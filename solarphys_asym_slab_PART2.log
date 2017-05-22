@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.20)  22 MAY 2017 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.20)  22 MAY 2017 15:07
 entering extended mode
 **./solarphys_asym_slab_PART2.tex
 (solarphys_asym_slab_PART2.tex
@@ -711,7 +711,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 LaTeX Warning: Reference `isec:' on page 4 undefined on input line 189.
 
-[4] [5] [6] Figure 1 [7] (solarphys_asym_slab_PART2.bbl [8]) [9]
+[4] [5] [6] Figure 1 [7] [8] (solarphys_asym_slab_PART2.bbl) [9]
 (solarphys_asym_slab_PART2.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -757,7 +757,7 @@ onts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmtt8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/marvosym/mar
 vosym.pfb>
-Output written on solarphys_asym_slab_PART2.pdf (9 pages, 323599 bytes).
+Output written on solarphys_asym_slab_PART2.pdf (9 pages, 323733 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
