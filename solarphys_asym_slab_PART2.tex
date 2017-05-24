@@ -24,6 +24,89 @@
 \usetikzlibrary{fadings}
 \numberwithin{equation}{section}
 
+
+
+% the following is to alter tikz settings to improve springs figure.
+\usetikzlibrary{decorations.pathmorphing,calc,patterns}
+\makeatletter
+\def\pgfdecorationspringstraightlinelength{0.5cm}
+\def\pgfdecorationspringnumberofelement{8}
+\def\pgfdecorationspringnaturallength{5cm}
+\pgfkeys{%
+  /pgf/decoration/.cd,
+  spring straight line length/.code={%
+    \pgfmathsetlengthmacro\pgfdecorationspringstraightlinelength{#1}},
+  spring natural length/.code={%
+    \pgfmathsetlengthmacro\pgfdecorationspringnaturallength{#1}},
+  spring number of element/.store in=\pgfdecorationspringnumberofelement
+}
+
+\pgfdeclaredecoration{coil spring}{straight line}{%
+  \state{straight line}[%
+    persistent precomputation = {%
+      % Compute the effective length of the spring (without the length
+      % of the two straight lines): \pgfdecorationspringeffectivelength
+      \pgfmathsetlengthmacro{\pgfdecorationspringeffectivelength}%
+        {\pgfdecoratedpathlength-2*\pgfdecorationspringstraightlinelength}
+      % Compute the effective length of one coil pattern:
+      % \pgfdecorationspringeffectivelengthofonecoil
+      \pgfmathsetlengthmacro{\pgfdecorationspringeffectivelengthofonecoil}%
+        {\pgfdecorationspringeffectivelength/\pgfdecorationspringnumberofelement}
+    },
+    width = \pgfdecorationspringstraightlinelength,
+    next state = draw spring]{%
+      \pgfpathlineto{%
+        \pgfqpoint{%
+          \pgfdecorationspringstraightlinelength}{0pt}}
+  }
+  \state{draw spring}%
+    [width=\pgfdecorationspringeffectivelengthofonecoil,
+     repeat state=\pgfdecorationspringnumberofelement-1,next state=final]{%
+       \pgfpathcurveto
+         {\pgfpoint@onspringcoil{0    }{ 0.555}{1}}
+         {\pgfpoint@onspringcoil{0.445}{ 1    }{2}}
+         {\pgfpoint@onspringcoil{1    }{ 1    }{3}}
+       \pgfpathcurveto
+         {\pgfpoint@onspringcoil{1.555}{ 1    }{4}}
+         {\pgfpoint@onspringcoil{2    }{ 0.555}{5}}
+         {\pgfpoint@onspringcoil{2    }{ 0    }{6}}
+       \pgfpathcurveto
+         {\pgfpoint@onspringcoil{2    }{-0.555}{7}}
+         {\pgfpoint@onspringcoil{1.555}{-1    }{8}}
+         {\pgfpoint@onspringcoil{1    }{-1    }{9}}
+       \pgfpathcurveto
+         {\pgfpoint@onspringcoil{0.445}{-1    }{10}}
+         {\pgfpoint@onspringcoil{0    }{-0.555}{11}}
+         {\pgfpoint@onspringcoil{0    }{ 0    }{12}}
+  }
+  \state{final}{%
+    \pgfpathlineto{\pgfpointdecoratedpathlast}
+  }
+}
+
+\def\pgfpoint@onspringcoil#1#2#3{%
+  \pgf@x=#1\pgfdecorationsegmentamplitude%
+  \pgf@x=.5\pgf@x%
+  \pgf@y=#2\pgfdecorationsegmentamplitude%
+  \pgfmathparse{0.083333333333*\pgfdecorationspringeffectivelengthofonecoil}%
+  \pgf@xa=\pgfmathresult pt
+  \advance\pgf@x by#3\pgf@xa%
+}
+
+\makeatother
+
+\tikzset{%
+  Spring/.style = {%
+    decoration = {%
+      coil spring,
+      spring straight line length = 0.2cm,
+      % To be added
+      spring natural length = #1,
+      spring number of element = 4,
+      amplitude=2mm},
+    decorate,
+    very thick},
+  Spring/.default = {4cm}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
@@ -117,7 +200,7 @@ where
 \end{equation}
 and $c_i=\cosh{m_ix_0}$ and $s_i=\sinh{m_ix_i}$ for $i=0,1,2$. To ensure the existence of non-trivial solutions of this equations, the determinant of the coefficient matrix must vanish. This gives us the dispersion relation
 \begin{equation}
-(\Lambda_0c_0+\Lambda_2s_0)(\Lambda_0s_0+\Lambda_1c_0)+(\Lambda_0c_0+\Lambda_1s_0)(\Lambda_0s_0+\Lambda_2c_0)=0.
+(\Lambda_0c_0+\Lambda_2s_0)(\Lambda_0s_0+\Lambda_1c_0)+(\Lambda_0c_0+\Lambda_1s_0)(\Lambda_0s_0+\Lambda_2c_0)=0. \label{disp rel}
 \end{equation}
 This allows one of the constants $B$ or $C$ to be arbitrary. These two types of solution correspond to the quasi-sausage and quasi-kink mode decoupling.
 
@@ -215,31 +298,130 @@ v_A^2 = \frac{\omega^2}{k^2} \left[1 + k^2x_0\left(\frac{R_A\frac{\rho_2}{\rho_0
 \end{equation}
 
 \subsection{Wide slab approximation}
-The wide slab approximation applies when the slab width is much larger than the wavelength, that is $kx_0 \gg 1$. When this approximation is applied, $m_0x_0 \gg 1$, therefore $\tanh{m_0x_0} \approx \coth{m_0x_0} \approx 0$ \cite{rob81b} (Check whether this is just for surface modes, like thin slab). Under this approximation, the quasi-sausage (top) and quasi-kink (bottom) expressions for the amplitude ratio becomes
+The wide slab approximation applies when the slab width is much larger than the wavelength, that is $kx_0 \gg 1$. To understand the properties of the eigenfunctions of the asymmetric slab system in the wide slab approximation, we must return to the dispersion relation, equation~\eqref{disp rel}. For surface modes under than wide slab approximation, $m_0x_0 \gg 1$, and therefore $\sinh{m_0x_0} \approx \cosh{m_0x_0} \approx 1$ \cite{rob81b}. Under this approximation, the dispersion relation, equation~\eqref{disp rel}, becomes
 \begin{equation}
-R_A = \left(\substack{- \\ +}\right)\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1x_0\frac{\rho_0}{\rho_1}-\omega^2}{(k^2v_A^2-\omega^2)m_2x_0\frac{\rho_0}{\rho_2}-\omega^2}\right], 
+(\Lambda_0 + \Lambda_1)(\Lambda_0 + \Lambda_2) = 0,
 \end{equation}
+which gives us two families of solutions, one satisfying $\Lambda_0 + \Lambda_1 = 0$ and the other satisfying $\Lambda_0 + \Lambda_2 = 0$. These are equivalent to
+\begin{equation}
+(k^2v_A^2 - \omega^2)m_{1,2}\frac{\rho_0}{\rho_{1,2}} - \omega^2m_0 = 0,
+\end{equation}
+respectively. This is the same as the dispersion relation governing surface waves along a single interface between a magnetised and a non-magnetised plasma \cite{rob81a}. Hence, the surface mode solutions of a wide asymmetric slab are just the surface modes that propagate along each interface independently. This makes intuitive sense because as the slab is widened the interfaces will have diminishing influence on each other, until each interface oscillates independently.
+
+This has an analogy to the mechanical example introduced by \citealt{all_etal17}. Consider two masses connected by a spring, with spring constant $k_0$, and each mass is also connected to a fixed wall on each side by springs with spring constants $k_1$ and $k_2$, respectively (Figure~\ref{fig: wide slab mechanical analogy}). When the middle spring has spring constant $k_0 \neq 0$, there are two modes, an in-phase mode (analogous to kink modes in a slab) and an in-antiphase mode (analogous to sausage modes in a slab) \citep{all_etal17}. When the two masses are decoupled by setting $k_0 = 0$ so that the middle spring is removed, each mass oscillated independently at the natural frequency of that side of the spring-mass system. This decoupling provides a good analogy to the wide slab limit for the magnetic slab. Each interface can oscillate at its own natural frequency, independent of the other interface. Given that we are considering magneto-acoustic waves, there are two restoring forces, the magnetic tension force and the pressure gradient force, which means that each independent interface has two natural frequencies (depending on the parameters of the system, there can be 0, 1, or 2 frequencies), corresponding to the fast and slow magneto-acoustic modes.
+
+With this understanding of the modes in the wide slab limit, the amplitude ratio, $R_A$ is either $0$ or \textit{undefined}, depending on which interface the wave is propagating.
+
+\begin{figure}
+\makebox[\textwidth][c]{
+\subfloat[Coupled equilibrium]{\scalebox{0.9}{
+\begin{tikzpicture}
+\filldraw[pattern=north east lines] (0,-0.5) -| (-0.2,0.5) -| (0,-0.5);
+\filldraw[pattern=north east lines] (6,-0.5) -| (6.2,0.5) -| (6,-0.5);
+\draw[Spring, line width=2] (0,0) -- (2,0);
+\draw[Spring, thin] (2,0) -- (4,0);
+\draw[Spring, line width=1] (4,0) -- (6,0);
+
+\draw [dashed] (2,1) -- (2,-1);
+\draw [dashed] (4,1) -- (4,-1);
+
+\draw (2,0) node [fill=red,circle,scale=0.8] {};
+\draw (4,0) node [fill=red,circle,scale=0.8] {};
+
+\Large
+\draw (1,0.6) node [] {$k_1$};
+\draw (3,0.6) node [] {$k_0 \neq 0$};
+\draw (5,0.6) node [] {$k_2$};
+\end{tikzpicture}
+}}
+
+\subfloat[Uncoupled equilibrium]{\scalebox{0.9}{
+\begin{tikzpicture}
+\filldraw[pattern=north east lines] (0,-0.5) -| (-0.2,0.5) -| (0,-0.5);
+\filldraw[pattern=north east lines] (6,-0.5) -| (6.2,0.5) -| (6,-0.5);
+\draw[Spring, line width=2] (0,0) -- (2,0);
+%\draw[Spring, thin] (2,0) -- (4,0);
+\draw[Spring, line width=1] (4,0) -- (6,0);
+
+\draw [dashed] (2,1) -- (2,-1);
+\draw [dashed] (4,1) -- (4,-1);
+
+\draw (2,0) node [fill=red,circle,scale=0.8] {};
+\draw (4,0) node [fill=red,circle,scale=0.8] {};
+
+\Large
+\draw (1,0.6) node [] {$k_1$};
+\draw (3,0.6) node [] {$k_0 = 0$};
+\draw (5,0.6) node [] {$k_2$};
+\end{tikzpicture}
+}}}
+
+\makebox[\textwidth][c]{
+\subfloat[Uncoupled oscillating]{\scalebox{0.9}{
+\begin{tikzpicture}
+\filldraw[pattern=north east lines] (0,-0.5) -| (-0.2,0.5) -| (0,-0.5);
+\filldraw[pattern=north east lines] (6,-0.5) -| (6.2,0.5) -| (6,-0.5);
+\draw[Spring, line width=2] (0,0) -- (1.5,0);
+%\draw[Spring, thin] (2,0) -- (4,0);
+\draw[Spring, line width=1] (4,0) -- (6,0);
+
+\draw [dashed] (2,1) -- (2,-1);
+\draw [dashed] (4,1) -- (4,-1);
+
+\draw (1.5,0) node [fill=red,circle,scale=0.8] {};
+\draw (4,0) node [fill=red,circle,scale=0.8] {};
+
+\Large
+\draw (1,0.6) node [] {$k_1$};
+\draw (3,0.6) node [] {$k_0 = 0$};
+\draw (5,0.6) node [] {$k_2$};
+\end{tikzpicture}
+}}
+
+\subfloat[Uncoupled oscillating]{\scalebox{0.9}{
+\begin{tikzpicture}
+\filldraw[pattern=north east lines] (0,-0.5) -| (-0.2,0.5) -| (0,-0.5);
+\filldraw[pattern=north east lines] (6,-0.5) -| (6.2,0.5) -| (6,-0.5);
+\draw[Spring, line width=2] (0,0) -- (2,0);
+%\draw[Spring, thin] (2,0) -- (4,0);
+\draw[Spring, line width=1] (3,0) -- (6,0);
+
+\draw [dashed] (2,1) -- (2,-1);
+\draw [dashed] (4,1) -- (4,-1);
+
+\draw (2,0) node [fill=red,circle,scale=0.8] {};
+\draw (3,0) node [fill=red,circle,scale=0.8] {};
+
+\Large
+\draw (1,0.6) node [] {$k_1$};
+\draw (3,0.6) node [] {$k_0 = 0$};
+\draw (5,0.6) node [] {$k_2$};
+\end{tikzpicture}
+}}}
+\caption{Mechanical example showing weak and zero coupling between the masses.}
+\label{fig: wide slab mechanical analogy}
+\end{figure}
 
 \subsection{Incompressible Approximation} \label{sec: incomp}
 
 If the plasma in each region is incompressible, the sound speeds become unbounded, so that $m_j \approx k$ for $j = 0,1,2$. Under this approximation, the CSAR for quasi-sausage modes (top) and quasi-kink modes (bottom) reduces to
 \begin{align}
-R_A &= \left(\hspace{-0.07in}\begin{matrix} &- \\ &+ \end{matrix}\right) \frac{\rho_1}{\rho_2} \left[ \frac{(k^2v_\textrm{A}^2-\omega^2)k\frac{\rho_0}{\rho_1}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)}{(k^2v_\textrm{A}^2-\omega^2)k\frac{\rho_0}{\rho_2}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)} \right].
+R_A &= \left(\substack{- \\ +}\right) \frac{\rho_1}{\rho_2} \left[ \frac{(k^2v_\textrm{A}^2-\omega^2)k\frac{\rho_0}{\rho_1}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)}{(k^2v_\textrm{A}^2-\omega^2)k\frac{\rho_0}{\rho_2}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)} \right].
 \end{align}
-This can be rearranged to
+This equation has solutions for $v_A$ given by
 \begin{equation}
-v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} \left(\substack{- \\ +}\right) \frac{\rho_1}{\rho_0}}{R_A \left(\substack{- \\ +}\right) 1} \right) \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right) (kx_0)\right]
+v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} \left(\substack{+ \\ -}\right) \frac{\rho_1}{\rho_0}}{R_A \left(\substack{+ \\ -}\right) 1} \right) \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right) (kx_0)\right]
 \end{equation}
 
 \subsection{Low-Beta Approximation} \label{sec: low-beta}
 
 For a low-beta plasma, the Alfv\'{e}n speed, $v_\textrm{A}$, dominates the internal sound speed, $c_0$, so that $m_0^2 \approx k^2-\omega^2/v_\textrm{A}^2$. For waves with phase speed much less than the Alfv\'{e}n speed, a further approximation of $m_0^2 \approx k^2$ can be made, which reduces the CSAR for quasi-sausage modes (top) and quasi-kink modes (bottom) to
 \begin{align}
-R_A &= \left(\hspace{-0.07in}\begin{matrix} &- \\ &+ \end{matrix}\right) \frac{\rho_1m_2}{\rho_2m_1} \left[ \frac{(k^2v_\textrm{A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)}{(k^2v_\textrm{A}^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)} \right].
+R_A &= \left(\substack{- \\ +}\right) \frac{\rho_1m_2}{\rho_2m_1} \left[ \frac{(k^2v_\textrm{A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)}{(k^2v_\textrm{A}^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)} \right].
 \end{align}
-This equation can be rearranged to give
+This equation can be solved for $v_A$ to give
 \begin{equation}
-v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[ 1 - k \left( \frac{ \frac{\rho_1}{\rho_0m_1} \left(\substack{- \\ +}\right) \frac{\rho_2}{\rho_0m_2}R_A}{R_A \left(\substack{- \\ +}\right) 1} \right) \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right) (kx_0)\right]
+v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} \left(\substack{+ \\ -}\right) R_A\frac{\rho_2}{\rho_0m_2}}{1 \left(\substack{+ \\ -}\right) R_A} \right) \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right) (kx_0)\right].
 \end{equation}
 
 
@@ -263,11 +445,11 @@ Similar manipulation of equation~\eqref{DR kink} yields
 \end{equation}
 If the conditions on either side of the slab are equal to first order approximation, the cross-slab amplitude ratio reduces to
 \begin{equation}
-R_v=-\frac{\rho_1m_2}{\rho_2m_1}. \label{cross-slab ratio approx saus}
+R_A=-\frac{\rho_1m_2}{\rho_2m_1} \label{cross-slab ratio approx saus}
 \end{equation}
 for quasi-sausage modes, and
 \begin{equation}
-R_v=\frac{\rho_1m_2}{\rho_2m_1}. \label{cross-slab ratio approx kink}
+R_A=\frac{\rho_1m_2}{\rho_2m_1} \label{cross-slab ratio approx kink}
 \end{equation}
 for quasi-kink modes.
 
@@ -477,18 +659,18 @@ Firstly, for quasi-sausage modes, using the solution for $\widehat{v}_x$ given b
 \end{equation}
 where $B$ is given by equation~\eqref{constB C} and $C$ is arbitrary. This equation is solved to give
 \begin{equation}
-\Delta_\textrm{min} = \frac{1}{m_0} \tanh^{-1}\left(-\frac{B}{C}\right). \label{disp of min power saus}
+x = \frac{1}{m_0} \tanh^{-1}\left(-\frac{B}{C}\right). \label{disp of min power saus}
 \end{equation}
 therefore the shift of minimum perturbation is
 \begin{equation}
-\Delta_z = \frac{1}{m_0}\tanh^{-1}\left(-\frac{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min saus}
+\Delta_{min} = \frac{1}{m_0}\tanh^{-1}\left(-\frac{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min saus}
 \end{equation}
 Secondly, for quasi-kink modes, using equations~\eqref{vsoln} and \eqref{constB B} we calculate the shift of minimum perturbation to be
 \begin{equation}
-\Delta_m = \frac{1}{m_0}\coth^{-1}\left(-\frac{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min kink}
+\Delta_{min} = \frac{1}{m_0}\coth^{-1}\left(-\frac{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min kink}
 \end{equation}
 
-It appears that expressions~\eqref{shift min saus} and~\eqref{shift min kink} for the shift in minimum perturbations depend on the parameters in the slab (subscript~0) and the left external plasma (subscript~1) and is not dependant on the right external plasma (subscript~2). However, the dependence on the right external plasma is implicit in the determination of the eigenfrequency $\omega$ when solving the dispersion relation \citep{all_etal17}.
+It appears that expressions~\eqref{shift min saus} and~\eqref{shift min kink} for the shift in minimum perturbations depend on the parameters in the slab (subscript~0), the left external plasma (subscript~1), but not on the right external plasma (subscript~2). However, the dependence on the right external plasma is implicit in the determination of the eigenfrequency $\omega$ when solving the dispersion relation \citep{all_etal17}.
 
 
 \subsection{Thin slab approximation}

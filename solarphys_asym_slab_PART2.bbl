@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{3}
 % BibTex style file: spr-mp-sola.bst (nameyear), 2015-03-09
 \ifx\bisbn     \undefined \def\bisbn  #1{ISBN #1}\fi
 \ifx\binits    \undefined \def\binits#1{#1}\fi
@@ -57,10 +57,22 @@
 \end{barticle}
 \endbibitem
 
-\bibitem[\protect\citeauthoryear{{Roberts}}{1981}]{rob81b}
+\bibitem[\protect\citeauthoryear{{Roberts}}{1981a}]{rob81a}
 \begin{barticle}
 \bauthor{\bsnm{{Roberts}}, \binits{B.}}:
-\byear{1981},
+\byear{1981}a,
+\batitle{{Wave propagation in a magnetically structured atmosphere I - Surface
+  waves at a magnetic interface.}}
+\bjtitle{Solar Physics}
+\bvolume{69},
+\bfpage{27}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Roberts}}{1981b}]{rob81b}
+\begin{barticle}
+\bauthor{\bsnm{{Roberts}}, \binits{B.}}:
+\byear{1981}b,
 \batitle{{Wave Propagation in a Magnetically Structured Atmosphere II - Waves
   in a Magnetic Slab}}.
 \bjtitle{Solar Physics}
