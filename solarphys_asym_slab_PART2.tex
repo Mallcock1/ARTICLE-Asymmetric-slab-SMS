@@ -274,7 +274,7 @@ The cross-slab amplitude ratio has potential as a tool for solar magneto-seismol
 
 To solve equation~\eqref{cross-slab ratio1} or~\eqref{cross-slab ratio2} directly for $v_A$, a numerical procedure must be followed. The numerical procedure is simple and would involve using a standard root-finding method such as the secant method. To make analytical progress, an approximation must be made to simplify equation~\eqref{cross-slab ratio1} or~\eqref{cross-slab ratio2}. The following subsections give the analytical solution for $v_A$ of equations~\eqref{cross-slab ratio1} and~\eqref{cross-slab ratio2} under the thin slab, wide slab, incompressible plasma, and low-beta approximations.
 
-\subsection{Thin slab approximation}
+\subsection{Thin slab approximation} \label{sec: CSAR thin slab}
 In the thin slab approximation, $kx_0 \ll 1$, it has been shown that $m_0x_0 \ll 1$ for surface modes \citep{rob81b}. Therefore, $\tanh{m_0x_0} \approx m_0x_0$ and the amplitude ratio for a thin slab quasi-sausage surface mode reduces to
 \begin{equation}
 R_A = -\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1x_0\frac{\rho_0}{\rho_1}-\omega^2}{(k^2v_A^2-\omega^2)m_2x_0\frac{\rho_0}{\rho_2}-\omega^2}\right], 
@@ -672,9 +672,18 @@ Secondly, for quasi-kink modes, using equations~\eqref{vsoln} and \eqref{constB 
 
 It appears that expressions~\eqref{shift min saus} and~\eqref{shift min kink} for the shift in minimum perturbations depend on the parameters in the slab (subscript~0), the left external plasma (subscript~1), but not on the right external plasma (subscript~2). However, the dependence on the right external plasma is implicit in the determination of the eigenfrequency $\omega$ when solving the dispersion relation \citep{all_etal17}.
 
+Mirroring the amplitude ratio method for solar magneto-seismology, we can solve equation~\eqref{shift min saus} or~\eqref{shift min kink} for the Alfv\'{e}n speed, $v_A$, to achieve an approximation for the magnetic field strength of inhomogeneous solar magnetic structures. This can be done either numerically, using an iterative root finding method, or analytically, under an appropriate approximation, as discussed below.
 
 \subsection{Thin slab approximation}
-
+As noted in Section~\ref{sec: CSAR thin slab}, for surface modes, the thin slab limit, that is $kx_0 \ll 1$ implies $m_0x_0 \ll 1$. Since, by definition, $\Delta_{min} < x_0$, then $m_0\Delta_{min} \ll 1$ so that $\tanh{m_0\Delta_{min}} \approx m_0\Delta_{min}$. Firstly, for quasi-sausage modes, equation~\eqref{shift min saus} can be solved for $v_A$ to give
+\begin{equation}
+v_A^2 = \frac{\omega^2}{k^2} \left[\frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_{min}) + \frac{1}{1 + (\omega / kc_0)^2} + k^2x_0\Delta_{min}\right],
+\end{equation}
+which further approximates to 
+\begin{equation}
+v_A^2 = \frac{\omega^2}{k^2} \left[\frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_{min}) + \frac{1}{1 + (\omega / kc_0)^2}\right]
+\end{equation}
+unless $\omega \gg kc_0$.
 
 \subsection{Wide slab approximation}
 
