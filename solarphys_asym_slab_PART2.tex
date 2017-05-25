@@ -24,6 +24,10 @@
 \usetikzlibrary{fadings}
 \numberwithin{equation}{section}
 
+\usepackage{geometry}
+\usepackage{pdflscape}
+
+\usepackage{multirow}
 
 
 % the following is to alter tikz settings to improve springs figure.
@@ -252,12 +256,12 @@ Using the second form of $C$ yields
 We now define the \emph{cross-slab amplitude ratio (CSAR)}, $R_A:=\frac{\widehat{v}_x(x_0)}{\widehat{v}_x(-x_0)}$ as the ratio of the amplitude of oscillation at the interface $x=x_0$ to that of the interface $x=-x_0$. Firstly, using equations~\eqref{v-x_01 C} and \eqref{vx_02 C}, the CSAR for quasi-sausage modes is
 \begin{align}
 R_A &=-\frac{\Lambda_0+\Lambda_1\frac{1}{\tau_0}}{\Lambda_0+\Lambda_2\frac{1}{\tau_0}} \notag \\
-	&=-\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0\frac{1}{\tanh{m_0x_0}}}{(k^2v_A^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0\frac{1}{\tanh{m_0x_0}}}\right]. \label{cross-slab ratio1}
+	&=-\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0\frac{1}{\tanh{m_0x_0}}}{(k^2v_A^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0\frac{1}{\tanh{m_0x_0}}}\right]. \label{cross-slab ratio saus}
 \end{align}
 Using equations~\eqref{v-x_01 B} and~\eqref{vx_02 B}, the corresponding expression for quasi-kink modes can be obtained, namely
 \begin{align}
 R_A&=\frac{\Lambda_0+\Lambda_1\tau_0}{\Lambda_0+\Lambda_2\tau_0} \notag \\
-	&=\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0\tanh{m_0x_0}}{(k^2v_A^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0\tanh{m_0x_0}}\right]. \label{cross-slab ratio2}
+	&=\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0\tanh{m_0x_0}}{(k^2v_A^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0\tanh{m_0x_0}}\right]. \label{cross-slab ratio kink}
 \end{align}
 
 As expected, equations \eqref{cross-slab ratio1} and \eqref{cross-slab ratio2} reduce to $R_A = -1$ and $R_A = 1$ for quasi-sausage and quasi-kink modes, respectively, when the slab is symmetric.
@@ -273,6 +277,7 @@ The cross-slab amplitude ratio has potential as a tool for solar magneto-seismol
 \end{itemize}
 
 To solve equation~\eqref{cross-slab ratio1} or~\eqref{cross-slab ratio2} directly for $v_A$, a numerical procedure must be followed. The numerical procedure is simple and would involve using a standard root-finding method such as the secant method. To make analytical progress, an approximation must be made to simplify equation~\eqref{cross-slab ratio1} or~\eqref{cross-slab ratio2}. The following subsections give the analytical solution for $v_A$ of equations~\eqref{cross-slab ratio1} and~\eqref{cross-slab ratio2} under the thin slab, wide slab, incompressible plasma, and low-beta approximations.
+
 
 \subsection{Thin slab approximation} \label{sec: CSAR thin slab}
 In the thin slab approximation, $kx_0 \ll 1$, it has been shown that $m_0x_0 \ll 1$ for surface modes \citep{rob81b}. Therefore, $\tanh{m_0x_0} \approx m_0x_0$ and the amplitude ratio for a thin slab quasi-sausage surface mode reduces to
@@ -712,20 +717,51 @@ which can be solved for $v_A$ to give
 v_A^2 = \frac{\omega^2}{k^2}\left[1 + \frac{k\rho_1}{m_1\rho_0}\left(\hspace{-0.07in}\begin{matrix} &\tanh \\ &\coth \end{matrix}\right)(k(x_0 + \Delta_{min}))\right].
 \end{equation}
 
+\newgeometry{margin=1cm} % modify this if you need even more space
+\begin{landscape}
+
 \begin{table}
 \caption{ A brilliant table caption.}
 \label{table label}
-\begin{tabular}{ccccccc} % define the column alignment
+\begin{tabular}{|cc|cccc|} % define the column alignment
                                   % l: left, c: center, r: right
                                   % @{.} replace the inter-column by a .
   \hline
-Type & Mode & Amplitude ratio, $R_A$ & \multicolumn{4}{c}{Alfv\'{e}n speed approximation} \\
-	 &		&						 & Thin slab & Wide Slab & Incompressible & Low-beta \\
+Type & Mode & \multicolumn{4}{c}{Squared Alfv\'{e}n/phase speed ratio, $kv_A / \omega$, approximation from amplitude ratio, $R_A$} \\
+	 &	    & Thin slab & Wide Slab & Incompressible & Low-beta \\
   \hline
-Surface & quasi-sausage & $R_A = $ &  &  &  & \\
+\multirow{2}{4em}{Surface} & Quasi-sausage & $ 1 + \frac{1}{x_0}\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_A + 1}\right) $  & N/A  & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} + \frac{\rho_1}{\rho_0}}{R_A + 1} \right) \coth{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} + R_A\frac{\rho_2}{\rho_0m_2}}{1 + R_A} \right) \coth{kx_0} $ \\
+						   & Quasi-kink	   & $ 1 + k^2x_0\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_A - 1}\right) $ & N/A  & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} - \frac{\rho_1}{\rho_0}}{R_A - 1} \right) \tanh{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} - R_A\frac{\rho_2}{\rho_0m_2}}{1 - R_A} \right) \tanh{kx_0} $ \\
+\multirow{2}{4em}{Body}    & Quasi-sausage & N/A & N/A & N/A & N/A \\
+						   & Quasi-kink	   & N/A & N/A & N/A & N/A \\
   \hline
 \end{tabular}
 \end{table}
+
+
+
+\begin{table}
+\caption{ A brilliant table caption.}
+\label{table label}
+\begin{tabular}{|cc|cccc|} % define the column alignment
+                                  % l: left, c: center, r: right
+                                  % @{.} replace the inter-column by a .
+  \hline
+Type & Mode & \multicolumn{4}{c}{Squared Alfv\'{e}n/phase speed ratio, $kv_A / \omega$, approximation from minimum perturbation shift, $\Delta_{min}$} \\
+	 &	    & Thin slab & Wide Slab & Incompressible & Low-beta \\
+  \hline
+\multirow{2}{4em}{Surface} & Quasi-sausage & $ \frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_{min}) + \frac{1}{1 + (\omega / kc_0)^2} $ & N/A & $ 1 + \frac{\rho_1}{\rho_0}\tanh{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\tanh{k(x_0 + \Delta_{min})} $ \\
+						   & Quasi-kink	   & N/A & Yet to derive & $ 1 + \frac{\rho_1}{\rho_0}\coth{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\coth{k(x_0 + \Delta_{min})} $ \\
+\multirow{2}{4em}{Body}    & Quasi-sausage & N/A & N/A & N/A & N/A \\
+						   & Quasi-kink	   & N/A & N/A & N/A & N/A \\
+  \hline
+\end{tabular}
+\end{table}
+
+\end{landscape}
+\restoregeometry
+
+
 
 \section{Discussion}
 Include: flow chart for solar magneto-seismology.
