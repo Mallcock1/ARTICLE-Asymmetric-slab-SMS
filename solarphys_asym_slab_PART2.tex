@@ -415,7 +415,7 @@ v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[ 1 + \left( \frac{R_A \frac{\rho_2}{
 
 \subsection{Low-Beta Approximation} \label{sec: low-beta}
 
-For a low-beta plasma, the Alfv\'{e}n speed, $v_\textrm{A}$, dominates the internal sound speed, $c_0$, so that $m_0^2 \approx k^2-\omega^2/v_\textrm{A}^2$. For waves with phase speed much less than the Alfv\'{e}n speed, a further approximation of $m_0^2 \approx k^2$ can be made, which reduces the CSAR for quasi-sausage modes (top) and quasi-kink modes (bottom) to
+Plasma beta, $\beta$, is the non-dimensional parameter defined as the ratio of plasma pressure to magnetic pressure. For a low-beta plasma, the Alfv\'{e}n speed, $v_\textrm{A}$, dominates the internal sound speed, $c_0$, so that $m_0^2 \approx k^2-\omega^2/v_\textrm{A}^2$. For waves with phase speed much less than the Alfv\'{e}n speed, a further approximation of $m_0^2 \approx k^2$ can be made, which reduces the CSAR for quasi-sausage modes (top) and quasi-kink modes (bottom) to
 \begin{align}
 R_A &= \left(\substack{- \\ +}\right) \frac{\rho_1m_2}{\rho_2m_1} \left[ \frac{(k^2v_\textrm{A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)}{(k^2v_\textrm{A}^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)} \right].
 \end{align}
@@ -674,6 +674,7 @@ It appears that expressions~\eqref{shift min saus} and~\eqref{shift min kink} fo
 
 Mirroring the amplitude ratio method for solar magneto-seismology, we can solve equation~\eqref{shift min saus} or~\eqref{shift min kink} for the Alfv\'{e}n speed, $v_A$, to achieve an approximation for the magnetic field strength of inhomogeneous solar magnetic structures. This can be done either numerically, using an iterative root finding method, or analytically, under an appropriate approximation, as discussed below.
 
+
 \subsection{Thin slab approximation}
 As noted in Section~\ref{sec: CSAR thin slab}, for surface modes, the thin slab limit, that is $kx_0 \ll 1$ implies $m_0x_0 \ll 1$. Since, by definition, $\Delta_{min} < x_0$, then $m_0\Delta_{min} \ll 1$ so that $\tanh{m_0\Delta_{min}} \approx m_0\Delta_{min}$. Firstly, for quasi-sausage modes, equation~\eqref{shift min saus} can be solved for $v_A$ to give
 \begin{equation}
@@ -685,14 +686,46 @@ v_A^2 = \frac{\omega^2}{k^2} \left[\frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_{min}) 
 \end{equation}
 unless $\omega \gg kc_0$.
 
+
 \subsection{Wide slab approximation}
+The concept of minimum perturbation shift is ill-defined in under the wide slab approximation. In the wide slab approximation, each interface oscillated independently at its own eigenfrequency. Therefore the nomenclature of quasi-sausage and quasi-kink mode breaks down. In the wide slab limit, the eigenfunctions have no local minimum in the slab, instead the perturbations decay evanescently away from the interface that the oscillation is localised.
 
 
 \subsection{Incompressible approximation}
+When the plasma is incompressible, the sound speeds are unbounded, so that $m_j = k$, for $j = 0, 1, 2$. The shift in minimum perturbation for a quasi-sausage mode (top) and quasi-kink (bottom) in an incompressible slab is
+\begin{equation}
+\Delta_{min} = \frac{1}{k}\left(\hspace{-0.07in}\begin{matrix} &\tanh^{-1} \\ &\coth^{-1} \end{matrix}\right)\left(-\frac{(k^2{v_A}^2-\omega^2)\frac{\rho_0}{\rho_1} - \omega^2\tanh{kx_0}}{(k^2{v_A}^2-\omega^2)\frac{\rho_0}{\rho_1}\tanh{kx_0} - \omega^2}\right),
+\end{equation}
+which can be solved for $v_A$ to give
+\begin{equation}
+v_A^2 = \frac{\omega^2}{k^2}\left[1 + \frac{\rho_1}{\rho_0}\left(\hspace{-0.07in}\begin{matrix} &\tanh \\ &\coth \end{matrix}\right)(k(x_0 + \Delta_{min}))\right].
+\end{equation}
 
 
 \subsection{Low-beta approximation}
+In a low-beta plasma, the shift in minimum perturbation for a quasi-sausage mode (top) and quasi-kink (bottom) is given by
+\begin{equation}
+\Delta_{min} = \frac{1}{k}\left(\hspace{-0.07in}\begin{matrix} &\tanh^{-1} \\ &\coth^{-1} \end{matrix}\right)\left(-\frac{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2k\tanh{kx_0}}{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{kx_0} - \omega^2k}\right),
+\end{equation}
+which can be solved for $v_A$ to give
+\begin{equation}
+v_A^2 = \frac{\omega^2}{k^2}\left[1 + \frac{k\rho_1}{m_1\rho_0}\left(\hspace{-0.07in}\begin{matrix} &\tanh \\ &\coth \end{matrix}\right)(k(x_0 + \Delta_{min}))\right].
+\end{equation}
 
+\begin{table}
+\caption{ A brilliant table caption.}
+\label{table label}
+\begin{tabular}{ccccccc} % define the column alignment
+                                  % l: left, c: center, r: right
+                                  % @{.} replace the inter-column by a .
+  \hline
+Type & Mode & Amplitude ratio, $R_A$ & \multicolumn{4}{c}{Alfv\'{e}n speed approximation} \\
+	 &		&						 & Thin slab & Wide Slab & Incompressible & Low-beta \\
+  \hline
+Surface & quasi-sausage & $R_A = $ &  &  &  & \\
+  \hline
+\end{tabular}
+\end{table}
 
 \section{Discussion}
 Include: flow chart for solar magneto-seismology.
