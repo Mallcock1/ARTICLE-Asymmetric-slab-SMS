@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.20)  25 MAY 2017 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.20)  26 MAY 2017 14:47
 entering extended mode
 **./solarphys_asym_slab_PART2.tex
 (solarphys_asym_slab_PART2.tex
@@ -604,20 +604,40 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen187
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen188
+\lightrulewidth=\dimen189
+\cmidrulewidth=\dimen190
+\belowrulesep=\dimen191
+\belowbottomsep=\dimen192
+\aboverulesep=\dimen193
+\abovetopsep=\dimen194
+\cmidrulesep=\dimen195
+\cmidrulekern=\dimen196
+\defaultaddspace=\dimen197
+\@cmidla=\count145
+\@cmidlb=\count146
+\@aboverulesep=\dimen198
+\@belowrulesep=\dimen199
+\@thisruleclass=\count147
+\@lastruleclass=\count148
+\@thisrulewidth=\dimen256
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
 s\tikzlibrarydecorations.pathmorphing.code.tex"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
 s\tikzlibrarydecorations.code.tex"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecoration
 s.code.tex"
-\pgfdecoratedcompleteddistance=\dimen188
-\pgfdecoratedremainingdistance=\dimen189
-\pgfdecoratedinputsegmentcompleteddistance=\dimen190
-\pgfdecoratedinputsegmentremainingdistance=\dimen191
-\pgf@decorate@distancetomove=\dimen192
-\pgf@decorate@repeatstate=\count145
-\pgfdecorationsegmentamplitude=\dimen193
-\pgfdecorationsegmentlength=\dimen194
+\pgfdecoratedcompleteddistance=\dimen257
+\pgfdecoratedremainingdistance=\dimen258
+\pgfdecoratedinputsegmentcompleteddistance=\dimen259
+\pgfdecoratedinputsegmentremainingdistance=\dimen260
+\pgf@decorate@distancetomove=\dimen261
+\pgf@decorate@repeatstate=\count149
+\pgfdecorationsegmentamplitude=\dimen262
+\pgfdecorationsegmentlength=\dimen263
 )
 \tikz@lib@dec@box=\box44
 )
@@ -641,30 +661,30 @@ LaTeX Warning: Label `itable label' multiply defined.
 )
 \openout1 = `solarphys_asym_slab_PART2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count146
-\scratchdimen=\dimen195
+\scratchcounter=\count150
+\scratchdimen=\dimen264
 \scratchbox=\box45
-\nofMPsegments=\count147
-\nofMParguments=\count148
+\nofMPsegments=\count151
+\nofMParguments=\count152
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count149
-\MPscratchDim=\dimen196
-\MPnumerator=\count150
-\makeMPintoPDFobject=\count151
+\MPscratchCnt=\count153
+\MPscratchDim=\dimen265
+\MPnumerator=\count154
+\makeMPintoPDFobject=\count155
 \everyMPtoPDFconversion=\toks50
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
@@ -750,22 +770,22 @@ Package caption Info: End \AtBeginDocument code.
 Article 1
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 146.
+(Font)              size <12> substituted on input line 148.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 146.
+(Font)              size <12> substituted on input line 148.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 146.
+LaTeX Font Info:    Try loading font information for U+msa on input line 148.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 146.
+LaTeX Font Info:    Try loading font information for U+msb on input line 148.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 146.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 148.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -773,86 +793,86 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 <orcid.pdf, id=28, 9.03375pt x 9.03375pt>
 File: orcid.pdf Graphic file (type pdf)
  <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf used on input line 146.
+Package pdftex.def Info: orcid.pdf used on input line 148.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 146.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 148.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 146.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 148.
 
 File: orcid.pdf Graphic file (type pdf)
 <use orcid.pdf>
-Package pdftex.def Info: orcid.pdf used on input line 146.
+Package pdftex.def Info: orcid.pdf used on input line 148.
 (pdftex.def)             Requested size: 9.0337pt x 9.0337pt.
-LaTeX Font Info:    Try loading font information for U+mvs on input line 146.
+LaTeX Font Info:    Try loading font information for U+mvs on input line 148.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\marvosym\umvs.fd")
-Underfull \hbox (badness 10000) detected at line 146
+Underfull \hbox (badness 10000) detected at line 148
 [][][]
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 148.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
  Abstract
 Keywords [1{C:/Users/Matt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <.
 /orcid.pdf>] [2]
 
 LaTeX Warning: Reference `icross-slab ratio1' on page 3 undefined on input line
- 267.
+ 269.
 
 
 LaTeX Warning: Reference `icross-slab ratio2' on page 3 undefined on input line
- 267.
+ 269.
 
 [3]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 271.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 273.
 
 
 LaTeX Warning: Reference `icross-slab ratio1' on page 4 undefined on input line
- 276.
+ 278.
 
 
 LaTeX Warning: Reference `icross-slab ratio2' on page 4 undefined on input line
- 276.
+ 278.
 
 
-LaTeX Warning: Reference `isec:' on page 4 undefined on input line 276.
+LaTeX Warning: Reference `isec:' on page 4 undefined on input line 278.
 
 
 LaTeX Warning: Reference `icross-slab ratio1' on page 4 undefined on input line
- 279.
+ 281.
 
 
 LaTeX Warning: Reference `icross-slab ratio2' on page 4 undefined on input line
- 279.
+ 281.
 
 
 LaTeX Warning: Reference `icross-slab ratio1' on page 4 undefined on input line
- 279.
+ 281.
 
 
 LaTeX Warning: Reference `icross-slab ratio2' on page 4 undefined on input line
- 279.
+ 281.
 
 
 LaTeX Warning: Reference `icross-slab ratio1' on page 4 undefined on input line
- 279.
+ 281.
 
 
 LaTeX Warning: Reference `icross-slab ratio2' on page 4 undefined on input line
- 279.
+ 281.
 
 
-Overfull \hbox (0.77017pt too wide) in paragraph at lines 306--307
+Overfull \hbox (0.77017pt too wide) in paragraph at lines 308--309
 [] [] \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1$ Roberts (1981b). Un-der this ap-pro
 x-i-ma-tion, the dis-per-sion re-la-tion, equa-tion [],|
  []
@@ -861,7 +881,7 @@ x-i-ma-tion, the dis-per-sion re-la-tion, equa-tion [],|
 Underfull \vbox (badness 2460) has occurred while \output is active []
 
  [7]
-Overfull \hbox (1.08044pt too wide) in paragraph at lines 680--681
+Overfull \hbox (1.08044pt too wide) in paragraph at lines 682--683
 []\OT1/cmr/m/n/10 Mirroring the am-pli-tude ra-tio method for so-lar magneto-se
 ismology, we can solve equa-tion []|
  []
@@ -918,10 +938,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17088 strings out of 493334
- 326996 string characters out of 3136674
- 381830 words of memory out of 3000000
- 20245 multiletter control sequences out of 15000+200000
+ 17145 strings out of 493334
+ 327768 string characters out of 3136674
+ 382553 words of memory out of 3000000
+ 20298 multiletter control sequences out of 15000+200000
  20032 words of font info for 76 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
  61i,16n,96p,1345b,894s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -958,7 +978,7 @@ mti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
 i8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/marvosym/marvosym.pfb
 >
-Output written on solarphys_asym_slab_PART2.pdf (11 pages, 385611 bytes).
+Output written on solarphys_asym_slab_PART2.pdf (11 pages, 385226 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

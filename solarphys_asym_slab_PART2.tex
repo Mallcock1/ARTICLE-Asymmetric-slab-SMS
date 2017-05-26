@@ -29,6 +29,8 @@
 
 \usepackage{multirow}
 
+\usepackage{booktabs}
+
 
 % the following is to alter tikz settings to improve springs figure.
 \usetikzlibrary{decorations.pathmorphing,calc,patterns}
@@ -720,21 +722,21 @@ v_A^2 = \frac{\omega^2}{k^2}\left[1 + \frac{k\rho_1}{m_1\rho_0}\left(\hspace{-0.
 \newgeometry{margin=1cm} % modify this if you need even more space
 \begin{landscape}
 
+
 \begin{table}
 \caption{ A brilliant table caption.}
 \label{table label}
-\begin{tabular}{|cc|cccc|} % define the column alignment
-                                  % l: left, c: center, r: right
-                                  % @{.} replace the inter-column by a .
-  \hline
-Type & Mode & \multicolumn{4}{c}{Squared Alfv\'{e}n/phase speed ratio, $kv_A / \omega$, approximation from amplitude ratio, $R_A$} \\
-	 &	    & Thin slab & Wide Slab & Incompressible & Low-beta \\
-  \hline
-\multirow{2}{4em}{Surface} & Quasi-sausage & $ 1 + \frac{1}{x_0}\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_A + 1}\right) $  & N/A  & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} + \frac{\rho_1}{\rho_0}}{R_A + 1} \right) \coth{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} + R_A\frac{\rho_2}{\rho_0m_2}}{1 + R_A} \right) \coth{kx_0} $ \\
-						   & Quasi-kink	   & $ 1 + k^2x_0\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_A - 1}\right) $ & N/A  & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} - \frac{\rho_1}{\rho_0}}{R_A - 1} \right) \tanh{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} - R_A\frac{\rho_2}{\rho_0m_2}}{1 - R_A} \right) \tanh{kx_0} $ \\
-\multirow{2}{4em}{Body}    & Quasi-sausage & N/A & N/A & N/A & N/A \\
-						   & Quasi-kink	   & N/A & N/A & N/A & N/A \\
-  \hline
+\begin{tabular}{llccc}
+  \toprule
+Type & Mode & \multicolumn{3}{c}{Approximation of $kv_A / \omega$ from amplitude ratio, $R_A$} \\
+\cmidrule(lr){3-5}
+	 &	    & \multicolumn{1}{c}{Thin slab} & \multicolumn{1}{c}{Incompressible} & \multicolumn{1}{c}{Low-beta} \\
+  \midrule
+\multirow{2}{*}{Surface} & Quasi-sausage & $ 1 + \frac{1}{x_0}\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_A + 1}\right) $ & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} + \frac{\rho_1}{\rho_0}}{R_A + 1} \right) \coth{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} + R_A\frac{\rho_2}{\rho_0m_2}}{1 + R_A} \right) \coth{kx_0} $ \\
+						   & Quasi-kink	   & $ 1 + k^2x_0\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_A - 1}\right) $ & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} - \frac{\rho_1}{\rho_0}}{R_A - 1} \right) \tanh{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} - R_A\frac{\rho_2}{\rho_0m_2}}{1 - R_A} \right) \tanh{kx_0} $ \\
+\multirow{2}{*}{Body}    & Quasi-sausage & N/A & N/A & N/A \\
+						   & Quasi-kink	   & N/A & N/A & N/A \\
+  \bottomrule
 \end{tabular}
 \end{table}
 
@@ -743,18 +745,17 @@ Type & Mode & \multicolumn{4}{c}{Squared Alfv\'{e}n/phase speed ratio, $kv_A / \
 \begin{table}
 \caption{ A brilliant table caption.}
 \label{table label}
-\begin{tabular}{|cc|cccc|} % define the column alignment
-                                  % l: left, c: center, r: right
-                                  % @{.} replace the inter-column by a .
-  \hline
-Type & Mode & \multicolumn{4}{c}{Squared Alfv\'{e}n/phase speed ratio, $kv_A / \omega$, approximation from minimum perturbation shift, $\Delta_{min}$} \\
-	 &	    & Thin slab & Wide Slab & Incompressible & Low-beta \\
-  \hline
-\multirow{2}{4em}{Surface} & Quasi-sausage & $ \frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_{min}) + \frac{1}{1 + (\omega / kc_0)^2} $ & N/A & $ 1 + \frac{\rho_1}{\rho_0}\tanh{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\tanh{k(x_0 + \Delta_{min})} $ \\
-						   & Quasi-kink	   & N/A & Yet to derive & $ 1 + \frac{\rho_1}{\rho_0}\coth{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\coth{k(x_0 + \Delta_{min})} $ \\
-\multirow{2}{4em}{Body}    & Quasi-sausage & N/A & N/A & N/A & N/A \\
-						   & Quasi-kink	   & N/A & N/A & N/A & N/A \\
-  \hline
+\begin{tabular}{llccc}
+  \toprule
+Type & Mode & \multicolumn{3}{c}{Approximation of $kv_A / \omega$ from minimum perturbation shift, $\Delta_{min}$} \\
+\cmidrule(lr){3-5}
+	 &	    & Thin slab & Incompressible & Low-beta \\
+  \midrule
+\multirow{2}{*}{Surface} & Quasi-sausage & $ \frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_{min}) + \frac{1}{1 + (\omega / kc_0)^2} $ & $ 1 + \frac{\rho_1}{\rho_0}\tanh{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\tanh{k(x_0 + \Delta_{min})} $ \\
+						   & Quasi-kink	   & Yet to derive & $ 1 + \frac{\rho_1}{\rho_0}\coth{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\coth{k(x_0 + \Delta_{min})} $ \\
+\multirow{2}{*}{Body}    & Quasi-sausage & N/A & N/A & N/A \\
+						   & Quasi-kink	   & N/A & N/A & N/A \\
+  \bottomrule
 \end{tabular}
 \end{table}
 
@@ -764,7 +765,6 @@ Type & Mode & \multicolumn{4}{c}{Squared Alfv\'{e}n/phase speed ratio, $kv_A / \
 
 
 \section{Discussion}
-Include: flow chart for solar magneto-seismology.
 
 The concept of minimum perturbation shift is exclusive to surface modes. The eigenfunctions of surface modes in a magnetic slab depend much more on the plasma parameters, such as the density, than body modes \citep{all_etal17}. This makes intuitive sense given that the energy in a surface mode is localised to the boundaries of the slab whereas the energy in a body mode is largely isolated within the slab. There is a quantifiable shift in the spacial nodes and anti-nodes in body mode perturbations within a slab due to changing external plasma parameters, however it is so small that is would not be an effective observational tool. It is also much more complicated because it depends on the number of nodes that the particular body mode has, an observation that is yet to be made in solar structures in either slab or tube geometries.
 
