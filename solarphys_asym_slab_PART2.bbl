@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{10}
 % BibTex style file: spr-mp-sola.bst (nameyear), 2015-03-09
 \ifx\bisbn     \undefined \def\bisbn  #1{ISBN #1}\fi
 \ifx\binits    \undefined \def\binits#1{#1}\fi
@@ -49,7 +49,7 @@
 \bauthor{\bsnm{{Erd{\'e}lyi}}, \binits{R.}}:
 \byear{2017},
 \batitle{{Magnetohydrodynamic Waves in an Asymmetric Magnetic Slab}}.
-\bjtitle{Solar Physics}
+\bjtitle{\solphys}
 \bvolume{292},
 \bfpage{35}.
 \doiurl{10.1007/s11207-017-1054-y}.
@@ -57,15 +57,81 @@
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{{Banerjee} \textit{et~al.}}{2007}]{ban_etal07}
+\begin{barticle}
+\bauthor{\bsnm{{Banerjee}}, \binits{D.}},
+\bauthor{\bsnm{{Erd{\'e}lyi}}, \binits{R.}},
+\bauthor{\bsnm{{Oliver}}, \binits{R.}},
+\bauthor{\bsnm{{O'Shea}}, \binits{E.}}:
+\byear{2007},
+\batitle{{Present and Future Observing Trends in Atmospheric
+  Magnetoseismology}}.
+\bjtitle{\solphys}
+\bvolume{246},
+\bfpage{3}.
+\doiurl{10.1007/s11207-007-9029-z}.
+\adsurl{2007SoPh..246....3B}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Erd{\'e}lyi} and
+  {Taroyan}}{2008}]{erd_etal08}
+\begin{barticle}
+\bauthor{\bsnm{{Erd{\'e}lyi}}, \binits{R.}},
+\bauthor{\bsnm{{Taroyan}}, \binits{Y.}}:
+\byear{2008},
+\batitle{{Hinode EUV spectroscopic observations of coronal oscillations}}.
+\bjtitle{\aap}
+\bvolume{489},
+\bfpage{L49}.
+\doiurl{10.1051/0004-6361:200810263}.
+\adsurl{2008A\%26A...489L..49E}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Erd{\'e}lyi}, {Hague}, and
+  {Nelson}}{2014}]{erd_etal14}
+\begin{barticle}
+\bauthor{\bsnm{{Erd{\'e}lyi}}, \binits{R.}},
+\bauthor{\bsnm{{Hague}}, \binits{A.}},
+\bauthor{\bsnm{{Nelson}}, \binits{C.J.}}:
+\byear{2014},
+\batitle{{Effects of Stratification and Flows on P $_{1}$/ P $_{2}$ Ratios and
+  Anti-node Shifts Within Closed Loop Structures}}.
+\bjtitle{\solphys}
+\bvolume{289},
+\bfpage{167}.
+\doiurl{10.1007/s11207-013-0344-2}.
+\adsurl{2014SoPh..289..167E}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Nakariakov} and {Ofman}}{2001}]{nak_etal01}
+\begin{barticle}
+\bauthor{\bsnm{{Nakariakov}}, \binits{V.M.}},
+\bauthor{\bsnm{{Ofman}}, \binits{L.}}:
+\byear{2001},
+\batitle{{Determination of the coronal magnetic field by coronal loop
+  oscillations}}.
+\bjtitle{\aap}
+\bvolume{372},
+\bfpage{L53}.
+\doiurl{10.1051/0004-6361:20010607}.
+\adsurl{2001A\%26A...372L..53N}.
+\end{barticle}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{{Roberts}}{1981a}]{rob81a}
 \begin{barticle}
 \bauthor{\bsnm{{Roberts}}, \binits{B.}}:
 \byear{1981}a,
-\batitle{{Wave propagation in a magnetically structured atmosphere I - Surface
+\batitle{{Wave propagation in a magnetically structured atmosphere. I - Surface
   waves at a magnetic interface.}}
-\bjtitle{Solar Physics}
+\bjtitle{\solphys}
 \bvolume{69},
 \bfpage{27}.
+\doiurl{10.1007/BF00151253}.
+\adsurl{1981SoPh...69...27R}.
 \end{barticle}
 \endbibitem
 
@@ -73,11 +139,55 @@
 \begin{barticle}
 \bauthor{\bsnm{{Roberts}}, \binits{B.}}:
 \byear{1981}b,
-\batitle{{Wave Propagation in a Magnetically Structured Atmosphere II - Waves
+\batitle{{Wave Propagation in a Magnetically Structured Atmosphere. II - Waves
   in a Magnetic Slab}}.
-\bjtitle{Solar Physics}
+\bjtitle{\solphys}
 \bvolume{69},
 \bfpage{39}.
+\doiurl{10.1007/BF00151254}.
+\adsurl{1981SoPh...69...39R}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Rosenberg}}{1970}]{ros70}
+\begin{barticle}
+\bauthor{\bsnm{{Rosenberg}}, \binits{H.}}:
+\byear{1970},
+\batitle{{Evidence for MHD Pulsations in the Solar Corona}}.
+\bjtitle{\aap}
+\bvolume{9},
+\bfpage{159}.
+\adsurl{1970A\%26A.....9..159R}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Uchida}}{1970}]{uch70}
+\begin{barticle}
+\bauthor{\bsnm{{Uchida}}, \binits{Y.}}:
+\byear{1970},
+\batitle{{Diagnosis of Coronal Magnetic Structure by Flare-Associated
+  Hydromagnetic Disturbances}}.
+\bjtitle{\pasj}
+\bvolume{22},
+\bfpage{341}.
+\adsurl{1970PASJ...22..341U}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Verth} \textit{et~al.}}{2007}]{ver_etal07}
+\begin{barticle}
+\bauthor{\bsnm{{Verth}}, \binits{G.}},
+\bauthor{\bsnm{{Van Doorsselaere}}, \binits{T.}},
+\bauthor{\bsnm{{Erd{\'e}lyi}}, \binits{R.}},
+\bauthor{\bsnm{{Goossens}}, \binits{M.}}:
+\byear{2007},
+\batitle{{Spatial magneto-seismology: effect of density stratification on the
+  first harmonic amplitude profile of transversal coronal loop oscillations}}.
+\bjtitle{\aap}
+\bvolume{475},
+\bfpage{341}.
+\doiurl{10.1051/0004-6361:20078086}.
+\adsurl{2007A\%26A...475..341V}.
 \end{barticle}
 \endbibitem
 
