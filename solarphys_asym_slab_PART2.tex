@@ -765,7 +765,7 @@ which can be solved for $v_A$ to give
 v_A^2 = \frac{\omega^2}{k^2}\left[1 + \frac{k\rho_1}{m_1\rho_0}\left(\hspace{-0.07in}\begin{matrix} &\tanh \\ &\coth \end{matrix}\right)(k(x_0 + \Delta_{min}))\right].
 \end{equation}
 
-\newgeometry{margin=1cm} % modify this if you need even more space
+%\newgeometry{margin=1cm} % modify this if you need even more space
 \begin{landscape}
 
 
@@ -779,8 +779,6 @@ Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_A^2 / \omega^2$ using am
   \midrule
 \multirow{2}{*}{Surface} & Quasi-sausage & $ 1 + \frac{1}{x_0}\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_A + 1}\right) $ & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} + \frac{\rho_1}{\rho_0}}{R_A + 1} \right) \coth{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} + R_A\frac{\rho_2}{\rho_0m_2}}{1 + R_A} \right) \coth{kx_0} $ \\
 						   & Quasi-kink	   & $ 1 + k^2x_0\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_A - 1}\right) $ & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} - \frac{\rho_1}{\rho_0}}{R_A - 1} \right) \tanh{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} - R_A\frac{\rho_2}{\rho_0m_2}}{1 - R_A} \right) \tanh{kx_0} $ \\
-\multirow{2}{*}{Body}    & Quasi-sausage & N/A & N/A & N/A \\
-						   & Quasi-kink	   & N/A & N/A & N/A \\
   \bottomrule
 \end{tabular} \label{table: amp ratio}
 \end{table}
@@ -797,14 +795,12 @@ Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_A^2 / \omega^2$ using mi
   \midrule
 \multirow{2}{*}{Surface} & Quasi-sausage & $ \frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_{min}) + \frac{1}{1 + (\omega / kc_0)^2} + k^2x_0\Delta_{min} $ & $ 1 + \frac{\rho_1}{\rho_0}\tanh{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\tanh{k(x_0 + \Delta_{min})} $ \\
 						   & Quasi-kink	   & $\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, defined in text & $ 1 + \frac{\rho_1}{\rho_0}\coth{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\coth{k(x_0 + \Delta_{min})} $ \\
-\multirow{2}{*}{Body}    & Quasi-sausage & N/A & N/A & N/A \\
-						   & Quasi-kink	   & N/A & N/A & N/A \\
   \bottomrule
 \end{tabular} \label{table: shift in min pert}
 \end{table}
 
 \end{landscape}
-\restoregeometry
+%\restoregeometry
 
 \section{Discussion}
 
