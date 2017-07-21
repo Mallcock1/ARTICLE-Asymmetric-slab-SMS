@@ -10,6 +10,7 @@
 %
 \usepackage[optionalrh,solaromanenum,natbib]{spr-sola-addons}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{amssymb}
 \usepackage{color}
 \usepackage{breakurl}
@@ -149,7 +150,7 @@
 
 \title{Solar Magneto-Seismology with Asymmetric Slab Waveguides}
 
-\author[addressref={UoS},email={}]{\inits{M.M.}\fnm{Matthew }\lnm{Allcock}\orcid{0000-0002-0771-743X}}
+\author[addressref={UoS},email={}]{\inits{M.}\fnm{Matthew }\lnm{Allcock}\orcid{0000-0002-0771-743X}}
 
 \author[addressref={UoS},corref,email={robertus@sheffield.ac.uk}]{\inits{R.}\fnm{Robert }\lnm{Erd\'{e}lyi}\orcid{0000-0003-3439-4127}}
 
@@ -167,32 +168,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Abstract 
 \begin{abstract}
-Abstract will go here.
+Solar magneto-seismology allows us to approximate plasma paramters that are difficult to measure using traditional observational methods. A magnetic slab can act as waveguide for magneto-acoustic waves that approximates magnetic structures in the Solar atmosphere. Asymmetry in the slab distorts the eigenfrequencies and eigenfunctions. In this work, we present two novel tools for solar magneto-seismology that use this distortion to estimate the slab magnetic field strength using magneto-acoustic surface waves: the \emph{amplitude ratio} and the \emph{minimum perturbation shift} methods. These tools provide advancement of solar magneto-seismology in inhomogeneous structures such as elongated magnetic bright points and sunspot light bridges that can be locally approximated as magnetic slabs.
 \end{abstract}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Keywords
-\keywords{Some, Key, Words}
+\keywords{Coronal Seismology; Magnetic fields, Photosphere; Waves, Magnetohydrodynamic; Waves, Modes.}
 \end{opening}
 %-------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-The emerging field of solar magneto-seismology (SMS) has become a crucial tool in developing our understanding of solar structures. By comparing observational measurements of magnetohydrodynamic waves to the wave solutions in inhomogeneous plasma models, we can make approximations of otherwise difficult-to-measure parameters such as the magnetic field strength and heat transport coefficients. This allows us to use more realistic parameters for numerical simulations and give us a better understanding of conditions that lead to, for example, instabilities, reconnection, and eruptions. In the present work, we present two novel analytical tools for SMS that use an asymmetric slab waveguide to determine an estimate for the magnetic field strength within locally slab-like solar structures.
+The emerging field of solar magneto-seismology (SMS) has become a crucial tool in developing our understanding of solar structures. By comparing observational measurements of magnetohydrodynamic (MHD) waves to the wave solutions in inhomogeneous plasma models, we can make approximations of otherwise difficult-to-measure parameters such as the magnetic field strength and heat transport coefficients. This allows us to use more realistic parameters for numerical simulations and give us a better understanding of conditions that lead to, for example instabilities, reconnection, and heating. In the present work, we derive two novel analytical tools for SMS that use an asymmetric slab waveguide to determine an estimate for the magnetic field strength. This can be applied to solar atmospheric structures that are locally slab-like, such as elongated magnetic bright points and sunspot light bridges.
 
-For a given geometry and set of equilibrium parameters, both eigenfunctions and their corresponding eigenvalue (eigenfrequency) of the dispersion relation are dependent on the plasma and magnetic parameters of the system. There have been successful SMS applications using both eigenfrequency and eigenfunction methods. By eigenfrequency methods we refer to methods that use the relationship between the observed frequency, or equivalently period, of the waveand the background conditions to estimate a parameter. By eigenfunction methods we refer to methods that use the relationship between the observed spatial and/or temporal power distribution and the background conditions to estimate a parameter, using a comparison with the theoretical eigenfunction. Eigenfunction methods often use a combination of eigenfunction and eigenfrequency to relate back to the background parameters.
+For a given geometry and set of equilibrium parameters, both eigenfunctions and their corresponding eigenvalue (eigenfrequency) of the dispersion relation are dependent on the plasma and magnetic parameters of the system. There have been successful SMS applications using both eigenfrequency and eigenfunction methods. By eigenfrequency methods we refer to methods that use the observed frequency, or equivalently period, of the wave to estimate a plasma parameter. By eigenfunction methods we refer to methods that compare the observed spatial and/or temporal wave power distribution comparison with the eigenfunctions from an applicable theoretical model to estimate a plasma parameter. We also refer to methods that use a combination of eigenfrequencies and eigenfunctions as eigenfunction methods.
 
-Both eigenvalue and eigenfunction methods have been used since the initial developments of SMS. \cite{ros70} first suggested that the frequency of oscillations, which were observed through synchrotron radiation due to the presence on MHD waves, could be used to diagnose background parameters. Further theoretical development has led to further eigenvalue methods, including coronal magnetic field estimates using standing kink modes in coronal loops by \cite{nak_etal01}, and using slow sausage and kink modes by \cite{erd_etal08}. The ratio of periods of the fundamental and the first harmonic standing kink mode and its dependence on density stratification has also been studied \citep{ban_etal07,erd_etal14}.
+Both eigenvalue and eigenfunction methods have been employed successfully. \cite{ros70} first suggested that the frequency of oscillations, observed through the synchrotron radiation fluctuation due to the presence of MHD waves, could be used to diagnose background parameters. Further theoretical development has led to more sophisticated eigenvalue methods, including coronal magnetic field estimates using standing kink modes in coronal loops by \cite{nak_etal01}, and using slow sausage and kink modes by \cite{erd_etal08}. The ratio of periods of the fundamental and the first harmonic standing kink mode and its dependence on density stratification has also been studied \citep{ban_etal07,erd_etal14}.
 
-Eigenfunction methods have also demonstrated their efficacy in estimating difficult-to-measure paramters. \cite{uch70} estimated the coronal magnetic structure by comparing Moreton wave observations with the theoretical influence that the coronal magnetic field has on the wavefront shape. More recent eigenfunction methods include utilising the anti-node shift of standing modes in a magnetic flux tube to diagnose its non-homogeneous density stratification \citep{ver_etal07,erd_etal14}.
+Eigenfunction methods have also demonstrated their efficacy. \cite{uch70} estimated the coronal magnetic structure by comparing Moreton wave observations with the theoretical influence that the coronal magnetic field has on Moreton wavefront shape. More recent eigenfunction methods include utilising the anti-node shift of standing modes in a magnetic flux tube to diagnose its inhomogeneous density stratification \citep{ver_etal07,erd_etal14}.
 
-The present work builds upon, and presents an application of, the linear wave mode analysis completed by \cite{all_etal17}. A magnetic slab, with non-magnetic, but asymmetric, in terms of density and sound speeds, plasma outside the slab has eigenmodes which can be described as either quasi-sausage or quasi-kink modes. For quasi-sausage (quasi-kink) modes, the oscillations on each slab interface are in anti-phase (phase). These differ from traditional sausage and kink modes by the fact that the amplitude of oscillation on each interface are not equal, resulting in the quasi-kink modes not necessarily retaining its cross-sectional area and the quasi-sausage modes not necessarily being reflectionally symmetric about the centre line of the slab. The extent to which these modes are modified from the traditional sausage and kink modes is dependant on the background parameters. Therefore, quantities such as the ratio of oscillation amplitudes on each side of the slab and the shift in the position of minimum perturbation within the slab can be used to diagnose certain background parameters. This is the focus of the present paper, to derive expressions for these quantities and discuss the potential for their use in solar magneto-seismology.
+The present work builds upon, and presents an application of, the linear wave mode analysis of asymmetric magnetic slabs completed by \cite{all_etal17}. A magnetic slab, with non-magnetic, but asymmetric density and temperatures outside the slab has eigenmodes which can be described as either quasi-sausage or quasi-kink. For quasi-sausage (quasi-kink) modes, the oscillations on each slab interface are in anti-phase (phase). These differ from traditional sausage and kink modes by the fact that the amplitude of oscillation on each interface are not equal, resulting in the quasi-kink modes not necessarily retaining its cross-sectional area and the quasi-sausage modes not necessarily having reflection symmetric about the centre line of the slab. The extent to which these modes are modified from the traditional sausage and kink modes is dependent on the background parameters, in particular, the magnitude of the asymmetry. Therefore, quantities such as the ratio of oscillation amplitudes on each side of the slab and the shift in the position of minimum perturbation within the slab can be used to diagnose certain background parameters. This is the focus of the present paper, to derive expressions for these quantities and discuss the potential for their use in solar magneto-seismology.
 
 %Rayleigh-Ritz theorem about eigenfunctions being more affected by perturbation of parameters than eigenvalues. 
 
-\section{Cross-slab amplitude ratio} \label{sec: CSAR}
+\section{Amplitude ratio} \label{sec: AR}
 The aim of this section is to derive an expression for the ratio of the oscillation on each interface of a magnetic slab in terms of the wave parameters and plasma parameters of the system.
 
-Consider an inviscid, plasma structured by two parallel interfaces separating the plasma into three regions along the $\mathbf{\widehat{x}}$-direction. In each region the plasma is uniform and the central region, known as the slab, has a uniform magnetic field, $\mathbf{B_0} = B_0 \mathbf{\widehat{z}}$. Adopting the same notation as \cite{all_etal17}, the density, pressure, and sound speed within the slab are $\rho_0$, $p_0$, and $c_0$, respectively, and in the external plasma they are subscripted by 1 and 2, respectively. In our previous work \citep{all_etal17}, it was shown that trapped MHD modes propagating along an asymmetric magnetic slab have velocity perturbation in the $\mathbf{\widehat{x}}$-direction given by $v_x(\mathbf{x}, t) = \widehat{v}_x(x)e^{i(kz-\omega t)}$ where $\omega$ and $k$ are the angular frequency and wavenumber, and
+Consider an inviscid, plasma structured by two parallel interfaces separating the plasma into three regions along the $\mathbfit{\widehat{x}}$-direction. In each region the plasma is uniform and the central region, known as the slab, has a uniform magnetic field, $\mathbfit{B_0} = B_0 \mathbfit{\widehat{z}}$. The plasma adjacent to the slab on each side is non-magnetic. The density, pressure, and sound speed within the slab are $\rho_0$, $p_0$, and $c_0$, respectively, and in the external plasma they are subscripted by 1 and 2, respectively. For more information about the equilibrium conditions, see \citealp{all_etal17}. In our previous work \citep{all_etal17}, it was shown that trapped MHD modes propagating along an asymmetric magnetic slab have velocity perturbation in the $\mathbfit{\widehat{x}}$-direction given by ${v_x(x,y,z,t) = \widehat{v}_x(x)e^{i(kz-\omega t)}}$ where $\omega$ and $k$ are the angular frequency and wavenumber, and
 \begin{equation}
 \widehat{v}_x(x)=
 \begin{cases}
@@ -208,7 +210,7 @@ m_0^2=\frac{(k^2v_\textrm{A}^2-\omega^2)(k^2c_0^2-\omega^2)}{(c_0^2+v_\textrm{A}
 \begin{equation}
 m_j^2=k^2-\frac{\omega^2}{c_j^2}, \quad \text{for $j=1,2$,} \label{m1/2}
 \end{equation}
-and $A, B, C$, and $D$ are arbitrary constants (with respect to $x$). These constants can be determined, to within one degree of freedom, using the boundary conditions of continuity in total (kinetic plus magnetic) pressure and transversal velocity component across the slab boundaries at $x = \pm x_0$. Applying these four boundary conditions retrieves four linear homogeneous algebraic equations in the four unknowns, which can be row reduced to the following form:
+and $A, B, C$, and $D$ are arbitrary constants (with respect to $x$). These constants can be determined, to within one degree of freedom, using the boundary conditions of continuity in total (kinetic plus magnetic) pressure and transversal velocity component across the slab boundaries at $x = \pm x_0$. Applying these four boundary conditions retrieves four coupled linear homogeneous algebraic equations in the four unknowns:
 \begin{equation}
 \left(
 \begin{matrix}
@@ -239,15 +241,15 @@ D
 \end{equation}
 where
 \begin{equation}
-\Lambda_0=-\frac{i\rho_0(k^2v_A^2-\omega^2)}{m_0\omega}, \quad \Lambda_1=\frac{i\rho_1\omega}{m_1}, \quad \text{and} \quad \Lambda_2=\frac{i\rho_2\omega}{m_2}, \label{Lambdas}
+\Lambda_0=-\frac{i\rho_0(k^2v_\textrm{A}^2-\omega^2)}{m_0\omega}, \quad \Lambda_1=\frac{i\rho_1\omega}{m_1}, \quad \text{and} \quad \Lambda_2=\frac{i\rho_2\omega}{m_2}, \label{Lambdas}
 \end{equation}
 and $c_i=\cosh{m_ix_0}$ and $s_i=\sinh{m_ix_i}$ for $i=0,1,2$. To ensure the existence of non-trivial solutions of this equations, the determinant of the coefficient matrix must vanish. This gives us the dispersion relation as
 \begin{equation}
 (\Lambda_0c_0+\Lambda_2s_0)(\Lambda_0s_0+\Lambda_1c_0)+(\Lambda_0c_0+\Lambda_1s_0)(\Lambda_0s_0+\Lambda_2c_0)=0. \label{disp rel}
 \end{equation}
-This relation allows one of the constants $B$ or $C$ to be arbitrary. These two types of solution correspond to the quasi-sausage and quasi-kink mode decoupling.
+Satisfying this relation allows one of the constants $B$ or $C$ to be arbitrary. This gives us two types of solution: quasi-sausage and quasi-kink modes.
 
-Firstly, for quasi-sausage modes, by letting $C$ be arbitrary the other constants $A$, $B$, and $D$ can be determined in terms of $C$ as follows
+Firstly, for quasi-sausage modes, by letting $C$ be arbitrary the other constants $A$, $B$, and $D$ can be determined as follows
 \begin{align}
 A=&\frac{1}{c_1-s_1}(Bc_0-Cs_0), \label{constA C} \\ 
 D=&\frac{1}{c_2-s_2}(Bc_0+Cs_0), \label{constD C}
@@ -256,7 +258,7 @@ where
 \begin{equation}
 B=\frac{\Lambda_0c_0+\Lambda_1s_0}{\Lambda_0s_0+\Lambda_1c_0}C=-\frac{\Lambda_0c_0+\Lambda_2s_0}{\Lambda_0s_0+\Lambda_2c_0}C. \label{constB C}
 \end{equation}
-The second formulation of $B$ in equation~\eqref{constB C} is found by substituting in the dispersion relation. A substitution of these values, using the first form of $B$, into the velocity solution, equation~\eqref{vsoln}, evaluated at the slab boundaries ($x=\pm{}x_0$), yields
+The second formulation of $B$ in equation~\eqref{constB C} is found by utilising the dispersion relation. A substitution of these values, using the first form of $B$, into the velocity solution, equation~\eqref{vsoln}, evaluated at the slab boundaries, yields
 \begin{align}
 \widehat{v}_x(x_0)=&Bc_0+Cs_0 \notag \\
 			  =&\frac{2\Lambda_1+\Lambda_0\left(\tau_0+\frac{1}{\tau_0}\right)}{\Lambda_0+\Lambda_1\frac{1}{\tau_0}}Cc_0, \label{vx_01 C} \\
@@ -269,7 +271,7 @@ Using the second form of $B$ yields
 \widehat{v}_x(x_0)=&\frac{-\Lambda_0}{\Lambda_0+\Lambda_2\frac{1}{\tau_0}}C/s_0, \label{vx_02 C} \\
 \widehat{v}_x(-x_0)=&\frac{-2\Lambda_2-\Lambda_0\left(\tau_0+\frac{1}{\tau_0}\right)}{\Lambda_0+\Lambda_2\frac{1}{\tau_0}}Cc_0. \label{v-x_02 C}
 \end{align}
-These forms are equivalent. The horizontal velocity perturbation amplitude, $\widehat{v}_x$ is, more specifically, a \emph{signed} amplitude, where a positive (negative) value indicates perturbation in the positive (negative) $\mathbf{\widehat{x}}$-direction.
+These forms are equivalent. The horizontal velocity perturbation amplitude, $\widehat{v}_x$ is, more specifically, a \emph{signed} amplitude, where a positive (negative) value indicates perturbation in the positive (negative) $\mathbfit{\widehat{x}}$-direction.
 
 Secondly, for quasi-kink modes, by letting $B$ be arbitrary the other constants $A$, $C$, and $D$ can be determined in terms of $B$ as follows
 \begin{align}
@@ -291,70 +293,163 @@ Using the second form of $C$ yields
 \widehat{v}_x(-x_0)=&\frac{2\Lambda_2+\Lambda_0\left(\tau_0+\frac{1}{\tau_0}\right)}{\Lambda_0+\Lambda_2\tau_0}Bs_0. \label{v-x_02 B}
 \end{align}
 
+\begin{figure}
+\makebox[\textwidth][c]{
+\subfloat[]{\scalebox{0.9}{
+\begin{tikzpicture}
+\draw [->] (1,0) -- (6,0);
 
-We now define the \emph{cross-slab amplitude ratio (CSAR)}, $R_A:=\frac{\widehat{v}_x(x_0)}{\widehat{v}_x(-x_0)}$ as the ratio of the amplitude of oscillation at the interface $x=x_0$ to that of the interface $x=-x_0$. Firstly, using equations~\eqref{v-x_01 C} and \eqref{vx_02 C}, the CSAR for quasi-sausage modes is
+\shade[bottom color=lightgray,top color=white, opacity=0.7] (1.75,2) to [out=-90,in=90] (2.25,0.75) to (4.5,0.75) to [out=90,in=-90] (5.5,2) to (1.75,2);
+
+\shade[bottom color=white,top color=lightgray, opacity=0.7] (2.25,0.75) to (4.5,0.75) to [out=-90,in=90] (5.5,-0.5) to (1.75,-0.5) to [out=90,in=-90] (2.25,0.75);
+
+\draw [thick] (1.75,2) to [out=-90,in=90] (2.25,0.75) to [out=-90,in=90] (1.75,-0.5);
+\draw [thick, dashed, opacity=0.5] (4.5,2) to [out=-90,in=90] (5.5,0.75) to [out=-90,in=90] (4.5,-0.5);
+
+\draw [thick, red, -stealth] (2.375,-0.5) to [out=90,in=-90] (2.625, 0.75) to [out=90,in=-90] (2.375,2);
+\draw [thick, red, -stealth] (3,-0.5) to [out=90,in=-90] (3, 0.75) to [out=90,in=-90] (3,2);
+\draw [thick, red, -stealth] (3.625,-0.5) to [out=90,in=-90] (3.375, 0.75) to [out=90,in=-90] (3.625,2);
+\draw [thick, red, -stealth] (4.25,-0.5) to [out=90,in=-90] (3.75, 0.75) to [out=90,in=-90] (4.25,2);
+\draw [thick, red, -stealth] (4.875,-0.5) to [out=90,in=-90] (4.125, 0.75) to [out=90,in=-90] (4.875,2);
+
+\draw [thick, dashed, opacity=0.5] (2.25,2) to [out=-90,in=90] (1.75,0.75) to [out=-90,in=90] (2.25,-0.5);
+\draw [thick] (5.5,2) to [out=-90,in=90] (4.5,0.75) to [out=-90,in=90] (5.5,-0.5);
+
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+%\draw [->] (0,0) -- (0,2);
+
+%\node at (1,1) {$\rho_1$};
+%\node at (6,1) {$\rho_2$};
+%\node [right] at (2.95,1.3) {$\rho_0$};
+
+\draw [-] (1.75, 2.1) to [out=90, in=-90] (1.875, 2.3) to [out=-90, in=90] (2, 2.1);
+\draw [-] (5, 2.1) to [out=90, in=-90] (5.25, 2.3) to [out=-90, in=90] (5.5, 2.1);
+
+\node [above] at (1.875,2.3) {$\widehat{\xi}_x(-x_0)$};
+\node [above] at (5.25, 2.3) {$\widehat{\xi}_x(x_0)$};
+
+\small
+\node [below] at (2,-0.5) {$-x_0$};
+\node [below] at (5,-0.5) {$x_0$};
+
+%\node [left] at (0,2) {$z$};
+\node [below] at (6,0) {$x$};
+\draw [-] (2,-0.5) -- (2,2);
+\draw [-] (5,-0.5) -- (5,2);
+\end{tikzpicture}
+}}
+
+
+\subfloat[]{\scalebox{0.9}{
+\begin{tikzpicture}
+\draw [->] (1,0) -- (6,0);
+
+\shade[bottom color=lightgray,top color=white, opacity=0.7] (1.5,2) to [out=-90,in=90] (2.5,0.75) to (5.25,0.75) to [out=90,in=-90] (4.75,2) to (1.5,2);
+
+\shade[bottom color=white,top color=lightgray, opacity=0.7] (2.5,0.75) to (5.25,0.75) to [out=-90,in=90] (4.75,-0.5) to (1.5,-0.5) to [out=90,in=-90] (2.5,0.75);
+
+\draw [thick] (1.5,2) to [out=-90,in=90] (2.5,0.75) to [out=-90,in=90] (1.5,-0.5);
+\draw [thick] (4.75,2) to [out=-90,in=90] (5.25,0.75) to [out=-90,in=90] (4.75,-0.5);
+
+%\draw [thick, red, -stealth] (2.0417,-0.5) to [out=90,in=-90] (2.9583, 0.75) to [out=90,in=-90] (2.0417,2);
+%\draw [thick, red, -stealth] (2.5833,-0.5) to [out=90,in=-90] (3.4167, 0.75) to [out=90,in=-90] (2.5833,2);
+%\draw [thick, red, -stealth] (3.125,-0.5) to [out=90,in=-90] (3.875, 0.75) to [out=90,in=-90] (3.125,2);
+%\draw [thick, red, -stealth] (3.6667,-0.5) to [out=90,in=-90] (4.3333, 0.75) to [out=90,in=-90] (3.6667,2);
+%\draw [thick, red, -stealth] (4.2083,-0.5) to [out=90,in=-90] (4.7917, 0.75) to [out=90,in=-90] (4.2083,2);
+
+\draw [thick, red, -stealth] (2.0417,-0.5) to [out=90,in=-90] (2.9583, 0.75) to [out=90,in=-90] (2.0417,2);
+\draw [thick, red, -stealth] (2.5833,-0.5) to [out=90,in=-90] (3.32, 0.75) to [out=90,in=-90] (2.5833,2);
+\draw [thick, red, -stealth] (3.125,-0.5) to [out=90,in=-90] (3.7, 0.75) to [out=90,in=-90] (3.125,2);
+\draw [thick, red, -stealth] (3.6667,-0.5) to [out=90,in=-90] (4.15, 0.75) to [out=90,in=-90] (3.6667,2);
+\draw [thick, red, -stealth] (4.2083,-0.5) to [out=90,in=-90] (4.7, 0.75) to [out=90,in=-90] (4.2083,2);
+
+\draw [thick, dashed, opacity=0.5] (2.5,2) to [out=-90,in=90] (1.5,0.75) to [out=-90,in=90] (2.5,-0.5);
+\draw [thick, dashed, opacity=0.5] (5.25,2) to [out=-90,in=90] (4.75,0.75) to [out=-90,in=90] (5.25,-0.5);
+
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\draw [-] (1.5, 2.1) to [out=90, in=-90] (1.75, 2.3) to [out=-90, in=90] (2., 2.1);
+\draw [-] (4.75, 2.1) to [out=90, in=-90] (4.875, 2.3) to [out=-90, in=90] (5., 2.1);
+
+\node [above] at (1.75,2.3) {$\widehat{\xi}_x(-x_0)$};
+\node [above] at (4.875, 2.3) {$\widehat{\xi}_x(x_0)$};
+
+\small
+\node [below] at (2,-0.5) {$-x_0$};
+\node [below] at (5,-0.5) {$x_0$};
+
+%\node [left] at (0,2) {$z$};
+\node [below] at (6,0) {$x$};
+\draw [-] (2,-0.5) -- (2,2);
+\draw [-] (5,-0.5) -- (5,2);
+\end{tikzpicture}
+}}}
+\caption{Illustration of the difference in amplitude of oscillation on each boundary of the slab for quasi-sausage (a) and quasi-kink modes (b). The ratio of the amplitudes can be used as a diagnostic tool.}
+\end{figure}
+
+We now define the \emph{amplitude ratio}, $R_\textrm{A} := \widehat{\xi}_x(x_0) / \widehat{\xi}_x(-x_0)$, as the ratio of the amplitude of oscillation at the interface $x=x_0$ to that of the interface $x=-x_0$. Given that ${\widehat{\xi}_x(x) = i\widehat{v}_x(x) / \omega}$, we also have $R_\textrm{A} = \widehat{v}_x(x_0) / \widehat{v}_x(-x_0)$. Firstly, using equations~\eqref{v-x_01 C} and \eqref{vx_02 C}, the amplitude ratio for quasi-sausage modes is
 \begin{align}
 R_A &=-\frac{\Lambda_0+\Lambda_1\frac{1}{\tau_0}}{\Lambda_0+\Lambda_2\frac{1}{\tau_0}} \notag \\
-	&=-\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0\frac{1}{\tanh{m_0x_0}}}{(k^2v_A^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0\frac{1}{\tanh{m_0x_0}}}\right]. \label{cross-slab ratio saus}
+	&=-\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_\textrm{A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0\frac{1}{\tanh{m_0x_0}}}{(k^2v_\textrm{A}^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0\frac{1}{\tanh{m_0x_0}}}\right]. \label{cross-slab ratio saus}
 \end{align}
 Using equations~\eqref{v-x_01 B} and~\eqref{vx_02 B}, the corresponding expression for quasi-kink modes can be obtained, namely
 \begin{align}
-R_A&=\frac{\Lambda_0+\Lambda_1\tau_0}{\Lambda_0+\Lambda_2\tau_0} \notag \\
-	&=\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0\tanh{m_0x_0}}{(k^2v_A^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0\tanh{m_0x_0}}\right]. \label{cross-slab ratio kink}
+R_\textrm{A}&=\frac{\Lambda_0+\Lambda_1\tau_0}{\Lambda_0+\Lambda_2\tau_0} \notag \\
+	&=\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_\textrm{A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0\tanh{m_0x_0}}{(k^2v_\textrm{A}^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0\tanh{m_0x_0}}\right]. \label{cross-slab ratio kink}
 \end{align}
+As expected, equations \eqref{cross-slab ratio saus} and \eqref{cross-slab ratio kink} reduce to $R_\textrm{A} = -1$ and $R_\textrm{A} = 1$ for quasi-sausage and quasi-kink modes, respectively, when the slab is symmetric.
 
-As expected, equations \eqref{cross-slab ratio saus} and \eqref{cross-slab ratio kink} reduce to $R_A = -1$ and $R_A = 1$ for quasi-sausage and quasi-kink modes, respectively, when the slab is symmetric.
-
-The cross-slab amplitude ratio has potential as a tool for solar magneto-seismology. The procedure goes as follows:
+The amplitude ratio has potential as a tool for solar magneto-seismology. The procedure goes as follows:
 \begin{itemize}
-\item Observe a surface mode in a slab-like structure,
-\item Determine whether the mode is sausage or kink,
-\item Directly measure the slab width, $x_0$, and the amplitude ratio, $R_A$, using intensity measurements,
+\item Observe a wave in a slab-like structure,
+\item Determine whether the mode is quasi-sausage or quasi-kink,
+\item Directly measure the slab width, $x_0$, and the amplitude ratio, $R_\textrm{A}$, using intensity measurements,
 \item Estimate the wave period, $2\pi / \omega$, and wavelength, $2\pi / k$,
 \item Estimate the density distribution, $\rho_{0,1,2}$, using emission measures, and use these to estimate the sound speeds, $c_{0,1,2}$.
-\item Solve \eqref{cross-slab ratio saus} or \eqref{cross-slab ratio kink} for the Alfv\'{e}n speed, $v_A$, numerically or analytically under an additional approximation (Sections~\ref{sec: CSAR thin slab},~\ref{sec: CSAR wide slab},~\ref{sec: CSAR incomp}, and~\ref{sec: CSAR low-beta}).
+\item Solve \eqref{cross-slab ratio saus} or \eqref{cross-slab ratio kink} for the Alfv\'{e}n speed, $v_\textrm{A}$, numerically or analytically.
 \end{itemize}
 
-To solve equation~\eqref{cross-slab ratio saus} or~\eqref{cross-slab ratio kink} directly for $v_A$, a numerical procedure must be followed. The numerical procedure is simple and involves employing a standard root-finding method such as the secant method. To solve analytically, an approximation must be made to simplify Equation~\eqref{cross-slab ratio saus} or~\eqref{cross-slab ratio kink}. The following subsections give the analytical solution for $v_A$ of equations~\eqref{cross-slab ratio saus} and~\eqref{cross-slab ratio kink} under the thin slab, wide slab, incompressible plasma, and low-beta approximations.
+To solve equation~\eqref{cross-slab ratio saus} or~\eqref{cross-slab ratio kink} directly for $v_\textrm{A}$, a numerical procedure must be followed. The numerical procedure is simple and involves employing a standard root-finding method such as the secant method. To solve analytically, an approximation must be made to simplify Equation~\eqref{cross-slab ratio saus} or~\eqref{cross-slab ratio kink}. The following subsections give the analytical solution for the Alfv\'{e}n speed, $v_\textrm{A}$, of equations~\eqref{cross-slab ratio saus} and~\eqref{cross-slab ratio kink} under the thin slab, wide slab, incompressible plasma, and low-beta approximations.
 
 
-\subsection{Thin slab approximation} \label{sec: CSAR thin slab}
+\subsection{Thin slab approximation} \label{sec: AR thin slab}
 In the thin slab approximation, $kx_0 \ll 1$, it has been shown that $m_0x_0 \ll 1$ for surface modes \citep{rob81b}. Therefore, $\tanh{m_0x_0} \approx m_0x_0$ and the amplitude ratio for a thin slab quasi-sausage surface mode reduces to
 \begin{equation}
-R_A = -\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1x_0\frac{\rho_0}{\rho_1}-\omega^2}{(k^2v_A^2-\omega^2)m_2x_0\frac{\rho_0}{\rho_2}-\omega^2}\right], 
+R_\textrm{A} = -\frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_\textrm{A}^2-\omega^2)m_1x_0\frac{\rho_0}{\rho_1}-\omega^2}{(k^2v_\textrm{A}^2-\omega^2)m_2x_0\frac{\rho_0}{\rho_2}-\omega^2}\right], 
 \end{equation}
 which has analytical solutions
 \begin{equation}
-v_A^2 = \frac{\omega^2}{k^2} \left[1 + \frac{1}{x_0}\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_A + 1}\right)\right].
+v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[1 + \frac{1}{x_0}\left(\frac{R_\textrm{A}\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} + 1}\right)\right].
 \end{equation}
 
 The amplitude ratio for a thin slab quasi-kink surface mode reduces to
 \begin{equation}
-R_A = \frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_A^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0^2x_0}{(k^2v_A^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0^2x_0}\right], 
+R_\textrm{A} = \frac{\rho_1m_2}{\rho_2m_1}\left[\frac{(k^2v_\textrm{A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2m_0^2x_0}{(k^2v_\textrm{A}^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2m_0^2x_0}\right], 
 \end{equation}
 which has analytical solutions
 \begin{equation}
-v_A^2 = \frac{\omega^2}{k^2} \left[\frac{c_0^2}{c_0^2 - \frac{\omega^2}{k^2}} + k^2x_0\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_A - 1}\right)\right]. \label{CSAR soln kink thin}
+v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[\frac{c_0^2}{c_0^2 - \frac{\omega^2}{k^2}} + k^2x_0\left(\frac{R_\textrm{A}\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} - 1}\right)\right]. \label{AR soln kink thin}
 \end{equation}
-In an asymmetric slab, there is only a slow quasi-kink surface mode because the fast version degenerates due to a cut-off by the external sound speeds splitting up \citep{all_etal17}. The slow quasi-kink surface mode has a phase speed that approaches zero in the thin slab limit. Therefore, to a good approximation, $\omega/k \ll c_0$, so that Solution~\eqref{CSAR soln kink thin} simplifies to
+In an asymmetric slab, there is only a slow quasi-kink surface mode because the fast version degenerates due to a cut-off by the external sound speeds becoming distinct \citep{all_etal17}. The slow quasi-kink surface mode has a phase speed that approaches zero in the thin slab limit. Therefore, to a good approximation, $\omega/k \ll c_0$, so that Solution~\eqref{AR soln kink thin} simplifies to
 \begin{equation}
-v_A^2 = \frac{\omega^2}{k^2} \left[1 + k^2x_0\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_A - 1}\right)\right]. \label{CSAR soln kink thin simplified}
+v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[1 + k^2x_0\left(\frac{R_\textrm{A}\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} - 1}\right)\right]. \label{AR soln kink thin simplified}
 \end{equation}
 
-\subsection{Wide slab approximation} \label{sec: CSAR wide slab}
+\subsection{Wide slab approximation} \label{sec: AR wide slab}
 The wide slab approximation applies when the slab width is much larger than the wavelength, that is $kx_0 \gg 1$. To understand the properties of the eigenfunctions of the asymmetric slab system in the wide slab approximation, we must return to the dispersion relation, Equation~\eqref{disp rel}. For surface modes in the slab, the wide slab approximation implies that $m_0x_0 \gg 1$, therefore ${\sinh{m_0x_0} \approx \cosh{m_0x_0} \approx 1}$ \citep{rob81b}. Under this approximation, the dispersion relation, Equation~\eqref{disp rel}, becomes
 \begin{equation}
 (\Lambda_0 + \Lambda_1)(\Lambda_0 + \Lambda_2) = 0,
 \end{equation}
 which gives us two families of solutions, one satisfying $\Lambda_0 + \Lambda_1 = 0$ and the other satisfying $\Lambda_0 + \Lambda_2 = 0$. These are equivalent to
 \begin{equation}
-(k^2v_A^2 - \omega^2)m_{1,2}\frac{\rho_0}{\rho_{1,2}} - \omega^2m_0 = 0,
+(k^2v_\textrm{A}^2 - \omega^2)m_j\frac{\rho_0}{\rho_j} - \omega^2m_0 = 0,
 \end{equation}
-respectively. This equation, for subscript 1 or 2, is the same as the dispersion relation governing surface waves along a single interface between a magnetised and a non-magnetised plasma \citep{rob81a}. Hence, the surface mode solutions of a wide asymmetric slab are just the surface modes that propagate along each interface independently. This makes intuitive sense because as the slab is widened the interfaces will have diminishing influence on each other, until each interface oscillates independently.
+for $j = 1, 2$, respectively. This equation is the same as the dispersion relation governing surface waves along a single interface between a magnetised and a non-magnetised plasma \citep{rob81a}. Hence, the surface mode solutions of a wide asymmetric slab are just the surface modes that propagate along each interface independently. This makes intuitive sense because as the slab is widened the interfaces will have diminishing influence on each other, until each interface oscillates independently.
 
-This has an analogy to the mechanical example introduced by \citealt{all_etal17}. Consider two masses connected by a spring, with spring constant $k_0$, and each mass is also connected to a fixed wall on each side by springs with spring constants $k_1$ and $k_2$, respectively (Figure~\ref{fig: wide slab mechanical analogy}). When the middle spring has spring constant $k_0 \neq 0$, there are two modes, an in-phase mode (analogous to kink modes in a slab) and an in-antiphase mode (analogous to sausage modes in a slab) \citep{all_etal17}. When the two masses are decoupled by setting $k_0 = 0$ so that the middle spring is removed, each mass oscillated independently at the natural frequency of that side of the spring-mass system. This decoupling provides a good analogy to the wide slab limit for the magnetic slab. Each interface can oscillate at its own natural frequency, independent of the other interface. Given that we are considering magneto-acoustic waves, there are two restoring forces, the magnetic tension force and the pressure gradient force, which means that each independent interface has two natural frequencies (depending on the parameters of the system, there can be 0, 1, or 2 frequencies), corresponding to the fast and slow magneto-acoustic modes.
+This has an analogy to the mechanical example introduced by \citealp{all_etal17}. Consider two masses connected by a spring, with spring constant $k_0$, and each mass is also connected to a fixed wall on each side by springs with spring constants $k_1$ and $k_2$, respectively (Figure~\ref{fig: wide slab mechanical analogy}). When the middle spring has spring constant $k_0 \neq 0$, there are two modes, an in-phase mode (analogous to kink modes in a slab) and an in-antiphase mode (analogous to sausage modes in a slab) \citep{all_etal17}. When the two masses are decoupled by removing the middle spring, equivalently setting $k_0 = 0$, each mass oscillates independently at the natural frequency of that side of the spring-mass system. This decoupling provides a good analogy to the wide slab limit for the magnetic slab. Each interface can oscillate at its own natural frequency, independent of the other interface. Given that we are considering magneto-acoustic waves, there are two restoring forces, the magnetic tension force and the pressure gradient force, which means that each independent interface has two natural frequencies (depending on the parameters of the system, there can be 0, 1, or 2 frequencies), corresponding to the fast and slow magneto-acoustic modes.
 
-With this understanding of the modes in the wide slab limit, the amplitude ratio, $R_A$ is either $0$ or \textit{undefined}, depending on which interface the wave is propagating.
+With this understanding of the modes in the wide slab limit, the amplitude ratio, $R_\textrm{A}$ is either $0$ or \textit{undefined}, depending on which interface the wave is propagating and is not useful for magneto-seismology.
 
 \begin{figure}
 \makebox[\textwidth][c]{
@@ -446,26 +541,26 @@ With this understanding of the modes in the wide slab limit, the amplitude ratio
 \label{fig: wide slab mechanical analogy}
 \end{figure}
 
-\subsection{Incompressible Approximation} \label{sec: CSAR incomp}
+\subsection{Incompressible Approximation} \label{sec: AR incomp}
 
-If the plasma in each region is incompressible, the sound speeds become unbounded, so that $m_j \approx k$ for $j = 0,1,2$. Under this approximation, the CSAR for quasi-sausage modes (top) and quasi-kink modes (bottom) reduces to
+If the plasma in each region is incompressible, the sound speeds become unbounded, so that $m_j \approx k$ for $j = 0,1,2$. Under this approximation, the amplitude ratios for quasi-sausage modes (top) and quasi-kink modes (bottom) reduce to
 \begin{align}
-R_A &= \left(\substack{- \\ +}\right) \frac{\rho_1}{\rho_2} \left[ \frac{(k^2v_\textrm{A}^2-\omega^2)k\frac{\rho_0}{\rho_1}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)}{(k^2v_\textrm{A}^2-\omega^2)k\frac{\rho_0}{\rho_2}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)} \right].
+R_\textrm{A} &= \left(\substack{- \\ +}\right) \frac{\rho_1}{\rho_2} \left[ \frac{(k^2v_\textrm{A}^2-\omega^2)k\frac{\rho_0}{\rho_1}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)}{(k^2v_\textrm{A}^2-\omega^2)k\frac{\rho_0}{\rho_2}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)} \right].
 \end{align}
-These equations have solutions for $v_A$ given by
+These equations have solutions for $v_\textrm{A}$ given by
 \begin{equation}
-v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} \left(\substack{+ \\ -}\right) \frac{\rho_1}{\rho_0}}{R_A \left(\substack{+ \\ -}\right) 1} \right) \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right) (kx_0)\right].
+v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[ 1 + \left( \frac{R_\textrm{A} \frac{\rho_2}{\rho_0} \left(\substack{+ \\ -}\right) \frac{\rho_1}{\rho_0}}{R_\textrm{A} \left(\substack{+ \\ -}\right) 1} \right) \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right) (kx_0)\right].
 \end{equation}
 
-\subsection{Low-Beta Approximation} \label{sec: CSAR low-beta}
+\subsection{Low-Beta Approximation} \label{sec: AR low-beta}
 
-Plasma beta, $\beta = 2\mu_0p_0/B_0^2$, is a non-dimensional parameter defined as the ratio of plasma pressure to magnetic pressure. For a low-beta plasma, where the magnetic pressure dominates the plasma pressure, the Alfv\'{e}n speed, $v_\textrm{A}$, dominates the internal sound speed, $c_0$, so that $m_0^2 \approx k^2-\omega^2/v_\textrm{A}^2$. For waves with phase speed much less than the Alfv\'{e}n speed, a further approximation of $m_0^2 \approx k^2$ can be made, in which case the CSAR for quasi-sausage modes (top) and quasi-kink modes (bottom) reduces to
+Plasma beta, $\beta = 2\mu_0p_0/B_0^2$, is a non-dimensional parameter defined as the ratio of plasma pressure to magnetic pressure. For a low-beta plasma, where the magnetic pressure dominates the plasma pressure, the Alfv\'{e}n speed, $v_\textrm{A}$, dominates the internal sound speed, $c_0$, so that $m_0^2 \approx k^2-\omega^2/v_\textrm{A}^2$. For waves with phase speed much less than the Alfv\'{e}n speed, a further approximation of $m_0^2 \approx k^2$ can be made, in which case the amplitude ratio for quasi-sausage modes (top) and quasi-kink modes (bottom) reduces to
 \begin{align}
-R_A &= \left(\substack{- \\ +}\right) \frac{\rho_1m_2}{\rho_2m_1} \left[ \frac{(k^2v_\textrm{A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)}{(k^2v_\textrm{A}^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)} \right].
+R_\textrm{A} &= \left(\substack{- \\ +}\right) \frac{\rho_1m_2}{\rho_2m_1} \left[ \frac{(k^2v_\textrm{A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)}{(k^2v_\textrm{A}^2-\omega^2)m_2\frac{\rho_0}{\rho_2}-\omega^2k \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right)(kx_0)} \right].
 \end{align}
-These equations can be solved for $v_A$ to give
+These equations can be solved for $v_\textrm{A}$ to give
 \begin{equation}
-v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} \left(\substack{+ \\ -}\right) R_A\frac{\rho_2}{\rho_0m_2}}{1 \left(\substack{+ \\ -}\right) R_A} \right) \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right) (kx_0)\right].
+v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} \left(\substack{+ \\ -}\right) R_\textrm{A}\frac{\rho_2}{\rho_0m_2}}{1 \left(\substack{+ \\ -}\right) R_\textrm{A}} \right) \left(\hspace{-0.07in}\begin{matrix} &\coth \\ &\tanh \end{matrix}\right) (kx_0)\right].
 \end{equation}
 
 
@@ -490,109 +585,21 @@ v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[1 + k \left( \frac{ \frac{\rho_1}{\r
 %\end{equation}
 %If the conditions on either side of the slab are equal to first order approximation, the cross-slab amplitude ratio reduces to
 %\begin{equation}
-%R_A=-\frac{\rho_1m_2}{\rho_2m_1}, \label{cross-slab ratio approx saus}
+%R_\textrm{A}=-\frac{\rho_1m_2}{\rho_2m_1}, \label{cross-slab ratio approx saus}
 %\end{equation}
 %for quasi-sausage modes, and
 %\begin{equation}
-%R_A=\frac{\rho_1m_2}{\rho_2m_1}, \label{cross-slab ratio approx kink}
+%R_\textrm{A}=\frac{\rho_1m_2}{\rho_2m_1}, \label{cross-slab ratio approx kink}
 %\end{equation}
 %for quasi-kink modes.
 
 
+\section{Shift of minimum perturbation}
+An additional eigenfunction-based solar magneto-seismology technique uses the shift in the position of minimum wave power from the centre of the slab due to the asymmetry in the external plasma regions.
+
+The position of minimum wave power for a symmetric sausage or kink mode is on the central line of the slab, at $x=0$. We define $\Delta_\textrm{min}$ to be the displacement (from the central line) of the position of minimum wave power inside an asymmetric magnetic slab. For quasi-sausage modes, the value of $\Delta_\textrm{min}$ will be the solution to $\widehat{v}_x(x) = 0$ under the constraint $|x| < x_0$, and for quasi-kink modes, the value of $\Delta_\textrm{min}$ will be the solution to $\textrm{d}\widehat{v}_x (x) / \textrm{d}x = 0$ under the same constraint $|x| < x_0$. The constraint restricts the solutions to being within the slab. 
+
 \begin{figure}
-\makebox[\textwidth][c]{
-\subfloat[]{\scalebox{0.9}{
-\begin{tikzpicture}
-\draw [->] (1,0) -- (6,0);
-
-\shade[bottom color=lightgray,top color=white, opacity=0.7] (1.75,2) to [out=-90,in=90] (2.25,0.75) to (4.5,0.75) to [out=90,in=-90] (5.5,2) to (1.75,2);
-
-\shade[bottom color=white,top color=lightgray, opacity=0.7] (2.25,0.75) to (4.5,0.75) to [out=-90,in=90] (5.5,-0.5) to (1.75,-0.5) to [out=90,in=-90] (2.25,0.75);
-
-\draw [thick] (1.75,2) to [out=-90,in=90] (2.25,0.75) to [out=-90,in=90] (1.75,-0.5);
-\draw [thick, dashed, opacity=0.5] (4.5,2) to [out=-90,in=90] (5.5,0.75) to [out=-90,in=90] (4.5,-0.5);
-
-\draw [thick, red, -stealth] (2.375,-0.5) to [out=90,in=-90] (2.625, 0.75) to [out=90,in=-90] (2.375,2);
-\draw [thick, red, -stealth] (3,-0.5) to [out=90,in=-90] (3, 0.75) to [out=90,in=-90] (3,2);
-\draw [thick, red, -stealth] (3.625,-0.5) to [out=90,in=-90] (3.375, 0.75) to [out=90,in=-90] (3.625,2);
-\draw [thick, red, -stealth] (4.25,-0.5) to [out=90,in=-90] (3.75, 0.75) to [out=90,in=-90] (4.25,2);
-\draw [thick, red, -stealth] (4.875,-0.5) to [out=90,in=-90] (4.125, 0.75) to [out=90,in=-90] (4.875,2);
-
-\draw [thick, dashed, opacity=0.5] (2.25,2) to [out=-90,in=90] (1.75,0.75) to [out=-90,in=90] (2.25,-0.5);
-\draw [thick] (5.5,2) to [out=-90,in=90] (4.5,0.75) to [out=-90,in=90] (5.5,-0.5);
-
-% % % % % % % % % % % % % % % % % % % % % % % % % %
-
-%\draw [->] (0,0) -- (0,2);
-
-%\node at (1,1) {$\rho_1$};
-%\node at (6,1) {$\rho_2$};
-%\node [right] at (2.95,1.3) {$\rho_0$};
-
-\draw [-] (1.75, 2.1) to [out=90, in=-90] (1.875, 2.3) to [out=-90, in=90] (2, 2.1);
-\draw [-] (5, 2.1) to [out=90, in=-90] (5.25, 2.3) to [out=-90, in=90] (5.5, 2.1);
-
-\node [above] at (1.875,2.3) {$\widehat{v}_x(-x_0)$};
-\node [above] at (5.25, 2.3) {$\widehat{v}_x(x_0)$};
-
-\small
-\node [below] at (2,-0.5) {$-x_0$};
-\node [below] at (5,-0.5) {$x_0$};
-
-%\node [left] at (0,2) {$z$};
-\node [below] at (6,0) {$x$};
-\draw [-] (2,-0.5) -- (2,2);
-\draw [-] (5,-0.5) -- (5,2);
-\end{tikzpicture}
-}}
-
-
-\subfloat[]{\scalebox{0.9}{
-\begin{tikzpicture}
-\draw [->] (1,0) -- (6,0);
-
-\shade[bottom color=lightgray,top color=white, opacity=0.7] (1.5,2) to [out=-90,in=90] (2.5,0.75) to (5.25,0.75) to [out=90,in=-90] (4.75,2) to (1.5,2);
-
-\shade[bottom color=white,top color=lightgray, opacity=0.7] (2.5,0.75) to (5.25,0.75) to [out=-90,in=90] (4.75,-0.5) to (1.5,-0.5) to [out=90,in=-90] (2.5,0.75);
-
-\draw [thick] (1.5,2) to [out=-90,in=90] (2.5,0.75) to [out=-90,in=90] (1.5,-0.5);
-\draw [thick] (4.75,2) to [out=-90,in=90] (5.25,0.75) to [out=-90,in=90] (4.75,-0.5);
-
-%\draw [thick, red, -stealth] (2.0417,-0.5) to [out=90,in=-90] (2.9583, 0.75) to [out=90,in=-90] (2.0417,2);
-%\draw [thick, red, -stealth] (2.5833,-0.5) to [out=90,in=-90] (3.4167, 0.75) to [out=90,in=-90] (2.5833,2);
-%\draw [thick, red, -stealth] (3.125,-0.5) to [out=90,in=-90] (3.875, 0.75) to [out=90,in=-90] (3.125,2);
-%\draw [thick, red, -stealth] (3.6667,-0.5) to [out=90,in=-90] (4.3333, 0.75) to [out=90,in=-90] (3.6667,2);
-%\draw [thick, red, -stealth] (4.2083,-0.5) to [out=90,in=-90] (4.7917, 0.75) to [out=90,in=-90] (4.2083,2);
-
-\draw [thick, red, -stealth] (2.0417,-0.5) to [out=90,in=-90] (2.9583, 0.75) to [out=90,in=-90] (2.0417,2);
-\draw [thick, red, -stealth] (2.5833,-0.5) to [out=90,in=-90] (3.32, 0.75) to [out=90,in=-90] (2.5833,2);
-\draw [thick, red, -stealth] (3.125,-0.5) to [out=90,in=-90] (3.7, 0.75) to [out=90,in=-90] (3.125,2);
-\draw [thick, red, -stealth] (3.6667,-0.5) to [out=90,in=-90] (4.15, 0.75) to [out=90,in=-90] (3.6667,2);
-\draw [thick, red, -stealth] (4.2083,-0.5) to [out=90,in=-90] (4.7, 0.75) to [out=90,in=-90] (4.2083,2);
-
-\draw [thick, dashed, opacity=0.5] (2.5,2) to [out=-90,in=90] (1.5,0.75) to [out=-90,in=90] (2.5,-0.5);
-\draw [thick, dashed, opacity=0.5] (5.25,2) to [out=-90,in=90] (4.75,0.75) to [out=-90,in=90] (5.25,-0.5);
-
-% % % % % % % % % % % % % % % % % % % % % % % % % %
-
-\draw [-] (1.5, 2.1) to [out=90, in=-90] (1.75, 2.3) to [out=-90, in=90] (2., 2.1);
-\draw [-] (4.75, 2.1) to [out=90, in=-90] (4.875, 2.3) to [out=-90, in=90] (5., 2.1);
-
-\node [above] at (1.75,2.3) {$\widehat{v}_x(-x_0)$};
-\node [above] at (4.875, 2.3) {$\widehat{v}_x(x_0)$};
-
-\small
-\node [below] at (2,-0.5) {$-x_0$};
-\node [below] at (5,-0.5) {$x_0$};
-
-%\node [left] at (0,2) {$z$};
-\node [below] at (6,0) {$x$};
-\draw [-] (2,-0.5) -- (2,2);
-\draw [-] (5,-0.5) -- (5,2);
-\end{tikzpicture}
-}}}
-
-
 \makebox[\textwidth][c]{
 \subfloat[]{\scalebox{0.9}{
 \begin{tikzpicture}
@@ -689,14 +696,8 @@ v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[1 + k \left( \frac{ \frac{\rho_1}{\r
 \end{tikzpicture}
 }}}
 
-\caption{(a) and (b) illustrate the difference in amplitude of oscillation on each boundary of the slab for quasi-sausage and quasi-kink modes. (c) and (d) illustrate the shift of minimum perturbation within the slab for quasi-sausage and quasi-kink modes. Both the ratio of the amplitudes and the shift in minimum perturbation can be used as a diagnostic tool.}
+\caption{Illustration of the minimum perturbation shift within the slab for quasi-sausage (a) and quasi-kink modes (b). The minimum perturbation shift can be used as a diagnostic tool.}
 \end{figure}
-
-
-\section{Shift of minimum perturbation}
-An additional eigenfunction-based solar magneto-seismology technique uses the shift in the position of minimum wave power from the centre of the slab due to the asymmetry in the external plasma regions.
-
-The position of minimum wave power for a symmetric sausage or kink mode is on the central line of the slab, at $x=0$. We define $\Delta_\textrm{min}$ to be the displacement (from the central line) of the position of minimum wave power inside an asymmetric magnetic slab. For quasi-sausage modes, the value of $\Delta_\textrm{min}$ will be the solution to $\widehat{v}_x(x) = 0$ under the constraint $|x| < x_0$, and for quasi-kink modes, the value of $\Delta_\textrm{min}$ will be the solution to $\textrm{d}\widehat{v}_x (x) / \textrm{d}x = 0$ under the same constraint $|x| < x_0$. The constraint restricts the solutions to being within the slab. 
 
 Firstly, for quasi-sausage modes, using the solution for the transversal velocity amplitude given by Equation~\eqref{vsoln} and the expressions for the variables within given by equation~\eqref{constB C}, the shift of minimum perturbation can be calculated as follows. The solution for the transversal velocity amplitude within the slab is
 \begin{equation}
@@ -708,93 +709,90 @@ x = \frac{1}{m_0} \tanh^{-1}\left(-\frac{B}{C}\right). \label{disp of min power 
 \end{equation}
 therefore the shift of minimum perturbation is
 \begin{equation}
-\Delta_{min} = \frac{1}{m_0}\tanh^{-1}\left(-\frac{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min saus}
+\Delta_\textrm{min} = \frac{1}{m_0}\tanh^{-1}\left(-\frac{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min saus}
 \end{equation}
 Secondly, for quasi-kink modes, using equations~\eqref{vsoln} and \eqref{constB B} we calculate the shift of minimum perturbation to be
 \begin{equation}
-\Delta_{min} = \frac{1}{m_0}\coth^{-1}\left(-\frac{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min kink}
+\Delta_\textrm{min} = \frac{1}{m_0}\coth^{-1}\left(-\frac{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min kink}
 \end{equation}
 
-It appears that expressions~\eqref{shift min saus} and~\eqref{shift min kink} for the shift in minimum perturbations depend on the parameters in the slab (subscript~0), the left external plasma (subscript~1), but not on the right external plasma (subscript~2). However, the dependence on the right external plasma is implicit in the determination of the eigenfrequency $\omega$ when solving the dispersion relation \citep{all_etal17}.
+It appears that expressions~\eqref{shift min saus} and~\eqref{shift min kink} for the minimum perturbation shifts depend on the parameters in the slab (subscript~0), the left external plasma (subscript~1), but not on the right external plasma (subscript~2). However, the dependence on the right external plasma is implicit in the determination of the eigenfrequency $\omega$ when solving the dispersion relation.
 
-The concept of minimum perturbation shift is exclusive to surface modes. The eigenfunctions of surface modes in a magnetic slab depend much more on the plasma parameters, such as the density, than body modes \citep{all_etal17}. This makes intuitive sense given that the energy in a surface mode is localised to the boundaries of the slab whereas the energy in a body mode is largely isolated within the slab. There is a quantifiable shift in the spatial nodes and anti-nodes in body mode perturbations within a slab due to changing external plasma parameters, however it is so small that is would not be an effective observational tool. It is also much more sophisticated because it depends on the number of internal nodes that the particular body mode has, an observation that is yet to be made in solar structures in either slab or tube geometries.
+The concept of minimum perturbation shift is exclusive to surface modes. The eigenfunctions of surface modes in a magnetic slab depend much more on the plasma parameters, such as the density, than body modes \citep{all_etal17}. This makes intuitive sense given that the energy in a surface mode is localised to the boundaries of the slab whereas the energy in a body mode is largely isolated within the slab. There is a quantifiable shift in the spatial nodes and anti-nodes in body mode perturbations within a slab due to changing external plasma parameters, however it is so small that is would not be an effective observational tool.
 
-Akin to the amplitude ratio method for solar magneto-seismology prescribed in Section~\ref{sec: CSAR}, we can solve equation~\eqref{shift min saus} or~\eqref{shift min kink} for the Alfv\'{e}n speed, $v_A$, to achieve an approximation for the magnetic field strength of inhomogeneous solar magnetic structures. This can be done either numerically, using an iterative root finding method, or analytically, under an appropriate approximation, as discussed below.
+Akin to the amplitude ratio method for solar magneto-seismology prescribed in Section~\ref{sec: AR}, we can solve equation~\eqref{shift min saus} or~\eqref{shift min kink} for the Alfv\'{e}n speed, $v_\textrm{A}$, to achieve an approximation for the magnetic field strength of inhomogeneous solar magnetic structures. This can be done either numerically, using an iterative root finding method, or analytically, under an appropriate approximation, as discussed below.
 
 
 \subsection{Thin slab approximation}
-As noted in Section~\ref{sec: CSAR thin slab}, for surface modes, the thin slab limit, that is $kx_0 \ll 1$ implies $m_0x_0 \ll 1$. Since, by definition, $\Delta_{min} < x_0$, then $m_0\Delta_{min} \ll 1$ so that $\tanh{m_0\Delta_{min}} \approx m_0\Delta_{min}$. Firstly, for quasi-sausage modes, Equation~\eqref{shift min saus} can be solved for $v_A$ to give
+As noted in Section~\ref{sec: AR thin slab}, for surface modes, the thin slab limit, that is $kx_0 \ll 1$, implies $m_0x_0 \ll 1$. By definition $\Delta_\textrm{min} < x_0$, therefore $m_0\Delta_{min} \ll 1$, so that $\tanh{m_0\Delta_\textrm{min}} \approx m_0\Delta_\textrm{min}$. Firstly, for quasi-sausage modes, Equation~\eqref{shift min saus} can be solved for $v_\textrm{A}$ to give
 \begin{equation}
-v_A^2 = \frac{\omega^2}{k^2} \left[\frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_{min}) + \frac{1}{1 + (\omega / kc_0)^2} + k^2x_0\Delta_{min}\right].
+v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[\frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_\textrm{min}) + \frac{1}{1 + (\omega / kc_0)^2} + k^2x_0\Delta_\textrm{min}\right].
 \end{equation}
-
-For quasi-kink modes in a thin slab, Equation~\eqref{shift min kink} can be solved for $v_A$ to give
+For quasi-kink modes in a thin slab, Equation~\eqref{shift min kink} can be solved for $v_\textrm{A}$ to give
 \begin{equation}
-v_A^2 = \frac{\omega^2}{k^2}\left[\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\right],
+v_\textrm{A}^2 = \frac{\omega^2}{k^2}\left[\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\right],
 \end{equation}
 where
 \begin{align}
-a &= m_1\frac{\rho_0}{\rho_1}(k^2c_0^2 - \omega^2)(x_0 + \Delta_{min}), \\
-b &= -m_1\frac{\rho_0}{\rho_1}(2k^2c_0^2 - \omega^2)(x_0 + \Delta_{min}) - (k^2c_0^2 - \omega^2), \\
-c &= c_0^2m_1\frac{\rho_0}{\rho_1}(x_0 + \Delta_{min}) + c_0^2 + \omega^2x_0\Delta_{min}.
+a &= m_1\frac{\rho_0}{\rho_1}(k^2c_0^2 - \omega^2)(x_0 + \Delta_\textrm{min}), \\
+b &= -m_1\frac{\rho_0}{\rho_1}(2k^2c_0^2 - \omega^2)(x_0 + \Delta_\textrm{min}) - (k^2c_0^2 - \omega^2), \\
+c &= c_0^2m_1\frac{\rho_0}{\rho_1}(x_0 + \Delta_\textrm{min}) + c_0^2 + \omega^2x_0\Delta_\textrm{min}.
 \end{align}
 
 
 \subsection{Wide slab approximation}
-The concept of minimum perturbation shift is ill-defined under the wide slab approximation. In the wide slab approximation, each interface oscillated independently at its own eigenfrequency. Therefore the nomenclature of quasi-sausage and quasi-kink mode breaks down. In the wide slab limit, the eigenfunctions have no local minimum in the slab, instead the perturbations are evanescent away from the interface that the oscillation is localised, therefore there is no local minimum in wave power within the slab.
+The concept of minimum perturbation shift is ill-defined under the wide slab approximation. In the wide slab approximation, each interface oscillates independently at its own eigenfrequency. Therefore the nomenclature of quasi-sausage and quasi-kink mode breaks down. In the wide slab limit, the eigenfunctions have no local minimum in the slab, instead the perturbations are evanescent away from the interface that the oscillation is localised, therefore there is no locally minimum wave power within the slab.
 
 
 \subsection{Incompressible approximation}
-When the plasma is incompressible, the sound speeds are unbounded, so that $m_j = k$, for $j = 0, 1, 2$. The shift in minimum perturbation for a quasi-sausage mode (top) and quasi-kink (bottom) in an incompressible slab is
+When the plasma is incompressible, the sound speeds are unbounded, so that $m_j = k$, for $j = 0, 1, 2$. The minimum perturbation shift for a quasi-sausage mode (top) and quasi-kink (bottom) in an incompressible slab is
 \begin{equation}
-\Delta_{min} = \frac{1}{k}\left(\hspace{-0.07in}\begin{matrix} &\tanh^{-1} \\ &\coth^{-1} \end{matrix}\right)\left(-\frac{(k^2{v_A}^2-\omega^2)\frac{\rho_0}{\rho_1} - \omega^2\tanh{kx_0}}{(k^2{v_A}^2-\omega^2)\frac{\rho_0}{\rho_1}\tanh{kx_0} - \omega^2}\right),
+\Delta_\textrm{min} = \frac{1}{k}\left(\hspace{-0.07in}\begin{matrix} &\tanh^{-1} \\ &\coth^{-1} \end{matrix}\right)\left(-\frac{(k^2{v_\textrm{A}}^2-\omega^2)\frac{\rho_0}{\rho_1} - \omega^2\tanh{kx_0}}{(k^2{v_\textrm{A}}^2-\omega^2)\frac{\rho_0}{\rho_1}\tanh{kx_0} - \omega^2}\right),
 \end{equation}
-which can be solved for $v_A$ to give
+which can be solved for $v_\textrm{A}$ to give
 \begin{equation}
-v_A^2 = \frac{\omega^2}{k^2}\left[1 + \frac{\rho_1}{\rho_0}\left(\hspace{-0.07in}\begin{matrix} &\tanh \\ &\coth \end{matrix}\right)(k(x_0 + \Delta_{min}))\right].
+v_\textrm{A}^2 = \frac{\omega^2}{k^2}\left[1 + \frac{\rho_1}{\rho_0}\left(\hspace{-0.07in}\begin{matrix} &\tanh \\ &\coth \end{matrix}\right)(k(x_0 + \Delta_\textrm{min}))\right].
 \end{equation}
 
 
 \subsection{Low-beta approximation}
-In a low-beta plasma, the shift in minimum perturbation for a quasi-sausage mode (top) and quasi-kink (bottom) is given by
+In a low-beta plasma, the minimum perturbation shift for a quasi-sausage mode (top) and quasi-kink (bottom) is given by
 \begin{equation}
-\Delta_{min} = \frac{1}{k}\left(\hspace{-0.07in}\begin{matrix} &\tanh^{-1} \\ &\coth^{-1} \end{matrix}\right)\left(-\frac{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2k\tanh{kx_0}}{(k^2{v_A}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{kx_0} - \omega^2k}\right),
+\Delta_\textrm{min} = \frac{1}{k}\left(\hspace{-0.07in}\begin{matrix} &\tanh^{-1} \\ &\coth^{-1} \end{matrix}\right)\left(-\frac{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2k\tanh{kx_0}}{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{kx_0} - \omega^2k}\right),
 \end{equation}
-which can be solved for $v_A$ to give
+which can be solved for $v_\textrm{A}$ to give
 \begin{equation}
-v_A^2 = \frac{\omega^2}{k^2}\left[1 + \frac{k\rho_1}{m_1\rho_0}\left(\hspace{-0.07in}\begin{matrix} &\tanh \\ &\coth \end{matrix}\right)(k(x_0 + \Delta_{min}))\right].
+v_\textrm{A}^2 = \frac{\omega^2}{k^2}\left[1 + \frac{k\rho_1}{m_1\rho_0}\left(\hspace{-0.07in}\begin{matrix} &\tanh \\ &\coth \end{matrix}\right)(k(x_0 + \Delta_\textrm{min}))\right].
 \end{equation}
 
 %\newgeometry{margin=1cm} % modify this if you need even more space
 \begin{landscape}
 
-
 \begin{table}
-\caption{Magneto-seismological application using the amplitude ratio, $R_A$, to approximate the Alfv\'{e}n speed, $v_A$, dependant on the type of mode observed.}
+\caption{Magneto-seismological application using the amplitude ratio, $R_\textrm{A}$, to approximate the Alfv\'{e}n speed, $v_\textrm{A}$.}
 \begin{tabular}{llccc}
   \toprule
-Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_A^2 / \omega^2$ using amplitude ratio, $R_A$} \\
+Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_\textrm{A}^2 / \omega^2$ using amplitude ratio, $R_\textrm{A}$} \\
 \cmidrule(lr){3-5}
 	 &	    & \multicolumn{1}{c}{Thin slab} & \multicolumn{1}{c}{Incompressible} & \multicolumn{1}{c}{Low-beta} \\
   \midrule
-\multirow{2}{*}{Surface} & Quasi-sausage & $ 1 + \frac{1}{x_0}\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_A + 1}\right) $ & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} + \frac{\rho_1}{\rho_0}}{R_A + 1} \right) \coth{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} + R_A\frac{\rho_2}{\rho_0m_2}}{1 + R_A} \right) \coth{kx_0} $ \\
-						   & Quasi-kink	   & $ 1 + k^2x_0\left(\frac{R_A\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_A - 1}\right) $ & $ 1 + \left( \frac{R_A \frac{\rho_2}{\rho_0} - \frac{\rho_1}{\rho_0}}{R_A - 1} \right) \tanh{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} - R_A\frac{\rho_2}{\rho_0m_2}}{1 - R_A} \right) \tanh{kx_0} $ \\
+\multirow{2}{*}{Surface} & Quasi-sausage & $ 1 + \frac{1}{x_0}\left(\frac{R_\textrm{A}\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} + 1}\right) $ & $ 1 + \left( \frac{R_\textrm{A} \frac{\rho_2}{\rho_0} + \frac{\rho_1}{\rho_0}}{R_\textrm{A} + 1} \right) \coth{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} + R_\textrm{A}\frac{\rho_2}{\rho_0m_2}}{1 + R_\textrm{A}} \right) \coth{kx_0} $ \\
+						   & Quasi-kink	   & $ 1 + k^2x_0\left(\frac{R_\textrm{A}\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} - 1}\right) $ & $ 1 + \left( \frac{R_\textrm{A} \frac{\rho_2}{\rho_0} - \frac{\rho_1}{\rho_0}}{R_\textrm{A} - 1} \right) \tanh{kx_0} $ & $ 1 + k \left( \frac{ \frac{\rho_1}{\rho_0m_1} - R_\textrm{A}\frac{\rho_2}{\rho_0m_2}}{1 - R_\textrm{A}} \right) \tanh{kx_0} $ \\
   \bottomrule
 \end{tabular} \label{table: amp ratio}
 \end{table}
 
 
-
 \begin{table}
-\caption{Magneto-seismological application using the minimum perturbation shift, $\Delta_{min}$, to approximate the Alfv\'{e}n speed, $v_A$, dependant on the type of mode observed.}
+\caption{Magneto-seismological application using the minimum perturbation shift, $\Delta_\textrm{min}$, to approximate the Alfv\'{e}n speed, $v_\textrm{A}$.}
 \begin{tabular}{llccc}
   \toprule
-Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_A^2 / \omega^2$ using minimum perturbation shift, $\Delta_{min}$} \\
+Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_\textrm{A}^2 / \omega^2$ using minimum perturbation shift, $\Delta_\textrm{min}$} \\
 \cmidrule(lr){3-5}
 	 &	    & Thin slab & Incompressible & Low-beta \\
   \midrule
-\multirow{2}{*}{Surface} & Quasi-sausage & $ \frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_{min}) + \frac{1}{1 + (\omega / kc_0)^2} + k^2x_0\Delta_{min} $ & $ 1 + \frac{\rho_1}{\rho_0}\tanh{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\tanh{k(x_0 + \Delta_{min})} $ \\
-						   & Quasi-kink	   & $\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, defined in text & $ 1 + \frac{\rho_1}{\rho_0}\coth{k(x_0 + \Delta_{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\coth{k(x_0 + \Delta_{min})} $ \\
+\multirow{2}{*}{Surface} & Quasi-sausage & $ \frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_\textrm{min}) + \frac{1}{1 + (\omega / kc_0)^2} + k^2x_0\Delta_\textrm{min} $ & $ 1 + \frac{\rho_1}{\rho_0}\tanh{k(x_0 + \Delta_\textrm{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\tanh{k(x_0 + \Delta_\textrm{min})} $ \\
+						   & Quasi-kink	   & $\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, defined in text & $ 1 + \frac{\rho_1}{\rho_0}\coth{k(x_0 + \Delta_\textrm{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\coth{k(x_0 + \Delta_\textrm{min})} $ \\
   \bottomrule
 \end{tabular} \label{table: shift in min pert}
 \end{table}
@@ -802,12 +800,43 @@ Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_A^2 / \omega^2$ using mi
 \end{landscape}
 %\restoregeometry
 
+\begin{figure}
+\centering
+\subfloat[]{\includegraphics[scale=0.35]{media/slow-kink-surf_amp-ratio.png}
+\label{fig: AR slow kink surf}}
+\subfloat[]{\includegraphics[scale=0.35]{media/slow-kink-surf_min-pert-shift.png}
+\label{fig: MPS slow kink surf}} \\
+\subfloat[]{\includegraphics[scale=0.35]{media/slow-saus-surf_amp-ratio.png}
+\label{fig: AR slow saus surf}}
+\subfloat[]{\includegraphics[scale=0.35]{media/slow-saus-surf_min-pert-shift.png}
+\label{fig: MPS slow saus surf}}
+\caption{The amplitude ratio (a,c) and the minimum perturbation shift (b,d)  as a function of the slab width, non-dimensionalised as $ kx_0 $, and the density ratio, $ \rho_1/\rho_0 $ for slow sausage (a,b) and kink (c,d) surface modes. The other density ratio is set as $\rho_2/\rho_0 = 2$ and the characteristic speed orderings are $c_2=1.2c_0$ and $v_\textrm{A}=1.3c_0$.}
+\label{fig: AR MPS}
+\end{figure}
+
 \section{Discussion}
 
-Presented above are the concepts of the amplitude ratio and the shift in minimum perturbation, both of which can either be solved for the Alfv\'{e}n speed either numerically, for a given set of observed parameters, or analytically, under and appropriate approximation. A summary of the analytical procedure for estimating the Alfv\'{e}n speed, $v_A$, within an magnetic slab is given in Tables~\ref{table: amp ratio} and~\ref{table: shift in min pert}, using the amplitude method and the shift in minimum perturbation methods, respectively. From this, an estimate of the magnetic field strength can be made. In practice, a numerical procedure would be relatively simple and computationally cheap by making use of a standard root finding method once the observed parameters have been substituted.
+We have introduced the amplitude ratio and the minimum perturbation shift methods for solar magneto-seismology. These expressions can each be solved for the Alfv\'{e}n speed, for a given set of observed parameters, either numerically or analytically, under an appropriate approximation. A summary of the analytical procedure for estimating the Alfv\'{e}n speed, $v_\textrm{A}$, within a magnetic slab is given in Tables~\ref{table: amp ratio} and~\ref{table: shift in min pert}, utilising the amplitude method and the minimum perturbation shift methods, respectively. From this, an estimate of the magnetic field strength can be made. In practice, a numerical procedure would be relatively simple and computationally cheap by making use of a standard root finding method once the observed parameters have been substituted but in some cases it might be valid to use an analytical solution from Tables~\ref{table: amp ratio} and~\ref{table: shift in min pert} under the necessary approximation.
 
-The next step along the development of this method is to determine whether magneto-acoustic waves can be set up in an asymmetric waveguide within the characteristic lifetime of such a structure in the solar atmosphere. This can be established analytically (for linear waves with simple initial conditions) and numerically (for nonlinear waves with more sophisticated initial conditions), and will be the subject of future work. Further, a more realistic system, including magnetic fields in the external plasmas, would allow for better application to solar waveguides.
+Figure~\ref{fig: AR MPS} illustrates the dependency of the amplitude ratio and the minimum perturbation shift on the slab width, $x_0$ and the 
 
+The next step along the development of this method is to determine whether magneto-acoustic waves can be set up in an asymmetric waveguide within the characteristic lifetime of such a structure in the solar atmosphere. This can be established analytically (for linear waves with simple initial conditions) and numerically (for nonlinear waves with more sophisticated initial conditions), and will be the subject of future work. Further, a more realistic system, including a magnetic field in the external plasmas, and an equilibrium shear flow, would allow for better application to solar waveguides.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Appendix
+%
+%\appendix   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Acknowledgements
+%
+\begin{acks}
+M. Allcock would like to thank the University Prize Scholarship and the SURE Scheme at the University of Sheffield. R. Erd\'{e}lyi acknowledges the support from the UK Science and Technology Facilities Council (STFC), the Royal Society, and is also  grateful to the Chinese Academy of Sciences Presidents International Fellowship Initiative, Grant No. 2016VMA045 for support received. 
+\end{acks}
+
+\begin{acks}[Declaration of Potential Conflicts of Interest]
+The authors declare that they have no conflicts of interest.
+\end{acks}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
