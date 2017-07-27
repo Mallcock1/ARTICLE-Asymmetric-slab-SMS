@@ -644,7 +644,7 @@ The position of minimum wave power for a symmetric sausage or kink mode is on th
 \draw [dashed] (3.5,-2) -- (3.5,2);
 \draw [fill] (3,0) circle [radius=0.07];
 \draw [-] (3, 0.2) to [out=90, in=-90] (3.25, 0.4) to [out=-90, in=90] (3.5, 0.2);
-\node [above] at (3.25, 0.4) {$\Delta_z$};
+\node [above] at (3.25, 0.4) {$\Delta_\mathrm{min}$};
 \end{tikzpicture}
 }}
 
@@ -692,11 +692,11 @@ The position of minimum wave power for a symmetric sausage or kink mode is on th
 \draw [dashed] (3.5,-2) -- (3.5,2);
 \draw [fill] (4,0.1) circle [radius=0.07];
 \draw [-] (3.5, 0.3) to [out=90, in=-90] (3.75, 0.5) to [out=-90, in=90] (4, 0.3);
-\node [above] at (3.8, 0.5) {$\Delta_m$};
+\node [above] at (3.8, 0.5) {$\Delta_\mathrm{min}$};
 \end{tikzpicture}
 }}}
 
-\caption{Illustration of the minimum perturbation shift within the slab for quasi-sausage (a) and quasi-kink modes (b). The minimum perturbation shift can be used as a diagnostic tool.}
+\caption{Illustration of the minimum perturbation shift within the slab for (a) quasi-sausage and (b) quasi-kink modes. The minimum perturbation shift can be used as a diagnostic tool.}
 \end{figure}
 
 Firstly, for quasi-sausage modes, using the solution for the transversal velocity amplitude given by Equation~\eqref{vsoln} and the expressions for the variables within given by equation~\eqref{constB C}, the shift of minimum perturbation can be calculated as follows. The solution for the transversal velocity amplitude within the slab is
@@ -711,7 +711,7 @@ therefore the shift of minimum perturbation is
 \begin{equation}
 \Delta_\textrm{min} = \frac{1}{m_0}\tanh^{-1}\left(-\frac{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min saus}
 \end{equation}
-Secondly, for quasi-kink modes, using equations~\eqref{vsoln} and \eqref{constB B} we calculate the shift of minimum perturbation to be
+Secondly, for quasi-kink modes, using Equations~\eqref{vsoln} and \eqref{constB B} we calculate the shift of minimum perturbation to be
 \begin{equation}
 \Delta_\textrm{min} = \frac{1}{m_0}\coth^{-1}\left(-\frac{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1} - \omega^2{m_0}\tanh{m_0x_0}}{(k^2{v_\textrm{A}}^2-\omega^2)m_1\frac{\rho_0}{\rho_1}\tanh{m_0x_0} - \omega^2{m_0}}\right). \label{shift min kink}
 \end{equation}
