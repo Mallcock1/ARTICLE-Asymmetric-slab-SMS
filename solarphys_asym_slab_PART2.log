@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.20)  20 JUL 2017 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.20)  22 AUG 2017 13:36
 entering extended mode
 **./solarphys_asym_slab_PART2.tex
 (solarphys_asym_slab_PART2.tex
@@ -920,117 +920,137 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 Keywords [1{C:/Users/Matt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <.
 /orcid.pdf>] [2] [3] Figure 1 [4]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 405.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 404.
  [5] [6] Figure 2 [7] Figure 3pdfTeX warning (ext4): destination with the same 
 identifier (name{equation.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.703 \begin{equation}
+l.702 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.707 \begin{equation}
+l.706 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.1.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.711 \begin{equation}
+l.710 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.715 \begin{equation}
+l.714 \begin{equation}
                        [8]pdfTeX warning (ext4): destination with the same iden
 tifier (name{equation.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.728 \begin{equation}
+l.727 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.1.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.732 \begin{equation}
+l.731 \begin{equation}
                        [9]pdfTeX warning (ext4): destination with the same iden
 tifier (name{equation.1.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.740 \end{align}
+l.739 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.1.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.740 \end{align}
+l.739 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.1.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.740 \end{align}
+l.739 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.1.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.749 \begin{equation}
+l.748 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.1.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.753 \begin{equation}
+l.752 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.1.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.760 \begin{equation}
+l.759 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.1.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.764 \begin{equation}
+l.763 \begin{equation}
                        [10] Table 1 Table 2 [11]
-<media/slow-kink-surf_amp-ratio.png, id=277, 578.16pt x 433.62pt>
+<media/slow-kink-surf_amp-ratio.png, id=281, 578.16pt x 433.62pt>
 File: media/slow-kink-surf_amp-ratio.png Graphic file (type png)
 
 <use media/slow-kink-surf_amp-ratio.png>
 Package pdftex.def Info: media/slow-kink-surf_amp-ratio.png used on input line 
-806.
+809.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
 
-<media/slow-kink-surf_min-pert-shift.png, id=279, 578.16pt x 433.62pt>
-File: media/slow-kink-surf_min-pert-shift.png Graphic file (type png)
-
-<use media/slow-kink-surf_min-pert-shift.png>
-Package pdftex.def Info: media/slow-kink-surf_min-pert-shift.png used on input 
-line 808.
-(pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
-
-<media/slow-saus-surf_amp-ratio.png, id=280, 578.16pt x 433.62pt>
+<media/slow-saus-surf_amp-ratio.png, id=283, 578.16pt x 433.62pt>
 File: media/slow-saus-surf_amp-ratio.png Graphic file (type png)
 
 <use media/slow-saus-surf_amp-ratio.png>
 Package pdftex.def Info: media/slow-saus-surf_amp-ratio.png used on input line 
-810.
+811.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
 
-<media/slow-saus-surf_min-pert-shift.png, id=281, 578.16pt x 433.62pt>
+<media/slow-kink-surf_min-pert-shift.png, id=284, 578.16pt x 433.62pt>
+File: media/slow-kink-surf_min-pert-shift.png Graphic file (type png)
+
+<use media/slow-kink-surf_min-pert-shift.png>
+Package pdftex.def Info: media/slow-kink-surf_min-pert-shift.png used on input 
+line 814.
+(pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
+
+<media/slow-saus-surf_min-pert-shift.png, id=285, 578.16pt x 433.62pt>
 File: media/slow-saus-surf_min-pert-shift.png Graphic file (type png)
 
 <use media/slow-saus-surf_min-pert-shift.png>
 Package pdftex.def Info: media/slow-saus-surf_min-pert-shift.png used on input 
-line 812.
+line 816.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
  Figure 4
-(solarphys_asym_slab_PART2.bbl) [12
+
+LaTeX Warning: Reference `fig: AR' on page 12 undefined on input line 821.
 
 
-] [13 <./media/slow-kink-surf_amp-ratio.png> <./media/slow-kink-surf_min-pert-s
-hift.png> <./media/slow-saus-surf_amp-ratio.png> <./media/slow-saus-surf_min-pe
-rt-shift.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 844.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 844.
+LaTeX Warning: Reference `fig: MPS' on page 12 undefined on input line 823.
 
-(solarphys_asym_slab_PART2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 844.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 844.
+<media/RA_vA_approx_2var.png, id=301, 578.16pt x 433.62pt>
+File: media/RA_vA_approx_2var.png Graphic file (type png)
+
+<use media/RA_vA_approx_2var.png>
+Package pdftex.def Info: media/RA_vA_approx_2var.png used on input line 830.
+(pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
+
+<media/DM_vA_approx_2var.png, id=302, 578.16pt x 433.62pt>
+File: media/DM_vA_approx_2var.png Graphic file (type png)
+
+<use media/DM_vA_approx_2var.png>
+Package pdftex.def Info: media/DM_vA_approx_2var.png used on input line 833.
+(pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
+ Figure 5 (solarphys_asym_slab_PART2.bbl
+[12
+
+
+] [13 <./media/slow-kink-surf_amp-ratio.png> <./media/slow-saus-surf_amp-ratio.
+png> <./media/slow-kink-surf_min-pert-shift.png> <./media/slow-saus-surf_min-pe
+rt-shift.png>] [14 <./media/RA_vA_approx_2var.png> <./media/DM_vA_approx_2var.p
+ng>]) [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 864.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 864.
+ (solarphys_asym_slab_PART2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 864.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 864.
 Package rerunfilecheck Info: File `solarphys_asym_slab_PART2.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: F799468076E7C0466749CAB2E8FEF2FE;845.
@@ -1039,16 +1059,22 @@ ed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 844.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 864.
  ) 
 Here is how much of TeX's memory you used:
- 20742 strings out of 493334
- 382695 string characters out of 3136674
- 460344 words of memory out of 3000000
- 23783 multiletter control sequences out of 15000+200000
+ 20765 strings out of 493334
+ 383180 string characters out of 3136674
+ 461964 words of memory out of 3000000
+ 23799 multiletter control sequences out of 15000+200000
  20537 words of font info for 77 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 61i,16n,96p,1349b,928s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,16n,96p,1348b,928s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
@@ -1083,9 +1109,9 @@ mti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
 i8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/marvosym/marvosym.pfb
 >
-Output written on solarphys_asym_slab_PART2.pdf (13 pages, 888309 bytes).
+Output written on solarphys_asym_slab_PART2.pdf (15 pages, 1131417 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 485 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
