@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{16}
 % BibTex style file: spr-mp-sola.bst (nameyear), 2015-03-09
 \ifx\bisbn     \undefined \def\bisbn  #1{ISBN #1}\fi
 \ifx\binits    \undefined \def\binits#1{#1}\fi
@@ -57,6 +57,35 @@
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{{Arregui}}{2012}]{arr12}
+\begin{barticle}
+\bauthor{\bsnm{{Arregui}}, \binits{I.}}:
+\byear{2012},
+\batitle{{Inversion of Physical Parameters in Solar Atmospheric Seismology}}.
+\bjtitle{Astrophysics and Space Science Proceedings}
+\bvolume{33},
+\bfpage{159}.
+\doiurl{10.1007/978-3-642-30442-2_18}.
+\adsurl{2012ASSP...33..159A}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Arregui}, {Oliver}, and
+  {Ballester}}{2012}]{arr_etal12}
+\begin{barticle}
+\bauthor{\bsnm{{Arregui}}, \binits{I.}},
+\bauthor{\bsnm{{Oliver}}, \binits{R.}},
+\bauthor{\bsnm{{Ballester}}, \binits{J.L.}}:
+\byear{2012},
+\batitle{{Prominence Oscillations}}.
+\bjtitle{\lrsp}
+\bvolume{9},
+\bfpage{2}.
+\doiurl{10.12942/lrsp-2012-2}.
+\adsurl{2012LRSP....9....2A}.
+\end{barticle}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{{Banerjee} \textit{et~al.}}{2007}]{ban_etal07}
 \begin{barticle}
 \bauthor{\bsnm{{Banerjee}}, \binits{D.}},
@@ -71,6 +100,22 @@
 \bfpage{3}.
 \doiurl{10.1007/s11207-007-9029-z}.
 \adsurl{2007SoPh..246....3B}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{De Moortel} and
+  {Nakariakov}}{2012}]{dem_etal12}
+\begin{barticle}
+\bauthor{\bsnm{{De Moortel}}, \binits{I.}},
+\bauthor{\bsnm{{Nakariakov}}, \binits{V.M.}}:
+\byear{2012},
+\batitle{{Magnetohydrodynamic waves and coronal seismology: an overview of
+  recent results}}.
+\bjtitle{Philosophical Transactions of the Royal Society of London Series A}
+\bvolume{370},
+\bfpage{3193}.
+\doiurl{10.1098/rsta.2011.0640}.
+\adsurl{2012RSPTA.370.3193D}.
 \end{barticle}
 \endbibitem
 
@@ -118,6 +163,21 @@
 \bfpage{L53}.
 \doiurl{10.1051/0004-6361:20010607}.
 \adsurl{2001A\%26A...372L..53N}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Nakariakov} and
+  {Verwichte}}{2005}]{nak_etal05}
+\begin{barticle}
+\bauthor{\bsnm{{Nakariakov}}, \binits{V.M.}},
+\bauthor{\bsnm{{Verwichte}}, \binits{E.}}:
+\byear{2005},
+\batitle{{Coronal Waves and Oscillations}}.
+\bjtitle{\lrsp}
+\bvolume{2},
+\bfpage{3}.
+\doiurl{10.12942/lrsp-2005-3}.
+\adsurl{2005LRSP....2....3N}.
 \end{barticle}
 \endbibitem
 
@@ -188,6 +248,41 @@
 \bfpage{341}.
 \doiurl{10.1051/0004-6361:20078086}.
 \adsurl{2007A\%26A...475..341V}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Yang} \textit{et~al.}}{2017}]{yan_etal17}
+\begin{barticle}
+\bauthor{\bsnm{{Yang}}, \binits{S.}},
+\bauthor{\bsnm{{Zhang}}, \binits{J.}},
+\bauthor{\bsnm{{Erd{\'e}lyi}}, \binits{R.}},
+\bauthor{\bsnm{{Hou}}, \binits{Y.}},
+\bauthor{\bsnm{{Li}}, \binits{X.}},
+\bauthor{\bsnm{{Yan}}, \binits{L.}}:
+\byear{2017},
+\batitle{{Sunspot Light Walls Suppressed by Nearby Brightenings}}.
+\bjtitle{\apjl}
+\bvolume{843},
+\bfpage{L15}.
+\doiurl{10.3847/2041-8213/aa7b2c}.
+\adsurl{2017ApJ...843L..15Y}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Zhang} \textit{et~al.}}{2017}]{zha_etal17}
+\begin{barticle}
+\bauthor{\bsnm{{Zhang}}, \binits{J.}},
+\bauthor{\bsnm{{Tian}}, \binits{H.}},
+\bauthor{\bsnm{{He}}, \binits{J.}},
+\bauthor{\bsnm{{Wang}}, \binits{L.}}:
+\byear{2017},
+\batitle{{Surge-like Oscillations above Sunspot Light Bridges Driven by
+  Magnetoacoustic Shocks}}.
+\bjtitle{\apj}
+\bvolume{838},
+\bfpage{2}.
+\doiurl{10.3847/1538-4357/aa63e8}.
+\adsurl{2017ApJ...838....2Z}.
 \end{barticle}
 \endbibitem
 
