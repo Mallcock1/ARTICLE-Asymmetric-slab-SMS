@@ -787,9 +787,9 @@ Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_\textrm{A}^2 / \omega^2$
 
 \section{Discussion} \label{sec: discussion}
 
-We have introduced the amplitude ratio method and the minimum perturbation shift method for solar magneto-seismology. These expressions can each be solved for the Alfv\'{e}n speed, for a given set of observed parameters, either numerically or analytically, under an appropriate approximation.
+We have introduced the amplitude ratio method and the minimum perturbation shift which quantify the spatial asymmetry in magnetic slab eigenmodes. These expressions can be solved for the Alfv\'{e}n speed, for a given set of observed parameters, giving us a novel method diagnosing information about the background plasma, thus advancing the field of spatial magneto-seismology.
 
-A summary of the analytical expressions for estimating the Alfv\'{e}n speed, $v_\textrm{A}$, within a magnetic slab is given in Tables~\ref{table: amp ratio} and~\ref{table: shift in min pert}, utilising the amplitude method and the minimum perturbation shift methods, respectively. In practice, a numerical procedure would be relatively simple and computationally cheap by making use of a standard root finding method once the observed parameters have been prescribed but in some cases it might be valid to use an analytical solution from Tables~\ref{table: amp ratio} and~\ref{table: shift in min pert} under the necessary approximation.
+A summary of the analytical expressions for estimating the Alfv\'{e}n speed, $v_\textrm{A}$, within a magnetic slab is given in Tables~\ref{table: amp ratio} and~\ref{table: shift in min pert}, utilising the amplitude method and the minimum perturbation shift methods, respectively. In practice, a numerical procedure could be made relatively simple and computationally inexpensive by making use of a standard root finding method once the observed parameters have been prescribed but in some cases it might be valid to use an analytical solution from Tables~\ref{table: amp ratio} and~\ref{table: shift in min pert} under the necessary approximation.
 
 \begin{figure}
 \centering
@@ -806,9 +806,9 @@ A summary of the analytical expressions for estimating the Alfv\'{e}n speed, $v_
 \label{fig: AR MPS}
 \end{figure}
 
-Figure~\ref{fig: AR MPS} illustrates the dependency of the amplitude ratio and minimum perturbation shift on the (non-dimensionalised) slab width, $kx_0$, and the density ratio, $\rho_1/\rho_0$, of one external plasma density to the slab density, holding the other external density fixed. varying one density ratio in this way is equivalent to changing the asymmetry of the system. The amplitude ratio is positive (negative) for quasi-kink (quasi-sausage) modes, because the oscillations on each boundary are in phase (anti-phase). Figures~\ref{fig: AR slow kink surf} and~\ref{fig: AR slow saus surf} further shows that, for a given background paramter regime, the boundary with the highest amplitude is different for quasi-kink and quasi-sausage modes. This is demonstrated by the value of the absolute value of the amplitude ratio being greater than 1 for quasi-sausage modes when it is less than 1 for quasi-kink modes, and \textit{vice versa}. This is in agreement with the properties of the eigenmodes of the analogous spring-mass system introduced by \cite{all_etal17}. Figures~\ref{fig: MPS slow kink surf} and~\ref{fig: MPS slow saus surf} demonstrate that the minimum perturbation shift for quasi-kink modes is in the opposite direction to that of quasi-sausage modes, for a given background parameter regime.
+Figure~\ref{fig: AR MPS} illustrates the dependency of the amplitude ratio and minimum perturbation shift on the (non-dimensionalised) slab width, $kx_0$, and the density ratio, $\rho_1/\rho_0$, of one external plasma density to the slab density, holding the other external density fixed. varying one density ratio in this way is equivalent to changing the asymmetry of the system. The amplitude ratio is positive (negative) for quasi-kink (quasi-sausage) modes, because the oscillations on each boundary are in phase (anti-phase). Figures~\ref{fig: AR slow kink surf} and~\ref{fig: AR slow saus surf} further show that, for a given background parameter regime, the boundary with the highest amplitude is different for quasi-kink and quasi-sausage modes. This is demonstrated by the value of the absolute value of the amplitude ratio being greater than 1 for quasi-sausage modes when it is less than 1 for quasi-kink modes, and \textit{vice versa}. This is in agreement with the properties of the eigenmodes of the analogous spring-mass system introduced by \cite{all_etal17}. Figures~\ref{fig: MPS slow kink surf} and~\ref{fig: MPS slow saus surf} demonstrate that the position of minimum perturbation for quasi-kink modes is shifted in the opposite direction to that of quasi-sausage modes.
 
-There are a number of ways that the amplitude ratio or minimum perturbation shift can be used for spatial seismology. Firstly, and most simply, given observed values for the wave frequency parameters (frequency or period and wavenumber or wavelength), the background parameters (plasma density inside and in each external side of the slab, which can then be used to determine the sound speeds by assuming equilibrium pressure balance across the slab boundaries), the spatial structure parameters (slab width), and a spatial diagnostic parameter (amplitude ratio or minimum perturbation shift), we can invert the corresponding expression for the spatial wave distribution parameter, Equation~\eqref{cross-slab ratio saus}, \eqref{cross-slab ratio kink}, \eqref{shift min saus}, or~\eqref{shift min kink}, to estimate the Alfv\'{e}n speed, if the specific wave mode is known.
+There are a number of ways that the amplitude ratio or minimum perturbation shift can be used for spatial seismology. Firstly, and most simply, given observed values for the wave frequency parameters (frequency or period and wavenumber or wavelength), the background parameters (plasma density inside and in each external side of the slab, which can then be used to determine the sound speeds by assuming equilibrium pressure balance across the slab boundaries), the spatial structure parameters (slab width), and a spatial diagnostic parameter (amplitude ratio or minimum perturbation shift), we can invert the corresponding expression for the spatial wave distribution parameter, Equation~\eqref{cross-slab ratio saus}, \eqref{cross-slab ratio kink}, \eqref{shift min saus}, or~\eqref{shift min kink}, to estimate the Alfv\'{e}n speed. Note that the particular wave mode observed must be known or decomposed from the superposition of modes that are observed.
 
 It is more often the case than not all the non-magnetic parameters are well-observable. For example, the density 
 
@@ -823,31 +823,15 @@ It is more often the case than not all the non-magnetic parameters are well-obse
 \label{fig: vA approx}
 \end{figure}
 
-The amplitude ratio has a strong sensitivity to the changes in the external densities, and therefore the external asymmetry, whereas the minimum perturbation shift has only a weak dependency. This means that the amplitude ratio is likely to be a more effective parameter for diagnosing background parameters. Furthermore, observations of the location of the minimum wave power within a solar magnetic slab will be fraught with noise potentially causing the detection of a false minimum. Noise in amplitude ratio measurements is less likely to introduce large errors because, for surface modes, the location of the slab boundaries is a more striking feature and can be identified by the steep gradients in the wavelength of observed light, for example.
+The amplitude ratio has a strong sensitivity to the changes in the external densities, and therefore the external asymmetry, whereas the minimum perturbation shift has a weaker dependency. This means that the amplitude ratio is likely to be a more effective parameter for diagnosing background parameters. Furthermore, observations of the location of the minimum wave power within a solar magnetic slab will be fraught with noise potentially causing the detection of a false minimum. Noise in amplitude ratio measurements is less likely to introduce large errors because the location of the slab boundaries is a more obvious feature and can be identified by the steep gradients in the wavelength of observed light, for example, and is stable to large noise signals.
 
-On a theoretical level, the eigenfunctions of a given system are more sensitive to small changes in the equilibrium parameters than the corresponding eigenfrequencies (Rayleigh-Ritz theorem - references needed, but I cannot find any). This means that spatial seismology techniques will be 
+On a theoretical level, the eigenfunctions of a given system are more sensitive to small changes in the equilibrium parameters than the corresponding eigenfrequencies (Rayleigh-Ritz theorem - references needed, but I cannot find any). This means that spatial seismology techniques are likely to be more effective than temporal techniques.
 
-The next step along the development of this method is to determine whether magneto-acoustic waves can be set up in an asymmetric waveguide within the characteristic lifetime of such a structure in the solar atmosphere. This can be established analytically (for linear waves with simple initial conditions) and numerically (for nonlinear waves with more sophisticated initial conditions), and will be the subject of future work. Further, a more realistic system, including a magnetic field in the external plasmas, and an equilibrium shear flow, would allow for better application to solar waveguides.
+In future work we would like to determine whether magneto-acoustic waves can be set up in an asymmetric waveguide within the characteristic lifetime of such a structure in the solar atmosphere. This can be established analytically (for linear waves with simple initial conditions) and numerically (for nonlinear waves with more sophisticated initial conditions). Further, a more realistic system, including asymmetric magnetic fields in the external plasmas, or an equilibrium shear flow, would allow for better application to solar waveguides.
 
 
 
 Something about a Bayesian approach for inversion - so that density are not required?
-
-
-
-The amplitude ratio has potential as a tool for solar magneto-seismology. The procedure goes as follows:
-\begin{itemize}
-\item Observe a wave in a slab-like structure,
-\item Determine whether the mode is quasi-sausage or quasi-kink,
-\item Directly measure the slab width, $x_0$, and the amplitude ratio, $R_\textrm{A}$, using intensity measurements,
-\item Estimate the wave period, $2\pi / \omega$, and wavelength, $2\pi / k$,
-\item Estimate the density distribution, $\rho_{0,1,2}$, using emission measures, and use these to estimate the sound speeds, $c_{0,1,2}$.
-\item Solve \eqref{cross-slab ratio saus} or \eqref{cross-slab ratio kink} for the Alfv\'{e}n speed, $v_\textrm{A}$, numerically or analytically.
-\end{itemize}
-
-To solve equation~\eqref{cross-slab ratio saus} or~\eqref{cross-slab ratio kink} directly for $v_\textrm{A}$, a numerical procedure must be followed. The numerical procedure is simple and involves employing a standard root-finding method such as the secant method. To solve analytically, an approximation must be made to simplify Equation~\eqref{cross-slab ratio saus} or~\eqref{cross-slab ratio kink}.
-
-\citep{arr12} for inversion of physical params using MHD seismology.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Appendix
@@ -858,7 +842,7 @@ To solve equation~\eqref{cross-slab ratio saus} or~\eqref{cross-slab ratio kink}
 %% Acknowledgements
 %
 \begin{acks}
-M. Allcock would like to thank the University Prize Scholarship and the SURE Scheme at the University of Sheffield. R. Erd\'{e}lyi acknowledges the support from the UK Science and Technology Facilities Council (STFC), the Royal Society, and is also  grateful to the Chinese Academy of Sciences Presidents International Fellowship Initiative, Grant No. 2016VMA045 for support received. 
+M. Allcock would like to thank the University Prize Scholarship. R. Erd\'{e}lyi acknowledges the support from the UK Science and Technology Facilities Council (STFC), the Royal Society, and is also  grateful to the Chinese Academy of Sciences Presidents International Fellowship Initiative, Grant No. 2016VMA045 for support received. 
 \end{acks}
 
 \begin{acks}[Declaration of Potential Conflicts of Interest]
