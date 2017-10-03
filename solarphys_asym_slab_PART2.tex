@@ -802,7 +802,7 @@ A summary of the analytical expressions for estimating the Alfv\'{e}n speed, $v_
 \label{fig: MPS slow kink surf}}
 \subfloat[Quasi-sausage]{\includegraphics[scale=0.35]{media/slow-saus-surf_min-pert-shift.png}
 \label{fig: MPS slow saus surf}}
-\caption{The amplitude ratio (\protect\subref*{fig: AR slow kink surf}, \protect\subref*{fig: AR slow saus surf}) and minimum perturbation shift (\protect\subref*{fig: MPS slow kink surf}, \protect\subref*{fig: MPS slow saus surf}) as a function of the slab width, non-dimensionalised as $kx_0$, and the density ratio, $\rho_1/\rho_0$ for slow quasi-kink (\protect\subref*{fig: AR slow kink surf}, \protect\subref*{fig: MPS slow kink surf}) and quasi-sausage (\protect\subref*{fig: AR slow saus surf}, \protect\subref*{fig: MPS slow saus surf}) surface modes. The other density ratio is set to $\rho_2/\rho_0 = 2$ and the characteristic speed ordering inside the slab is $v_\textrm{A}=1.3c_0$ and the sound speed outside the slab is determined to ensure equilibrium pressure balance.}
+\caption{The amplitude ratio (\protect\subref*{fig: AR slow kink surf}, \protect\subref*{fig: AR slow saus surf}) and minimum perturbation shift (\protect\subref*{fig: MPS slow kink surf}, \protect\subref*{fig: MPS slow saus surf}) as a function of the slab width, non-dimensionalised as $kx_0$, and the density ratio, $\rho_1/\rho_0$, for slow quasi-kink (\protect\subref*{fig: AR slow kink surf}, \protect\subref*{fig: MPS slow kink surf}) and quasi-sausage (\protect\subref*{fig: AR slow saus surf}, \protect\subref*{fig: MPS slow saus surf}) surface modes. The other density ratio is set to $\rho_2/\rho_0 = 2$, the characteristic speed ordering inside the slab is $v_\textrm{A}=1.3c_0$, and the sound speed outside the slab is determined to ensure equilibrium pressure balance.}
 \label{fig: AR MPS}
 \end{figure}
 
@@ -810,14 +810,14 @@ Figure~\ref{fig: AR MPS} illustrates the dependency of the amplitude ratio and m
 
 There are a number of ways that the amplitude ratio or minimum perturbation shift can be used for spatial seismology. Firstly, and most simply, given observed values for the wave frequency parameters (frequency or period and wavenumber or wavelength), the background parameters (plasma density inside and in each external side of the slab, which can then be used to determine the sound speeds by assuming equilibrium pressure balance across the slab boundaries), the spatial structure parameters (slab width), and a spatial diagnostic parameter (amplitude ratio or minimum perturbation shift), we can invert the corresponding expression for the spatial wave distribution parameter, Equation~\eqref{cross-slab ratio saus}, \eqref{cross-slab ratio kink}, \eqref{shift min saus}, or~\eqref{shift min kink}, to estimate the Alfv\'{e}n speed. Note that the particular wave mode observed must be known or decomposed from the superposition of modes that are observed.
 
-It is more often the case than not all the non-magnetic parameters are well-observable. For example, the density 
+It is often the case than not all the non-magnetic parameters are well-observable. In this case, the dispersion relation can be used simultaneously with the equation for the amplitude ratio or the minimum perturbation shift to approximate the Alfv\'{e}n speed and another unknown parameter. For example, Figure~\ref{fig: vA approx} shows the inversion curves for a particular parameter regime typical of a slow surface mode. One of the 
 
 \begin{figure}
 \centering
-\subfloat[Quasi-kink]{\includegraphics[scale=0.45]{media/RA_vA_approx_2var.png}
+\subfloat[Amplitude ratio inversion.]{\includegraphics[scale=0.45]{media/RA_vA_approx_2var.png}
 \label{fig: RA vA approx}}
 \\
-\subfloat[Quasi-sausage]{\includegraphics[scale=0.45]{media/DM_vA_approx_2var.png}
+\subfloat[Minimum perturbation shift inversion.]{\includegraphics[scale=0.45]{media/DM_vA_approx_2var.png}
 \label{fig: DM vA approx}}
 \caption{Using prescribed values for the amplitude ratio, $R_\textrm{A}$, \protect\subref{fig: RA vA approx} or minimum perturbation shift, $\Delta_\textrm{min}$, \protect\subref{fig: DM vA approx}, we can use a numerical inversion to approximate background parameters, in this case the Alfv\'{e}n speed, $v_\textrm{A}$, and one of the density ratios, $\rho_1 / \rho_0$. Dashed (solid) lines correspond to the inversion curves for slow quasi-kink (quasi-sausage) surface modes. The dotted lines indicate the inversion for a symmetric slab. The light shaded area indicates the values of the Alfv\'{e}n speed which correspond to body modes, rather than surface modes, so are not important for SMS. The dark shaded region in Figure~\protect\subref{fig: DM vA approx} illustrates that the minimum perturbation shift must be within the slab, that is $|\Delta_\textrm{min} / x_0| < 1$.}
 \label{fig: vA approx}
