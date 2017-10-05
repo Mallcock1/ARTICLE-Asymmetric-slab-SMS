@@ -329,8 +329,8 @@ Using the second form of $C$ in Equation~\eqref{constB B} yields
 \node [below] at (6,0) {$x$};
 \draw [-] (2,-0.5) -- (2,2);
 \draw [-] (5,-0.5) -- (5,2);
-\end{tikzpicture}
-}}
+\end{tikzpicture} 
+}\label{fig: RA saus}}
 
 
 \subfloat[]{\scalebox{0.9}{
@@ -375,9 +375,9 @@ Using the second form of $C$ in Equation~\eqref{constB B} yields
 \node [below] at (6,0) {$x$};
 \draw [-] (2,-0.5) -- (2,2);
 \draw [-] (5,-0.5) -- (5,2);
-\end{tikzpicture}
-}}}
-\caption{Illustration of the difference in amplitude of oscillation on each boundary of the slab for~(a)~quasi-sausage and~(b)~quasi-kink modes. The ratio of the amplitudes can be used as a diagnostic tool.}
+\end{tikzpicture} 
+}\label{fig: RA kink}}}
+\caption{Illustration of the difference in amplitude of oscillation on each boundary of the slab for~\protect\subref{fig: RA saus}~quasi-sausage and~\protect\subref{fig: RA kink}~quasi-kink modes. The ratio of the amplitudes can be used as a diagnostic tool.}
 \label{fig: RA}
 \end{figure}
 
@@ -582,7 +582,7 @@ We will return to a discussion of the inversion of the amplitude ratio in Sectio
 \section{Shift of minimum perturbation}
 A second spatial seismology technique uses the shift in the position of minimum wave power from the centre of the slab due to the asymmetry in the external plasma regions as a diagnostic parameter for the slab Alfv\'{e}n speed.
 
-The position of minimum wave power for a symmetric sausage or kink mode is at the central line of the slab, at $x=0$. We define $\Delta_\textrm{min}$ to be the displacement (from the central line) of the position of minimum wave power inside an asymmetric magnetic slab. For quasi-sausage modes, $\Delta_\textrm{min}$ is the solution to $\widehat{v}_x(x) = 0$ under the constraint $|x| < x_0$, and for quasi-kink modes, $\Delta_\textrm{min}$ is the solution to $\textrm{d}\widehat{v}_x (x) / \textrm{d}x = 0$ under the same constraint $|x| < x_0$. The constraint restricts the solutions to being within the slab. 
+The position of minimum wave power for a symmetric sausage or kink mode is at the central line of the slab, at $x=0$. We define $\Delta_\textrm{min}$ to be the displacement (from the central line) of the position of minimum wave power inside an asymmetric magnetic slab (Figure~\ref{fig: min pert shift}). For quasi-sausage modes, $\Delta_\textrm{min}$ is the solution to $\widehat{v}_x(x) = 0$ under the constraint $|x| < x_0$, and for quasi-kink modes, $\Delta_\textrm{min}$ is the solution to $\textrm{d}\widehat{v}_x (x) / \textrm{d}x = 0$ under the same constraint $|x| < x_0$. The constraint restricts the solutions to being within the slab. 
 
 \begin{figure}
 \makebox[\textwidth][c]{
@@ -631,7 +631,7 @@ The position of minimum wave power for a symmetric sausage or kink mode is at th
 \draw [-] (3, 0.2) to [out=90, in=-90] (3.25, 0.4) to [out=-90, in=90] (3.5, 0.2);
 \node [above] at (3.1, 0.4) {$\Delta_\mathrm{min}$};
 \end{tikzpicture}
-}}
+}\label{fig: min pert shift saus}}
 
 
 \subfloat[]{\scalebox{0.9}{
@@ -679,9 +679,10 @@ The position of minimum wave power for a symmetric sausage or kink mode is at th
 \draw [-] (3.5, 0.3) to [out=90, in=-90] (3.75, 0.5) to [out=-90, in=90] (4, 0.3);
 \node [above] at (4, 0.5) {$\Delta_\mathrm{min}$};
 \end{tikzpicture}
-}}}
+}\label{fig: min pert shift kink}}}
 
-\caption{Illustration of the minimum perturbation shift within the slab for (a) quasi-sausage and (b) quasi-kink modes. The minimum perturbation shift can be used as a diagnostic tool.}
+\caption{Illustration of the minimum perturbation shift within the slab for~\protect\subref{fig: min pert shift saus}~quasi-sausage and~\protect\subref{fig: min pert shift kink}~quasi-kink modes. The minimum perturbation shift can be used as a diagnostic tool.}
+\label{fig: min pert shift}
 \end{figure}
 
 Firstly, for quasi-sausage modes, using the solution for the transversal velocity amplitude given by Equation~\eqref{vsoln} and the expressions for the variables within given by equation~\eqref{constB C}, the shift of minimum perturbation can be calculated as follows. The solution for the transversal velocity amplitude within the slab is
@@ -810,7 +811,7 @@ Figure~\ref{fig: AR MPS} illustrates the dependency of the amplitude ratio and m
 
 There are a number of ways that the amplitude ratio or minimum perturbation shift can be used for spatial seismology. Firstly, and most simply, given observed values for the wave frequency parameters (frequency or period and wavenumber or wavelength), the background parameters (plasma density inside and in each external side of the slab, which can then be used to determine the sound speeds by assuming equilibrium pressure balance across the slab boundaries), the spatial structure parameters (slab width), and a spatial diagnostic parameter (amplitude ratio or minimum perturbation shift), we can invert the corresponding expression for the spatial wave distribution parameter, Equation~\eqref{cross-slab ratio saus}, \eqref{cross-slab ratio kink}, \eqref{shift min saus}, or~\eqref{shift min kink}, to estimate the Alfv\'{e}n speed. Note that the particular wave mode observed must be known or decomposed from the superposition of modes that are observed.
 
-It is often the case than not all the non-magnetic parameters are well-observable. In this case, the dispersion relation can be used simultaneously with the equation for the amplitude ratio or the minimum perturbation shift to approximate the Alfv\'{e}n speed and another unknown parameter. For example, Figure~\ref{fig: vA approx} shows the inversion curves for a particular parameter regime typical of a slow surface mode. One of the 
+It is often the case than not all the non-magnetic parameters are well-observable. In this case, the dispersion relation can be solved simultaneously with the equation for the amplitude ratio or the minimum perturbation shift to approximate the Alfv\'{e}n speed and another unknown parameter. For example, Figure~\ref{fig: vA approx} shows the inversion curves for a particular parameter regime typical of a slow surface mode, plotted by prescribing (as if they were observed quantities) all parameters apart from the Alfv\'{e}n speed, $v_\textrm{A}$, and one of the density ratios, $\rho_1/\rho_0$, then numerically solving the dispersion relation, Equation~\eqref{disp rel}, and expressions for 
 
 \begin{figure}
 \centering
@@ -828,10 +829,6 @@ The amplitude ratio has a strong sensitivity to the changes in the external dens
 On a theoretical level, the eigenfunctions of a given system are more sensitive to small changes in the equilibrium parameters than the corresponding eigenfrequencies (Rayleigh-Ritz theorem - references needed, but I cannot find any). This means that spatial seismology techniques are likely to be more effective than temporal techniques.
 
 In future work we would like to determine whether magneto-acoustic waves can be set up in an asymmetric waveguide within the characteristic lifetime of such a structure in the solar atmosphere. This can be established analytically (for linear waves with simple initial conditions) and numerically (for nonlinear waves with more sophisticated initial conditions). Further, a more realistic system, including asymmetric magnetic fields in the external plasmas, or an equilibrium shear flow, would allow for better application to solar waveguides.
-
-
-
-Something about a Bayesian approach for inversion - so that density are not required?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Appendix
