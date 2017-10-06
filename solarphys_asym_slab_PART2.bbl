@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{19}
 % BibTex style file: spr-mp-sola.bst (nameyear), 2015-03-09
 \ifx\bisbn     \undefined \def\bisbn  #1{ISBN #1}\fi
 \ifx\binits    \undefined \def\binits#1{#1}\fi
@@ -151,6 +151,19 @@
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{{Kato}}{1995}]{kat95}
+\begin{bbook}
+\bauthor{\bsnm{{Kato}}, \binits{T.}}:
+\byear{1995},
+\bbtitle{{Perturbation Theory for Linear Operators}},
+\bedition{2}nd edn.
+\bpublisher{Springer},
+\blocation{Verlag Berlin Heidelberg},
+\bfpage{623}.
+\doiurl{10.1007/978-3-642-66282-9}.
+\end{bbook}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{{Nakariakov} and {Ofman}}{2001}]{nak_etal01}
 \begin{barticle}
 \bauthor{\bsnm{{Nakariakov}}, \binits{V.M.}},
@@ -266,6 +279,42 @@
 \bfpage{L15}.
 \doiurl{10.3847/2041-8213/aa7b2c}.
 \adsurl{2017ApJ...843L..15Y}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Yu} \textit{et~al.}}{2016}]{yu_etal16}
+\begin{barticle}
+\bauthor{\bsnm{{Yu}}, \binits{H.}},
+\bauthor{\bsnm{{Chen}}, \binits{S.-X.}},
+\bauthor{\bsnm{{Li}}, \binits{B.}},
+\bauthor{\bsnm{{Xia}}, \binits{L.-D.}}:
+\byear{2016},
+\batitle{{Period ratios for standing kink and sausage modes in magnetized
+  structures with siphon flow on the Sun}}.
+\bjtitle{Research in Astronomy and Astrophysics}
+\bvolume{16},
+\bfpage{92}.
+\doiurl{10.1088/1674-4527/16/6/092}.
+\adsurl{2016RAA....16...92Y}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Yuan} \textit{et~al.}}{2014}]{yua_etal14}
+\begin{barticle}
+\bauthor{\bsnm{{Yuan}}, \binits{D.}},
+\bauthor{\bsnm{{Nakariakov}}, \binits{V.M.}},
+\bauthor{\bsnm{{Huang}}, \binits{Z.}},
+\bauthor{\bsnm{{Li}}, \binits{B.}},
+\bauthor{\bsnm{{Su}}, \binits{J.}},
+\bauthor{\bsnm{{Yan}}, \binits{Y.}},
+\bauthor{\bsnm{{Tan}}, \binits{B.}}:
+\byear{2014},
+\batitle{{Oscillations in a Sunspot with Light Bridges}}.
+\bjtitle{\apj}
+\bvolume{792},
+\bfpage{41}.
+\doiurl{10.1088/0004-637X/792/1/41}.
+\adsurl{2014ApJ...792...41Y}.
 \end{barticle}
 \endbibitem
 
