@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{20}
 % BibTex style file: spr-mp-sola.bst (nameyear), 2015-03-09
 \ifx\bisbn     \undefined \def\bisbn  #1{ISBN #1}\fi
 \ifx\binits    \undefined \def\binits#1{#1}\fi
@@ -54,6 +54,24 @@
 \bfpage{35}.
 \doiurl{10.1007/s11207-017-1054-y}.
 \adsurl{2017SoPh..292...35A}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Andries} \textit{et~al.}}{2009}]{and_etal09}
+\begin{barticle}
+\bauthor{\bsnm{{Andries}}, \binits{J.}},
+\bauthor{\bsnm{{van Doorsselaere}}, \binits{T.}},
+\bauthor{\bsnm{{Roberts}}, \binits{B.}},
+\bauthor{\bsnm{{Verth}}, \binits{G.}},
+\bauthor{\bsnm{{Verwichte}}, \binits{E.}},
+\bauthor{\bsnm{{Erd{\'e}lyi}}, \binits{R.}}:
+\byear{2009},
+\batitle{{Coronal Seismology by Means of Kink Oscillation Overtones}}.
+\bjtitle{\ssr}
+\bvolume{149},
+\bfpage{3}.
+\doiurl{10.1007/s11214-009-9561-2}.
+\adsurl{2009SSRv..149....3A}.
 \end{barticle}
 \endbibitem
 
@@ -134,6 +152,21 @@
 \end{barticle}
 \endbibitem
 
+\bibitem[\protect\citeauthoryear{{Erd{\'e}lyi} and {Verth}}{2007}]{erd_etal07}
+\begin{barticle}
+\bauthor{\bsnm{{Erd{\'e}lyi}}, \binits{R.}},
+\bauthor{\bsnm{{Verth}}, \binits{G.}}:
+\byear{2007},
+\batitle{{The effect of density stratification on the amplitude profile of
+  transversal coronal loop oscillations}}.
+\bjtitle{\aap}
+\bvolume{462},
+\bfpage{743}.
+\doiurl{10.1051/0004-6361:20065693}.
+\adsurl{2007A\%26A...462..743E}.
+\end{barticle}
+\endbibitem
+
 \bibitem[\protect\citeauthoryear{{Erd{\'e}lyi}, {Hague}, and
   {Nelson}}{2014}]{erd_etal14}
 \begin{barticle}
@@ -176,21 +209,6 @@
 \bfpage{L53}.
 \doiurl{10.1051/0004-6361:20010607}.
 \adsurl{2001A\%26A...372L..53N}.
-\end{barticle}
-\endbibitem
-
-\bibitem[\protect\citeauthoryear{{Nakariakov} and
-  {Verwichte}}{2005}]{nak_etal05}
-\begin{barticle}
-\bauthor{\bsnm{{Nakariakov}}, \binits{V.M.}},
-\bauthor{\bsnm{{Verwichte}}, \binits{E.}}:
-\byear{2005},
-\batitle{{Coronal Waves and Oscillations}}.
-\bjtitle{\lrsp}
-\bvolume{2},
-\bfpage{3}.
-\doiurl{10.12942/lrsp-2005-3}.
-\adsurl{2005LRSP....2....3N}.
 \end{barticle}
 \endbibitem
 
