@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.25)  5 DEC 2017 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.25)  7 DEC 2017 13:07
 entering extended mode
 **./solarphys_asym_slab_PART2.tex
 (solarphys_asym_slab_PART2.tex
@@ -1008,7 +1008,7 @@ er (name{equation.1.13}) has been already used, duplicate ignored
                    \relax 
 l.726 \begin{equation}
                        [10] Table 1 Table 2 [11]
-<media/slow-kink-surf_amp-ratio.png, id=306, 578.16pt x 433.62pt>
+<media/slow-kink-surf_amp-ratio.png, id=307, 578.16pt x 433.62pt>
 File: media/slow-kink-surf_amp-ratio.png Graphic file (type png)
 
 <use media/slow-kink-surf_amp-ratio.png>
@@ -1016,7 +1016,7 @@ Package pdftex.def Info: media/slow-kink-surf_amp-ratio.png used on input line
 775.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
 
-<media/slow-saus-surf_amp-ratio.png, id=308, 578.16pt x 433.62pt>
+<media/slow-saus-surf_amp-ratio.png, id=309, 578.16pt x 433.62pt>
 File: media/slow-saus-surf_amp-ratio.png Graphic file (type png)
 
 <use media/slow-saus-surf_amp-ratio.png>
@@ -1024,7 +1024,7 @@ Package pdftex.def Info: media/slow-saus-surf_amp-ratio.png used on input line
 777.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
 
-<media/slow-kink-surf_min-pert-shift.png, id=309, 578.16pt x 433.62pt>
+<media/slow-kink-surf_min-pert-shift.png, id=310, 578.16pt x 433.62pt>
 File: media/slow-kink-surf_min-pert-shift.png Graphic file (type png)
 
 <use media/slow-kink-surf_min-pert-shift.png>
@@ -1032,7 +1032,7 @@ Package pdftex.def Info: media/slow-kink-surf_min-pert-shift.png used on input
 line 780.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
 
-<media/slow-saus-surf_min-pert-shift.png, id=310, 578.16pt x 433.62pt>
+<media/slow-saus-surf_min-pert-shift.png, id=311, 578.16pt x 433.62pt>
 File: media/slow-saus-surf_min-pert-shift.png Graphic file (type png)
 
 <use media/slow-saus-surf_min-pert-shift.png>
@@ -1040,14 +1040,14 @@ Package pdftex.def Info: media/slow-saus-surf_min-pert-shift.png used on input
 line 782.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
  Figure 4
-<media/RA_vA_approx_2var.png, id=339, 578.16pt x 433.62pt>
+<media/RA_vA_approx_2var.png, id=340, 578.16pt x 433.62pt>
 File: media/RA_vA_approx_2var.png Graphic file (type png)
 
 <use media/RA_vA_approx_2var.png>
 Package pdftex.def Info: media/RA_vA_approx_2var.png used on input line 798.
 (pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
 
-<media/DM_vA_approx_2var.png, id=340, 578.16pt x 433.62pt>
+<media/DM_vA_approx_2var.png, id=341, 578.16pt x 433.62pt>
 File: media/DM_vA_approx_2var.png Graphic file (type png)
 
 <use media/DM_vA_approx_2var.png>
@@ -1074,12 +1074,15 @@ ed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 834.
  ) 
 Here is how much of TeX's memory you used:
  20860 strings out of 493323
  385474 string characters out of 3139069
- 464449 words of memory out of 3000000
+ 465449 words of memory out of 3000000
  23891 multiletter control sequences out of 15000+200000
  20537 words of font info for 77 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
@@ -1114,9 +1117,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/Matt/AppData/Roaming/Mi
 KTeX/2.9/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on solarphys_asym_slab_PART2.pdf (15 pages, 1137853 bytes).
+Output written on solarphys_asym_slab_PART2.pdf (15 pages, 1138116 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
+ 544 PDF objects out of 1000 (max. 8388607)
  106 named destinations out of 1000 (max. 500000)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
