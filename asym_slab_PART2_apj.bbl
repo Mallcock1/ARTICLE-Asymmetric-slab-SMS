@@ -1,0 +1,78 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+
+\bibitem[{{Allcock} \& {Erd{\'e}lyi}(2017)}]{all_etal17}
+{Allcock}, M., \& {Erd{\'e}lyi}, R. 2017, \solphys, 292, 35
+
+\bibitem[{{Andries} {et~al.}(2009){Andries}, {van Doorsselaere}, {Roberts},
+  {Verth}, {Verwichte}, \& {Erd{\'e}lyi}}]{and_etal09}
+{Andries}, J., {van Doorsselaere}, T., {Roberts}, B., {et~al.} 2009, \ssr, 149,
+  3
+
+\bibitem[{{Arregui}(2012)}]{arr12}
+{Arregui}, I. 2012, Astrophysics and Space Science Proceedings, 33, 159
+
+\bibitem[{{Arregui} {et~al.}(2012){Arregui}, {Oliver}, \&
+  {Ballester}}]{arr_etal12}
+{Arregui}, I., {Oliver}, R., \& {Ballester}, J.~L. 2012, \lrsp, 9, 2
+
+\bibitem[{{Banerjee} {et~al.}(2007){Banerjee}, {Erd{\'e}lyi}, {Oliver}, \&
+  {O'Shea}}]{ban_etal07}
+{Banerjee}, D., {Erd{\'e}lyi}, R., {Oliver}, R., \& {O'Shea}, E. 2007,
+  \solphys, 246, 3
+
+\bibitem[{{De Moortel} \& {Nakariakov}(2012)}]{dem_etal12}
+{De Moortel}, I., \& {Nakariakov}, V.~M. 2012, Philosophical Transactions of
+  the Royal Society of London Series A, 370, 3193
+
+\bibitem[{{Erd{\'e}lyi} {et~al.}(2014){Erd{\'e}lyi}, {Hague}, \&
+  {Nelson}}]{erd_etal14}
+{Erd{\'e}lyi}, R., {Hague}, A., \& {Nelson}, C.~J. 2014, \solphys, 289, 167
+
+\bibitem[{{Erd{\'e}lyi} \& {Taroyan}(2008)}]{erd_etal08}
+{Erd{\'e}lyi}, R., \& {Taroyan}, Y. 2008, \aap, 489, L49
+
+\bibitem[{{Erd{\'e}lyi} \& {Verth}(2007)}]{erd_etal07}
+{Erd{\'e}lyi}, R., \& {Verth}, G. 2007, \aap, 462, 743
+
+\bibitem[{{Kato}(1995)}]{kat95}
+{Kato}, T. 1995, {Perturbation Theory for Linear Operators}, 2nd edn. (Verlag
+  Berlin Heidelberg: Springer), 623
+
+\bibitem[{{Nakariakov} \& {Ofman}(2001)}]{nak_etal01}
+{Nakariakov}, V.~M., \& {Ofman}, L. 2001, \aap, 372, L53
+
+\bibitem[{{Roberts}(1981{\natexlab{a}})}]{rob81b}
+{Roberts}, B. 1981{\natexlab{a}}, \solphys, 69, 39
+
+\bibitem[{{Roberts}(1981{\natexlab{b}})}]{rob81a}
+---. 1981{\natexlab{b}}, \solphys, 69, 27
+
+\bibitem[{{Rosenberg}(1970)}]{ros70}
+{Rosenberg}, H. 1970, \aap, 9, 159
+
+\bibitem[{{Uchida}(1970)}]{uch70}
+{Uchida}, Y. 1970, \pasj, 22, 341
+
+\bibitem[{{Verth} {et~al.}(2007){Verth}, {Van Doorsselaere}, {Erd{\'e}lyi}, \&
+  {Goossens}}]{ver_etal07}
+{Verth}, G., {Van Doorsselaere}, T., {Erd{\'e}lyi}, R., \& {Goossens}, M. 2007,
+  \aap, 475, 341
+
+\bibitem[{{Yang} {et~al.}(2017){Yang}, {Zhang}, {Erd{\'e}lyi}, {Hou}, {Li}, \&
+  {Yan}}]{yan_etal17}
+{Yang}, S., {Zhang}, J., {Erd{\'e}lyi}, R., {et~al.} 2017, \apjl, 843, L15
+
+\bibitem[{{Yu} {et~al.}(2016){Yu}, {Chen}, {Li}, \& {Xia}}]{yu_etal16}
+{Yu}, H., {Chen}, S.-X., {Li}, B., \& {Xia}, L.-D. 2016, Research in Astronomy
+  and Astrophysics, 16, 92
+
+\bibitem[{{Yuan} {et~al.}(2014){Yuan}, {Nakariakov}, {Huang}, {Li}, {Su},
+  {Yan}, \& {Tan}}]{yua_etal14}
+{Yuan}, D., {Nakariakov}, V.~M., {Huang}, Z., {et~al.} 2014, \apj, 792, 41
+
+\bibitem[{{Zhang} {et~al.}(2017){Zhang}, {Tian}, {He}, \& {Wang}}]{zha_etal17}
+{Zhang}, J., {Tian}, H., {He}, J., \& {Wang}, L. 2017, \apj, 838, 2
+
+\end{thebibliography}

@@ -1,65 +1,24 @@
-\documentclass[namedreferences]{solarphysics}
-%
-% spr-sola-addons available options:
-%  hyperref      -- loads hyperref.sty with options (pdfborder={0 0 0 },urlcolor=blue,breaklinks)
-%  natbib        -- For citations: redefine \cite commands (loads natbib.sty)
-%  solaenum      -- makes enumerated list with italics-roman numerals and a single right-bracket
-%  solaromanenum -- makes enumerated list with roman numerals and a single right-bracket
-%  linksfromyear -- puts a link on a year citation (hyperref must be loaded)
-%  optionalrh    -- for optional running title/author
-%
-\usepackage[optionalrh,solaromanenum,natbib]{spr-sola-addons}
+\documentclass[trackchanges]{aastex61}
+
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{amssymb}
 \usepackage{color}
 \usepackage{breakurl}
-\usepackage{savesym}
-\savesymbol{iint}
-\savesymbol{iiint}
+\usepackage{isomath}
 
 \usepackage{amsthm, amsmath}
 \def\UrlFont{\sf}
 \usepackage{tikz}
-\usepackage{subfig}
+\let\captionbox\relax
+\usepackage[caption=false]{subfig}
 \usetikzlibrary{fadings}
 \numberwithin{equation}{section}
 
-\usepackage{geometry}
-\usepackage{pdflscape}
-
 \usepackage{multirow}
-
 \usepackage{booktabs}
 
-% Definitions for the journal names
-\newcommand{\adv}{    {\it Adv. Space Res.}} 
-\newcommand{\annG}{   {\it Ann. Geophys.}} 
-\newcommand{\aap}{    {\it Astron. Astrophys.}}
-\newcommand{\aaps}{   {\it Astron. Astrophys. Suppl.}}
-\newcommand{\aapr}{   {\it Astron. Astrophys. Rev.}}
-\newcommand{\ag}{     {\it Ann. Geophys.}}
-\newcommand{\aj}{     {\it Astron. J.}} 
-\newcommand{\apj}{    {\it Astrophys. J.}}
-\newcommand{\apjl}{   {\it Astrophys. J. Lett.}}
-\newcommand{\apss}{   {\it Astrophys. Space Sci.}} 
-\newcommand{\cjaa}{   {\it Chin. J. Astron. Astrophys.}} 
-\newcommand{\gafd}{   {\it Geophys. Astrophys. Fluid Dyn.}}
-\newcommand{\grl}{    {\it Geophys. Res. Lett.}}
-\newcommand{\ijga}{   {\it Int. J. Geomagn. Aeron.}}
-\newcommand{\jastp}{  {\it J. Atmos. Solar-Terr. Phys.}} 
-\newcommand{\jgr}{    {\it J. Geophys. Res.}}
-\newcommand{\lrsp}{Living Rev. Solar Phys.}
-\newcommand{\mnras}{  {\it Mon. Not. Roy. Astron. Soc.}}
-\newcommand{\nat}{    {\it Nature}}
-\newcommand{\pasp}{   {\it Pub. Astron. Soc. Pac.}}
-\newcommand{\pasj}{   {\it Pub. Astron. Soc. Japan}}
-\newcommand{\pre}{    {\it Phys. Rev. E}}
-\newcommand{\solphys}{{\it Solar Phys.}}
-\newcommand{\sovast}{ {\it Soviet  Astron.}} 
-\newcommand{\ssr}{    {\it Space Sci. Rev.}}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % the following is to alter tikz settings to improve springs figure.
 \usetikzlibrary{decorations.pathmorphing,calc,patterns}
 \makeatletter
@@ -141,42 +100,43 @@
     decorate,
     very thick},
   Spring/.default = {4cm}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Definitions for journal names
+\newcommand{\lrsp}{Living Rev. Solar Phys.}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+\shorttitle{Solar Magneto-Seismology with Asymmetric Slab Waveguides}
+\shortauthors{Allcock and Erd\'{e}lyi}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
-
-\begin{article}
-
-\begin{opening}
-
 \title{Solar Magneto-Seismology with Magneto-Acoustic Surface Waves in Asymmetric Magnetic Slab Waveguides}
 
-\author[addressref={UoS},email={}]{\inits{M.}\fnm{Matthew }\lnm{Allcock}\orcid{0000-0002-0771-743X}}
+\correspondingauthor{Robert Erd\'{e}lyi}
+\email{robertus@sheffield.ac.uk}
 
-\author[addressref={UoS},corref,email={robertus@sheffield.ac.uk}]{\inits{R.}\fnm{Robert }\lnm{Erd\'{e}lyi}\orcid{0000-0003-3439-4127}}
+\author[0000-0002-0771-743X]{Matthew Allcock}
+\affiliation{Solar Physics and Space Plasma Research Centre, School of Mathematics and Statistics, University of Sheffield, Hicks Building, Hounsfield Road, Sheffield, S3 7RH, UK}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Runningheads
-%
-\runningauthor{M. Allcock, R. Erd\'{e}lyi}
-\runningtitle{Solar Magneto-Seismology with Asymmetric Slab Waveguides}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%Affilations 
-
-\address[id={UoS}]{Solar Physics and Space Plasma Research Centre, School of Mathematics and Statistics, University of Sheffield, Hicks Building, Hounsfield Road, Sheffield, S3 7RH, UK.}
+\author[0000-0003-3439-4127]{Robert Erd\'{e}lyi}
+\affiliation{Solar Physics and Space Plasma Research Centre, School of Mathematics and Statistics, University of Sheffield, Hicks Building, Hounsfield Road, Sheffield, S3 7RH, UK}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Abstract 
 \begin{abstract}
-Solar magneto-seismology is a method used to approximate plasma parameters that are traditionally difficult to measure using observations of magneto-hydrodynamic waves. A magnetic slab can act as waveguide for magneto-acoustic waves that approximates magnetic structures in the solar atmosphere. Asymmetry of the slab caused by different plasma parameters in each external region affects both the eigenfrequencies and eigenfunctions differently at each side of the slab, that is both the temporal and spatial profiles of the eigenmodes of propagation along the slab are influenced by the equilibrium asymmetry. We present two novel diagnostic tools for solar magneto-seismology that use this distortion to estimate the slab magnetic field strength using the spatial distribution of magneto-acoustic surface waves: the \emph{amplitude ratio} and the \emph{minimum perturbation shift} methods. These methods can be used to estimate background equilibrium parameters that are traditionally difficult to measure in inhomogeneous structures such as elongated magnetic bright points, prominences, and the magnetic structures above sunspot light bridges known as light walls, that may be locally approximated as slabs.
+Solar magneto-seismology is an indirect method to approximate plasma parameters that are traditionally difficult to measure in the solar atmosphere using observations of magneto-hydrodynamic waves. A magnetic slab can act as waveguide for magneto-acoustic waves that approximates magnetic structures in the solar atmosphere. Asymmetry of the slab caused by different plasma parameters in each external region affects both the eigenfrequencies and eigenfunctions differently at each side of the slab, that is both the temporal and spatial profiles of the eigenmodes of propagation along the slab are influenced by the equilibrium asymmetry. We present two novel diagnostic tools for solar magneto-seismology that use this distortion to estimate the slab magnetic field strength using the spatial distribution of magneto-acoustic surface waves: the \emph{amplitude ratio} and the \emph{minimum perturbation shift} techniques. They have the potential to estimate background equilibrium parameters in inhomogeneous solar structures such as elongated magnetic bright points, prominences, and the magnetic structures above sunspot light bridges known as light walls, which may be locally approximated as slabs.
 \end{abstract}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Keywords
-\keywords{Coronal Seismology; Magnetic fields, Photosphere; Waves, Magnetohydrodynamic; Waves, Modes.}
-\end{opening}
-%-------------------------------------------------
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\keywords{magnetohydrodynamics --- plasmas --- Sun: atmosphere --- Sun: oscillations --- waves}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \section{Introduction}
 The emerging field of solar magneto-seismology (SMS) has become a crucial tool in developing our understanding of structures in the solar atmosphere. By comparing observational measurements of magnetohydrodynamic (MHD) waves to the wave solutions of inhomogeneous plasma modelling of the medium in which the waves propagate, we can make approximations of traditionally difficult-to-measure plasma parameters such as the magnetic field strength and heat transport coefficient \citep{and_etal09,arr12,dem_etal12}. This in turn equips us with more realistic parameters for numerical simulations and give us a better understanding of conditions that lead to, for example, wave energy dissipation, instability, magnetic reconnection, and heating.
@@ -189,7 +149,7 @@ Spatial seismology techniques have more recently started demonstrating their eff
 
 In the present work, we derive two novel analytical tools for spatial seismology that use an asymmetric slab waveguide to approximate background parameters. This has applications to solar atmospheric structures that are locally slab-like which have been observed to guide MHD oscillations, such as elongated magnetic bright points, prominences, and the locally slab-like magnetic structures above sunspot light bridges known as light walls \citep{arr_etal12,yua_etal14,yan_etal17,zha_etal17}.
 
-This work provides an application of the linear wave analysis of asymmetric magnetic slabs completed by \cite{all_etal17}. A magnetic slab, with non-magnetic, but asymmetric density and temperatures outside the slab has eigenmodes which can be described as either quasi-sausage or quasi-kink. For quasi-sausage (quasi-kink) modes, the oscillations on each slab interface are in anti-phase (phase). They differ in character from traditional (symmetric) sausage and kink modes by their asymmetry about the center of the slab due to the amplitude of oscillation on each interface being unequal caused by the asymmetric external environment. This results in quasi-kink modes not necessarily retaining their cross-sectional area and quasi-sausage modes not necessarily having reflection symmetric about the centre line of the slab. The spatial distribution of these waves across the slab, and therefore the extent to which they are modified from the traditional sausage and kink modes, is dependent on the asymmetric background plasma parameters. Consequently, we can use the spatial distribution of these waves to diagnose the waveguide. This is the focus of the present paper: to derive expressions for proxy parameters that encapsulate this asymmetric spacial distribution and discuss the application to SMS.
+This work provides an application of the linear wave analysis of asymmetric magnetic slabs completed by \cite{all_etal17}. A magnetic slab, with non-magnetic, but asymmetric density and temperatures outside the slab has eigenmodes which can be described as either quasi-sausage or quasi-kink. For quasi-sausage (quasi-kink) modes, the oscillations on each slab interface are in anti-phase (phase). They differ in character from traditional (symmetric) sausage and kink modes by their asymmetry about the center of the slab due to the amplitude of oscillation on each interface being unequal caused by the asymmetric external environment. This results in quasi-kink modes not necessarily retaining their cross-sectional area and quasi-sausage modes not necessarily having reflection symmetric about the centre line of the slab. The spatial distribution of these waves across the slab, and therefore the extent to which they are modified from the traditional sausage and kink modes, is dependent on the asymmetric background plasma parameters. Consequently, we can use the spatial distribution of these waves to diagnose the waveguide. This is the focus of the present paper: to derive expressions for proxy parameters that encapsulate this asymmetric \replaced{spacial}{spatial} distribution and discuss the application to SMS.
 
 Section~\ref{sec: AR} introduces the amplitude ratio diagnostic parameter, Section~\ref{sec: MPS} introduces the minimum perturbation shift diagnostic parameter, and Section~\ref{sec: discussion} discusses the application of these parameters to SMS.
 
@@ -197,7 +157,9 @@ Section~\ref{sec: AR} introduces the amplitude ratio diagnostic parameter, Secti
 \section{Amplitude ratio} \label{sec: AR}
 The aim of this section is to derive an expression for the ratio of the oscillation on each interface of an asymmetric magnetic slab in terms of the wave and plasma parameters of the system.
 
-Consider an inviscid, plasma structured by two parallel interfaces separating the plasma into three regions along the $\mathbfit{\widehat{x}}$-direction. In each region the plasma is uniform and the central region, known as the slab, has a uniform magnetic field, $\mathbfit{B} = B_0 \mathbfit{\widehat{z}}$. The plasma adjacent to the slab on each side is non-magnetic. The density, pressure, and sound speed within the slab are denoted by $\rho_0$, $p_0$, and $c_0$, respectively, and in the external plasma they are subscripted by 1 and 2, respectively. For more information about the equilibrium conditions, see \cite{all_etal17}. In the aforementioned work, it was shown that trapped magneto-acoustic modes propagating along an asymmetric magnetic slab have velocity perturbation in the $\mathbfit{\widehat{x}}$-direction given by ${v_x(x,y,z,t) = \widehat{v}_x(x)e^{i(kz-\omega t)}}$, where $\omega$ and $k$ are the angular frequency and wavenumber, and
+Consider an inviscid, plasma structured by two parallel interfaces separating the plasma into three regions along the $\mathbfit{\widehat{x}}$-direction. In each region the plasma is uniform and the central region, known as the slab, has a uniform magnetic field, $\mathbfit{B} = B_0 \mathbfit{\widehat{z}}$. The plasma adjacent to the slab on each side is non-magnetic. The density, pressure, and sound speed within the slab are denoted by $\rho_0$, $p_0$, and $c_0$, respectively, and in the external plasma they are subscripted by 1 and 2, respectively. The same equilibrium conditions are used, with more information given, by \cite{all_etal17}. 
+
+In the aforementioned work, it was shown that trapped magneto-acoustic modes propagating along an asymmetric magnetic slab have velocity perturbation in the $\mathbfit{\widehat{x}}$-direction given by ${v_x(x,y,z,t) = \widehat{v}_x(x)e^{i(kz-\omega t)}}$, where $\omega$ and $k$ are the angular frequency and wavenumber, and
 \begin{equation}
 \widehat{v}_x(x)=
 \begin{cases}
@@ -250,7 +212,7 @@ and $c_i=\cosh{m_ix_0}$ and $s_i=\sinh{m_ix_i}$ for $i=0,1,2$. Ensuring that thi
 \begin{equation}
 (\Lambda_0c_0+\Lambda_2s_0)(\Lambda_0s_0+\Lambda_1c_0)+(\Lambda_0c_0+\Lambda_1s_0)(\Lambda_0s_0+\Lambda_2c_0)=0. \label{disp rel}
 \end{equation}
-More information regarding the above derivation can be found in \cite{all_etal17}. By satisfying this relation, we gain one degree of freedom in the system of Equations~\eqref{coefmatrix} which allows one of the constants $B$ or $C$ to be arbitrary. This gives us two types of solution: quasi-sausage and quasi-kink modes.
+More information regarding the above derivation can be found in \cite{all_etal17}. By satisfying this relation, we gain one degree of freedom in the system of Equations~\eqref{coefmatrix} which leaves one of the constants $B$ or $C$ arbitrary. This gives us two types of solution: \textit{quasi-sausage} and \textit{quasi-kink} modes.
 
 Firstly, for quasi-sausage modes, by letting $C$ be arbitrary the other constants $A$, $B$, and $D$ can be determined as
 \begin{align}
@@ -385,7 +347,7 @@ Using the second form of $C$ in Equation~\eqref{constB B} yields
 \draw [-] (5,-0.5) -- (5,2);
 \end{tikzpicture} 
 }\label{fig: RA kink}}}
-\caption{Illustration of the difference in amplitude of oscillation on each boundary of the slab for~\protect\subref{fig: RA saus}~quasi-sausage and~\protect\subref{fig: RA kink}~quasi-kink modes. The ratio of the amplitudes can be used as a diagnostic tool.}
+\caption{Illustration of the difference in amplitude of oscillation on each boundary of the slab for~\protect\subref{fig: RA saus}~quasi-sausage and~\protect\subref{fig: RA kink}~quasi-kink modes.}
 \label{fig: RA}
 \end{figure}
 
@@ -438,9 +400,7 @@ which gives us two families of solutions, one satisfying $\Lambda_0 + \Lambda_1 
 \end{equation}
 for $j = 1, 2$, respectively. This equation is the same as the dispersion relation governing surface waves along a single interface between a magnetised and a non-magnetised plasma \citep{rob81a}. Hence, the surface mode solutions of a wide asymmetric slab are just the surface modes that propagate along each interface independently. This again makes intuitive sense considering that as the slab is widened the interfaces will have diminishing influence on each other, until each interface oscillates independently with its own characteristic frequency.
 
-This is analogous to the mechanical example introduced by \cite{all_etal17}. Consider two masses connected by a spring, with spring constant $k_0$, and each mass is also connected to a fixed wall on each side by springs with spring constants $k_1$ and $k_2$, respectively (see Figure~\ref{fig: wide slab mechanical analogy}). When the middle spring has spring constant $k_0 \neq 0$, there are two modes, an in-phase mode (analogous to kink modes in a slab) and an in-antiphase mode (analogous to sausage modes in a slab). When the two masses are decoupled by removing the middle spring, equivalently setting $k_0 = 0$, each mass oscillates independently at the natural frequency of that side of the spring-mass system. This decoupling provides a good analogy to the wide slab limit for the magnetic slab. Each interface can oscillate at its own natural frequency, independent of the other interface. Given that we are considering magneto-acoustic waves, there are two restoring forces, the magnetic tension force and the pressure gradient force, which means that each independent interface has two natural frequencies (depending on the parameters of the system, there can be 0, 1, or 2 frequencies), corresponding to the fast and slow magneto-acoustic modes.
-
-With this understanding of the modes in the wide slab limit, the amplitude ratio, $R_\textrm{A}$, is either $0$ or \textit{undefined}, depending on which interface the wave is propagating and is therefore not useful for magneto-seismology.
+This is analogous to the mechanical example introduced by \cite{all_etal17}. Consider two masses connected by a spring, with spring constant $k_0$, and each mass is also connected to a fixed wall on each side by springs with spring constants $k_1$ and $k_2$, respectively (see Figure~\ref{fig: wide slab mechanical analogy}). When the middle spring has spring constant $k_0 \neq 0$, there are two modes, an in-phase mode (analogous to kink modes in a slab) and an in-antiphase mode (analogous to sausage modes in a slab). When the two masses are decoupled by removing the middle spring, equivalently setting $k_0 = 0$, each mass oscillates independently at the natural frequency of that side of the spring-mass system. This decoupling provides a good analogy to the wide slab limit for the magnetic slab. Each interface can oscillate at its own natural frequency, independent of the other interface. Given that we are considering magneto-acoustic waves, there are two restoring forces, the magnetic tension force and the pressure gradient force, which means that each independent interface has two natural frequencies (depending on the parameters of the system, there can be 0, 1, or 2 frequencies), corresponding to the fast and slow magneto-acoustic modes. With this understanding of the modes in the wide slab limit, the amplitude ratio, $R_\textrm{A}$, is either $0$ or \textit{undefined}, depending on which interface the wave is propagating and is therefore not useful for magneto-seismology.
 
 \begin{figure}
 \makebox[\textwidth][c]{
@@ -658,7 +618,7 @@ The position of minimum wave power for a symmetric sausage or kink mode is at th
 \end{tikzpicture}
 }\label{fig: min pert shift kink}}}
 
-\caption{Illustration of the minimum perturbation shift within the slab for~\protect\subref{fig: min pert shift saus}~quasi-sausage and~\protect\subref{fig: min pert shift kink}~quasi-kink modes. The minimum perturbation shift can be used as a diagnostic tool.}
+\caption{Illustration of the minimum perturbation shift, $\Delta_\textrm{min}$, within the slab (shaded) for~\protect\subref{fig: min pert shift saus}~quasi-sausage and~\protect\subref{fig: min pert shift kink}~quasi-kink modes.}
 \label{fig: min pert shift}
 \end{figure}
 
@@ -685,7 +645,7 @@ The concept of minimum perturbation shift is exclusive to surface modes. The eig
 Akin to the amplitude ratio method for solar magneto-seismology prescribed in Section~\ref{sec: AR}, we can determine from Equation~\eqref{shift min saus} or~\eqref{shift min kink} the Alfv\'{e}n speed, $v_\textrm{A}$, to estimate the magnetic field strength of inhomogeneous solar magnetic structures. This can be done either numerically, using an iterative root finding method, or analytically, under an appropriate approximation. In each of the following subsections, we carry out an inversion for the Alfv\'{e}n speed, $v_\textrm{A}$ under a specific approximation.
 
 
-\subsection{Thin slab approximation}
+\subsection{Thin slab approximation} \label{sec: min pert shift thin}
 In Section~\ref{sec: AR thin slab}, we addressed that under the thin slab approximation, that is $kx_0 \ll 1$, we have $m_0x_0 \ll 1$ for surface modes. This means that by definition $|\Delta_\textrm{min}| < x_0$, therefore $m_0|\Delta_\textrm{min}| \ll 1$, so that $\tanh{m_0\Delta_\textrm{min}} \approx m_0\Delta_\textrm{min}$. Firstly, for quasi-sausage modes, Equation~\eqref{shift min saus} can be solved for $v_\textrm{A}$ to give
 \begin{equation}
 v_\textrm{A}^2 = \frac{\omega^2}{k^2} \left[\frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_\textrm{min}) + \frac{1}{1 + (\omega / kc_0)^2} + k^2x_0\Delta_\textrm{min}\right].
@@ -727,60 +687,52 @@ which provides for $v_\textrm{A}$ to give
 v_\textrm{A}^2 = \frac{\omega^2}{k^2}\left[1 + \frac{k\rho_1}{m_1\rho_0}\left(\hspace{-0.07in}\begin{matrix} &\tanh \\ &\coth \end{matrix}\right)(k(x_0 + \Delta_\textrm{min}))\right].
 \end{equation}
 
-%\newgeometry{margin=1cm} % modify this if you need even more space
-\begin{landscape}
+\begin{deluxetable}{lccc}[ht]
+\tablecaption{Magneto-seismology application using the amplitude ratio, $R_\textrm{A}$, to approximate the Alfv\'{e}n speed, $v_\textrm{A}$. \label{table: amp ratio}}
+\tablehead{
+\colhead{Mode} & \multicolumn{3}{c}{Approximation of $k^2v_\textrm{A}^2 / \omega^2$ using amplitude ratio, $R_\textrm{A}$} \\
+& \colhead{Thin slab} & \colhead{Incompressible} & \colhead{Low-beta}
+}
+\startdata
+\\[-7pt]
+Quasi-sausage surface & $ 1 + \frac{1}{x_0}\left(\frac{R_\textrm{A}\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} + 1}\right) $ & $ 1 + \left( \frac{R_\textrm{A} \frac{\rho_2}{\rho_0} + \frac{\rho_1}{\rho_0}}{R_\textrm{A} + 1} \right) \coth{kx_0} $ & $ 1 + k \left( \frac{ R_\textrm{A}\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} + 1} \right) \coth{kx_0} $ \\[10pt]
+Quasi-kink surface & $ 1 + k^2x_0\left(\frac{R_\textrm{A}\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} - 1}\right) $ & $ 1 + \left( \frac{R_\textrm{A} \frac{\rho_2}{\rho_0} - \frac{\rho_1}{\rho_0}}{R_\textrm{A} - 1} \right) \tanh{kx_0} $ & $ 1 + k \left( \frac{ R_\textrm{A}\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} - 1} \right) \tanh{kx_0} $ \\[10pt]
+\enddata
+\end{deluxetable}
 
-\begin{table}
-\caption{Magneto-seismological application using the amplitude ratio, $R_\textrm{A}$, to approximate the Alfv\'{e}n speed, $v_\textrm{A}$.}
-\begin{tabular}{llccc}
-  \toprule
-Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_\textrm{A}^2 / \omega^2$ using amplitude ratio, $R_\textrm{A}$} \\
-\cmidrule(lr){3-5}
-	 &	    & \multicolumn{1}{c}{Thin slab} & \multicolumn{1}{c}{Incompressible} & \multicolumn{1}{c}{Low-beta} \\
-  \midrule
-\multirow{2}{*}{Surface} & Quasi-sausage & $ 1 + \frac{1}{x_0}\left(\frac{R_\textrm{A}\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} + 1}\right) $ & $ 1 + \left( \frac{R_\textrm{A} \frac{\rho_2}{\rho_0} + \frac{\rho_1}{\rho_0}}{R_\textrm{A} + 1} \right) \coth{kx_0} $ & $ 1 + k \left( \frac{ R_\textrm{A}\frac{\rho_2}{\rho_0m_2} + \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} + 1} \right) \coth{kx_0} $ \\
-						   & Quasi-kink	   & $ 1 + k^2x_0\left(\frac{R_\textrm{A}\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} - 1}\right) $ & $ 1 + \left( \frac{R_\textrm{A} \frac{\rho_2}{\rho_0} - \frac{\rho_1}{\rho_0}}{R_\textrm{A} - 1} \right) \tanh{kx_0} $ & $ 1 + k \left( \frac{ R_\textrm{A}\frac{\rho_2}{\rho_0m_2} - \frac{\rho_1}{\rho_0m_1}}{R_\textrm{A} - 1} \right) \tanh{kx_0} $ \\
-  \bottomrule
-\end{tabular} \label{table: amp ratio}
-\end{table}
-
-
-\begin{table}
-\caption{Magneto-seismological application using the minimum perturbation shift, $\Delta_\textrm{min}$, to approximate the Alfv\'{e}n speed, $v_\textrm{A}$.}
-\begin{tabular}{llccc}
-  \toprule
-Type & Mode & \multicolumn{3}{c}{Approximation of $k^2v_\textrm{A}^2 / \omega^2$ using minimum perturbation shift, $\Delta_\textrm{min}$} \\
-\cmidrule(lr){3-5}
-	 &	    & Thin slab & Incompressible & Low-beta \\
-  \midrule
-\multirow{2}{*}{Surface} & Quasi-sausage & $ \frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_\textrm{min}) + \frac{1}{1 + (\omega / kc_0)^2} + k^2x_0\Delta_\textrm{min} $ & $ 1 + \frac{\rho_1}{\rho_0}\tanh{k(x_0 + \Delta_\textrm{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\tanh{k(x_0 + \Delta_\textrm{min})} $ \\
-						   & Quasi-kink	   & $\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, defined in text & $ 1 + \frac{\rho_1}{\rho_0}\coth{k(x_0 + \Delta_\textrm{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\coth{k(x_0 + \Delta_\textrm{min})} $ \\
-  \bottomrule
-\end{tabular} \label{table: shift in min pert}
-\end{table}
-
-\end{landscape}
-%\restoregeometry
+\begin{deluxetable}{lccc}[ht]
+\tablecaption{Magneto-seismology application using the minimum perturbation shift, $\Delta_\textrm{min}$, to approximate the Alfv\'{e}n speed, $v_\textrm{A}$. \label{table: min pert shift}}
+\tablehead{
+\colhead{Mode} & \multicolumn{3}{c}{Approximation of $k^2v_\textrm{A}^2 / \omega^2$ using amplitude ratio, $R_\textrm{A}$} \\
+& \colhead{Thin slab} & \colhead{Incompressible} & \colhead{Low-beta}
+}
+\rule{0pt}{4ex}
+\startdata
+\\[-7pt]
+Quasi-sausage surface & $ \frac{\rho_1}{\rho_0m_1}(x_0 + \Delta_\textrm{min}) + \frac{1}{1 + (\omega / kc_0)^2} + k^2x_0\Delta_\textrm{min} $ & $ 1 + \frac{\rho_1}{\rho_0}\tanh{k(x_0 + \Delta_\textrm{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\tanh{k(x_0 + \Delta_\textrm{min})} $ \\[10pt]
+Quasi-kink surface & $\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, defined in Section~\ref{sec: min pert shift thin} & $ 1 + \frac{\rho_1}{\rho_0}\coth{k(x_0 + \Delta_\textrm{min})} $ & $ 1 + \frac{k\rho_1}{m_1\rho_0}\coth{k(x_0 + \Delta_\textrm{min})} $ \\[10pt]
+\enddata
+\end{deluxetable}
 
 
 \section{Discussion} \label{sec: discussion}
 
 We have introduced the amplitude ratio and the minimum perturbation shift which quantify the spatial asymmetry in magnetic slab eigenmodes. These expressions can be applied to determine the Alfv\'{e}n speed, for a given set of observed equilibrium parameters, providing us a novel method diagnosing information about the background plasma, thus advancing the field of spatial magneto-seismology.
 
-A summary of the analytical expressions for estimating the Alfv\'{e}n speed, $v_\textrm{A}$, within an asymmetric magnetic slab is given in Tables~\ref{table: amp ratio} and~\ref{table: shift in min pert}, utilising the amplitude method and the minimum perturbation shift methods, respectively. In practice, a numerical procedure could be made relatively simple and computationally inexpensive by making use of a standard root finding method once the observed parameters have been prescribed but in some cases it might be valid to use an analytical solution from Tables~\ref{table: amp ratio} and~\ref{table: shift in min pert} under the necessary approximation.
+A summary of the analytical expressions for estimating the Alfv\'{e}n speed, $v_\textrm{A}$, within an asymmetric magnetic slab is given in Tables~\ref{table: amp ratio} and~\ref{table: min pert shift}, utilising the amplitude method and the minimum perturbation shift methods, respectively. In practice, a numerical procedure could be made relatively simple and computationally inexpensive by making use of a standard root finding method once the observed parameters have been prescribed but in some cases it might be valid to use an analytical solution from Tables~\ref{table: amp ratio} and~\ref{table: min pert shift} under the necessary approximation.
 
 \begin{figure}
 \centering
-\subfloat[Quasi-kink]{\includegraphics[scale=0.35]{media/slow-kink-surf_amp-ratio.png}
+\subfloat[Quasi-kink]{\includegraphics[scale=0.38]{slow-kink-surf_amp-ratio.pdf}
 \label{fig: AR slow kink surf}}
-\subfloat[Quasi-sausage]{\includegraphics[scale=0.35]{media/slow-saus-surf_amp-ratio.png}
+\subfloat[Quasi-sausage]{\includegraphics[scale=0.38]{slow-saus-surf_amp-ratio.pdf}
 \label{fig: AR slow saus surf}}
 \\
-\subfloat[Quasi-kink]{\includegraphics[scale=0.35]{media/slow-kink-surf_min-pert-shift.png}
+\subfloat[Quasi-kink]{\includegraphics[scale=0.38]{slow-kink-surf_min-pert-shift.pdf}
 \label{fig: MPS slow kink surf}}
-\subfloat[Quasi-sausage]{\includegraphics[scale=0.35]{media/slow-saus-surf_min-pert-shift.png}
+\subfloat[Quasi-sausage]{\includegraphics[scale=0.38]{slow-saus-surf_min-pert-shift.pdf}
 \label{fig: MPS slow saus surf}}
-\caption{(\protect\subref*{fig: AR slow kink surf}, \protect\subref*{fig: AR slow saus surf}) The amplitude ratio, $R_\textrm{A}$, and (\protect\subref*{fig: MPS slow kink surf}, \protect\subref*{fig: MPS slow saus surf}) the minimum perturbation shift, $\Delta_\textrm{min}$, as a function of the slab width, non-dimensionalised as $kx_0$, and the density ratio, $\rho_1/\rho_0$, for (\protect\subref*{fig: AR slow kink surf}, \protect\subref*{fig: MPS slow kink surf}) slow quasi-kink and (\protect\subref*{fig: AR slow saus surf}, \protect\subref*{fig: MPS slow saus surf}) quasi-sausage surface modes. The other density ratio is set to $\rho_2/\rho_0 = 2$, the characteristic speed ordering inside the slab is $v_\textrm{A}=1.3c_0$, and the sound speed outside the slab is determined to ensure equilibrium pressure balance.}
+\caption{(\protect\subref*{fig: AR slow kink surf}, \protect\subref*{fig: AR slow saus surf}) The amplitude ratio, $R_\textrm{A}$, and (\protect\subref*{fig: MPS slow kink surf}, \protect\subref*{fig: MPS slow saus surf}) the minimum perturbation shift, $\Delta_\textrm{min}$, as a function of the slab width, non-dimensionalised to $kx_0$, and the density ratio, $\rho_1/\rho_0$, for slow (\protect\subref*{fig: AR slow kink surf}, \protect\subref*{fig: MPS slow kink surf}) quasi-kink and (\protect\subref*{fig: AR slow saus surf}, \protect\subref*{fig: MPS slow saus surf}) quasi-sausage surface modes. The other density ratio is set to $\rho_2/\rho_0 = 2$, the characteristic speed ordering inside the slab is $v_\textrm{A}=1.3c_0$, and the sound speed outside the slab is determined to ensure equilibrium pressure balance.}
 \label{fig: AR MPS}
 \end{figure}
 
@@ -794,12 +746,11 @@ However, it is often the case than not all the non-magnetic parameters character
 
 \begin{figure}
 \centering
-\subfloat[Amplitude ratio inversion.]{\includegraphics[scale=0.45]{media/RA_vA_approx_2var.png}
+\subfloat[Amplitude ratio inversion]{\includegraphics[scale=0.42]{RA_vA_approx_2var.pdf}
 \label{fig: RA vA approx}}
-\\
-\subfloat[Minimum perturbation shift inversion.]{\includegraphics[scale=0.45]{media/DM_vA_approx_2var.png}
+\subfloat[Minimum perturbation shift inversion]{\includegraphics[scale=0.42]{DM_vA_approx_2var.pdf}
 \label{fig: DM vA approx}}
-\caption{Using prescribed values for~\protect\subref{fig: RA vA approx}~the amplitude ratio, $R_\textrm{A}$, or~\protect\subref{fig: DM vA approx}~the minimum perturbation shift, $\Delta_\textrm{min}$, a numerical inversion is used to approximate the background equilibrium parameters, in this case the Alfv\'{e}n speed, $v_\textrm{A}$, and one of the density ratios, $\rho_1 / \rho_0$, for slow magneto-acoustic modes. Dashed (solid) lines correspond to the inversion curves for slow quasi-kink (quasi-sausage) surface modes. The dotted lines indicate the inversion for a symmetric slab. The light-shaded area indicates the values of the Alfv\'{e}n speed which correspond to body modes, rather than surface modes, so are not important for SMS application. The dark shaded region in Figure~\protect\subref{fig: DM vA approx} illustrates the region outside the slab, which is not a valid region for the minimum perturbation shift, which must be within the slab.}
+\caption{Using prescribed values for~\protect\subref{fig: RA vA approx}~the amplitude ratio, $R_\textrm{A}$, or~\protect\subref{fig: DM vA approx}~the minimum perturbation shift, $\Delta_\textrm{min}$, a numerical inversion is used to approximate the background equilibrium parameters, in this case the Alfv\'{e}n speed, $v_\textrm{A}$, and one of the density ratios, $\rho_1 / \rho_0$, for slow magneto-acoustic modes. Dashed (solid) lines correspond to the inversion curves for slow quasi-kink (quasi-sausage) surface modes. The dotted lines indicate the inversion for symmetric kink and sausage modes. The light-shaded area indicates the values of the Alfv\'{e}n speed which correspond to body modes, rather than surface modes, so are not important for SMS application. The dark shaded region in Figure~\protect\subref{fig: DM vA approx} illustrates the region outside the slab, outside the bounds of the minimum perturbation shift.}
 \label{fig: vA approx}
 \end{figure}
 
@@ -807,28 +758,19 @@ The amplitude ratio has a strong sensitivity to the changes in the external dens
 
 Both the amplitude ratio and minimum perturbation shift are more sensitive to small changes in the background equilibrium parameters, \emph{i.e.} the asymmetry in the background plasma. On a theoretical level, this corroborates with the result that eigenfunctions of linear operators on a Hilbert space are often more sensitive to small perturbations of the operator than their corresponding eigenvalues \citep{kat95}. The amplitude ratio and minimum perturbation shift both depend on the eigenfunctions, $\widehat{v}_x(x)$, and their eigenvalues, $\omega^2$. This means that spatial seismology techniques can be theoretically more effective than temporal techniques for many solar structure. Therefore, we are excited to see a push for increased spatial resolution with next-generational observational instrumentation such as the Daniel K. Inouye Solar Telescope (DKIST). Upon completion, this will equip us to be able to use the magneto-seismology techniques developed here to better understand the diagnostic properties of asymmetric slab-like solar atmospheric structures such as elongated magnetic bright points, prominences, and sunspot light walls.
 
-In future work, we would like to determine whether magneto-acoustic surface waves can be set up in an asymmetric waveguide within the characteristic lifetime of such a structure in the solar atmosphere. This can be established analytically (for linear waves with simple initial conditions) and numerically (for non-linear waves with more sophisticated initial conditions). Further, a more realistic system, including asymmetric magnetic fields in the external plasmas, or an equilibrium shear flow, would allow for better application to solar waveguides.
+We propose to determine whether asymmetric magneto-acoustic surface waves can be excited within the characteristic lifetime of an asymmetric waveguide in the solar atmosphere. This task can be investigated analytically (for linear waves with simple initial conditions) and numerically (for non-linear waves with more sophisticated initial conditions). Further, a more realistic system, including asymmetric magnetic fields in the external plasmas, or an equilibrium shear flow, would allow for better application to solar waveguides.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Appendix
-%
-%\appendix   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Acknowledgements
-%
-\begin{acks}
+\acknowledgments
 M. Allcock would like to thank the University Prize Scholarship. R. Erd\'{e}lyi acknowledges the support from the UK Science and Technology Facilities Council (STFC) and the Royal Society. 
-\end{acks}
 
-\begin{acks}[Declaration of Potential Conflicts of Interest]
-The authors declare that they have no conflicts of interest.
-\end{acks}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\bibliographystyle{spr-mp-sola}
 \bibliography{Bibliography}
 
-\end{article} 
+%% Include this line if you are using the \added, \replaced, \deleted
+%% commands to see a summary list of all changes at the end of the article.
+\listofchanges
+
 \end{document}

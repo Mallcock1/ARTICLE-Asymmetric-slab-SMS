@@ -1,1 +1,0 @@
-# ARTICLE-Asymmetric-slab-SMS
