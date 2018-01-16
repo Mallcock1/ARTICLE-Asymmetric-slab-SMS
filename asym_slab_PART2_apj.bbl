@@ -22,6 +22,11 @@
 {Banerjee}, D., {Erd{\'e}lyi}, R., {Oliver}, R., \& {O'Shea}, E. 2007,
   \solphys, 246, 3
 
+\bibitem[{{Crockett} {et~al.}(2010){Crockett}, {Mathioudakis}, {Jess},
+  {Shelyag}, {Keenan}, \& {Christian}}]{cro_etal10}
+{Crockett}, P.~J., {Mathioudakis}, M., {Jess}, D.~B., {et~al.} 2010, \apjl,
+  722, L188
+
 \bibitem[{{De Moortel} \& {Nakariakov}(2012)}]{dem_etal12}
 {De Moortel}, I., \& {Nakariakov}, V.~M. 2012, Philosophical Transactions of
   the Royal Society of London Series A, 370, 3193
@@ -40,6 +45,11 @@
 {Kato}, T. 1995, {Perturbation Theory for Linear Operators}, 2nd edn. (Verlag
   Berlin Heidelberg: Springer), 623
 
+\bibitem[{{Moreels} {et~al.}(2015){Moreels}, {Freij}, {Erd{\'e}lyi}, {Van
+  Doorsselaere}, \& {Verth}}]{mor_etal15}
+{Moreels}, M.~G., {Freij}, N., {Erd{\'e}lyi}, R., {Van Doorsselaere}, T., \&
+  {Verth}, G. 2015, \aap, 579, A73
+
 \bibitem[{{Nakariakov} \& {Ofman}(2001)}]{nak_etal01}
 {Nakariakov}, V.~M., \& {Ofman}, L. 2001, \aap, 372, L53
 
@@ -52,6 +62,14 @@
 \bibitem[{{Rosenberg}(1970)}]{ros70}
 {Rosenberg}, H. 1970, \aap, 9, 159
 
+\bibitem[{{Tritschler} {et~al.}(2015){Tritschler}, {Rimmele}, {Berukoff},
+  {Casini}, {Craig}, {Elmore}, {Hubbard}, {Kuhn}, {Lin}, {McMullin}, {Reardon},
+  {Schmidt}, {Warner}, \& {Woger}}]{tri_etal15}
+{Tritschler}, A., {Rimmele}, T.~R., {Berukoff}, S., {et~al.} 2015, in Cambridge
+  Workshop on Cool Stars, Stellar Systems, and the Sun, Vol.~18, 18th Cambridge
+  Workshop on Cool Stars, Stellar Systems, and the Sun, ed. G.~T. {van Belle}
+  \& H.~C. {Harris}, 933--944
+
 \bibitem[{{Uchida}(1970)}]{uch70}
 {Uchida}, Y. 1970, \pasj, 22, 341
 
@@ -63,6 +81,10 @@
 \bibitem[{{Yang} {et~al.}(2017){Yang}, {Zhang}, {Erd{\'e}lyi}, {Hou}, {Li}, \&
   {Yan}}]{yan_etal17}
 {Yang}, S., {Zhang}, J., {Erd{\'e}lyi}, R., {et~al.} 2017, \apjl, 843, L15
+
+\bibitem[{{Yang} {et~al.}(2015){Yang}, {Zhang}, {Jiang}, \&
+  {Xiang}}]{yan_etal15}
+{Yang}, S., {Zhang}, J., {Jiang}, F., \& {Xiang}, Y. 2015, \apjl, 804, L27
 
 \bibitem[{{Yu} {et~al.}(2016){Yu}, {Chen}, {Li}, \& {Xia}}]{yu_etal16}
 {Yu}, H., {Chen}, S.-X., {Li}, B., \& {Xia}, L.-D. 2016, Research in Astronomy
