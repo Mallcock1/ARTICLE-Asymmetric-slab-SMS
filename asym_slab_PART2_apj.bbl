@@ -17,10 +17,21 @@
   {Ballester}}]{arr_etal12}
 {Arregui}, I., {Oliver}, R., \& {Ballester}, J.~L. 2012, \lrsp, 9, 2
 
+\bibitem[{{Asai} {et~al.}(2001){Asai}, {Ishii}, \& {Kurokawa}}]{asa_etal01}
+{Asai}, A., {Ishii}, T.~T., \& {Kurokawa}, H. 2001, \apjl, 555, L65
+
 \bibitem[{{Banerjee} {et~al.}(2007){Banerjee}, {Erd{\'e}lyi}, {Oliver}, \&
   {O'Shea}}]{ban_etal07}
 {Banerjee}, D., {Erd{\'e}lyi}, R., {Oliver}, R., \& {O'Shea}, E. 2007,
   \solphys, 246, 3
+
+\bibitem[{{Bharti} {et~al.}(2007){Bharti}, {Rimmele}, {Jain}, {Jaaffrey}, \&
+  {Smartt}}]{bha_etal07}
+{Bharti}, L., {Rimmele}, T., {Jain}, R., {Jaaffrey}, S.~N.~A., \& {Smartt},
+  R.~N. 2007, \mnras, 376, 1291
+
+\bibitem[{{Bovelet} \& {Wiehr}(2003)}]{bov_etal03}
+{Bovelet}, B., \& {Wiehr}, E. 2003, \aap, 412, 249
 
 \bibitem[{{Crockett} {et~al.}(2010){Crockett}, {Mathioudakis}, {Jess},
   {Shelyag}, {Keenan}, \& {Christian}}]{cro_etal10}
@@ -40,6 +51,12 @@
 
 \bibitem[{{Erd{\'e}lyi} \& {Verth}(2007)}]{erd_etal07}
 {Erd{\'e}lyi}, R., \& {Verth}, G. 2007, \aap, 462, 743
+
+\bibitem[{{Joarder} \& {Roberts}(1992{\natexlab{a}})}]{joa_etal92a}
+{Joarder}, P.~S., \& {Roberts}, B. 1992{\natexlab{a}}, \aap, 256, 264
+
+\bibitem[{{Joarder} \& {Roberts}(1992{\natexlab{b}})}]{joa_etal92b}
+---. 1992{\natexlab{b}}, \aap, 261, 625
 
 \bibitem[{{Kato}(1995)}]{kat95}
 {Kato}, T. 1995, {Perturbation Theory for Linear Operators}, 2nd edn. (Verlag
@@ -62,6 +79,14 @@
 \bibitem[{{Rosenberg}(1970)}]{ros70}
 {Rosenberg}, H. 1970, \aap, 9, 159
 
+\bibitem[{{Roy}(1973)}]{roy73}
+{Roy}, J.~R. 1973, \solphys, 28, 95
+
+\bibitem[{{Shimizu} {et~al.}(2009){Shimizu}, {Katsukawa}, {Kubo}, {Lites},
+  {Ichimoto}, {Suematsu}, {Tsuneta}, {Nagata}, {Shine}, \&
+  {Tarbell}}]{shi_etal09}
+{Shimizu}, T., {Katsukawa}, Y., {Kubo}, M., {et~al.} 2009, \apjl, 696, L66
+
 \bibitem[{{Tritschler} {et~al.}(2015){Tritschler}, {Rimmele}, {Berukoff},
   {Casini}, {Craig}, {Elmore}, {Hubbard}, {Kuhn}, {Lin}, {McMullin}, {Reardon},
   {Schmidt}, {Warner}, \& {Woger}}]{tri_etal15}
@@ -72,6 +97,9 @@
 
 \bibitem[{{Uchida}(1970)}]{uch70}
 {Uchida}, Y. 1970, \pasj, 22, 341
+
+\bibitem[{{van Ballegooijen} \& {Martens}(1989)}]{van_etal89}
+{van Ballegooijen}, A.~A., \& {Martens}, P.~C.~H. 1989, \apj, 343, 971
 
 \bibitem[{{Verth} {et~al.}(2007){Verth}, {Van Doorsselaere}, {Erd{\'e}lyi}, \&
   {Goossens}}]{ver_etal07}
@@ -86,6 +114,11 @@
   {Xiang}}]{yan_etal15}
 {Yang}, S., {Zhang}, J., {Jiang}, F., \& {Xiang}, Y. 2015, \apjl, 804, L27
 
+\bibitem[{{Young} {et~al.}(2009){Young}, {Watanabe}, {Hara}, \&
+  {Mariska}}]{you_etal09}
+{Young}, P.~R., {Watanabe}, T., {Hara}, H., \& {Mariska}, J.~T. 2009, \aap,
+  495, 587
+
 \bibitem[{{Yu} {et~al.}(2016){Yu}, {Chen}, {Li}, \& {Xia}}]{yu_etal16}
 {Yu}, H., {Chen}, S.-X., {Li}, B., \& {Xia}, L.-D. 2016, Research in Astronomy
   and Astrophysics, 16, 92
@@ -96,5 +129,8 @@
 
 \bibitem[{{Zhang} {et~al.}(2017){Zhang}, {Tian}, {He}, \& {Wang}}]{zha_etal17}
 {Zhang}, J., {Tian}, H., {He}, J., \& {Wang}, L. 2017, \apj, 838, 2
+
+\bibitem[{{Zirker} {et~al.}(1994){Zirker}, {Engvold}, \& {Yi}}]{zir_etal94}
+{Zirker}, J.~B., {Engvold}, O., \& {Yi}, Z. 1994, \solphys, 150, 81
 
 \end{thebibliography}
