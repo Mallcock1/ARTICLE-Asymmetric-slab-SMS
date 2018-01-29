@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.25)  19 JAN 2018 10:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.25)  26 JAN 2018 17:03
 entering extended mode
 **./asym_slab_PART2_apj.tex
 (asym_slab_PART2_apj.tex
@@ -1038,7 +1038,7 @@ LaTeX Font Info:    Font shape `OML/cmr/bx/it' in size <14.4> not available
 
 pdfTeX warning: pdflatex (file ./slow-kink-surf_amp-ratio.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<slow-kink-surf_amp-ratio.pdf, id=311, 602.25pt x 451.6875pt>
+<slow-kink-surf_amp-ratio.pdf, id=310, 602.25pt x 451.6875pt>
 File: slow-kink-surf_amp-ratio.pdf Graphic file (type pdf)
 
 <use slow-kink-surf_amp-ratio.pdf>
@@ -1048,7 +1048,7 @@ Package pdftex.def Info: slow-kink-surf_amp-ratio.pdf used on input line 727.
 
 pdfTeX warning: pdflatex (file ./slow-saus-surf_amp-ratio.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<slow-saus-surf_amp-ratio.pdf, id=312, 602.25pt x 451.6875pt>
+<slow-saus-surf_amp-ratio.pdf, id=311, 602.25pt x 451.6875pt>
 File: slow-saus-surf_amp-ratio.pdf Graphic file (type pdf)
 
 <use slow-saus-surf_amp-ratio.pdf>
@@ -1058,7 +1058,7 @@ Package pdftex.def Info: slow-saus-surf_amp-ratio.pdf used on input line 729.
 
 pdfTeX warning: pdflatex (file ./slow-kink-surf_min-pert-shift.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<slow-kink-surf_min-pert-shift.pdf, id=313, 602.25pt x 451.6875pt>
+<slow-kink-surf_min-pert-shift.pdf, id=312, 602.25pt x 451.6875pt>
 File: slow-kink-surf_min-pert-shift.pdf Graphic file (type pdf)
 
 <use slow-kink-surf_min-pert-shift.pdf>
@@ -1069,7 +1069,7 @@ Package pdftex.def Info: slow-kink-surf_min-pert-shift.pdf used on input line 7
 
 pdfTeX warning: pdflatex (file ./slow-saus-surf_min-pert-shift.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<slow-saus-surf_min-pert-shift.pdf, id=314, 602.25pt x 451.6875pt>
+<slow-saus-surf_min-pert-shift.pdf, id=313, 602.25pt x 451.6875pt>
 File: slow-saus-surf_min-pert-shift.pdf Graphic file (type pdf)
 
 <use slow-saus-surf_min-pert-shift.pdf>
@@ -1080,7 +1080,7 @@ Package pdftex.def Info: slow-saus-surf_min-pert-shift.pdf used on input line 7
 
 pdfTeX warning: pdflatex (file ./RA_vA_approx_2var.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<RA_vA_approx_2var.pdf, id=383, 602.25pt x 451.6875pt>
+<RA_vA_approx_2var.pdf, id=382, 602.25pt x 451.6875pt>
 File: RA_vA_approx_2var.pdf Graphic file (type pdf)
 
 <use RA_vA_approx_2var.pdf>
@@ -1090,7 +1090,7 @@ Package pdftex.def Info: RA_vA_approx_2var.pdf used on input line 750.
 
 pdfTeX warning: pdflatex (file ./DM_vA_approx_2var.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<DM_vA_approx_2var.pdf, id=384, 602.25pt x 451.6875pt>
+<DM_vA_approx_2var.pdf, id=383, 602.25pt x 451.6875pt>
 File: DM_vA_approx_2var.pdf Graphic file (type pdf)
 
 <use DM_vA_approx_2var.pdf>
@@ -1099,14 +1099,7 @@ Package pdftex.def Info: DM_vA_approx_2var.pdf used on input line 752.
  [11 <./slow-kink-surf_amp-ratio.pdf> <./slow-saus-surf_amp-ratio.pdf> <./slow-
 kink-surf_min-pert-shift.pdf> <./slow-saus-surf_min-pert-shift.pdf>] [12 <./RA_
 vA_approx_2var.pdf> <./DM_vA_approx_2var.pdf>]
-(asym_slab_PART2_apj.bbl
-Overfull \vbox (10.1837pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (10.1837pt too high) has occurred while \output is active []
-
-
-[13]) [14]
+[13] (asym_slab_PART2_apj.bbl) [14]
 
 LaTeX Warning: Reference `6' on page 15 undefined on input line 784.
 
@@ -1127,10 +1120,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21284 strings out of 493323
- 391116 string characters out of 3139069
- 530719 words of memory out of 3000000
- 24275 multiletter control sequences out of 15000+200000
+ 21297 strings out of 493323
+ 391234 string characters out of 3139069
+ 530759 words of memory out of 3000000
+ 24285 multiletter control sequences out of 15000+200000
  18132 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,92p,1562b,842s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1164,9 +1157,9 @@ onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmti8.pfb>
-Output written on asym_slab_PART2_apj.pdf (16 pages, 1153219 bytes).
+Output written on asym_slab_PART2_apj.pdf (16 pages, 1157448 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
- 153 named destinations out of 1000 (max. 500000)
+ 721 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
  155 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -17,21 +17,16 @@
   {Ballester}}]{arr_etal12}
 {Arregui}, I., {Oliver}, R., \& {Ballester}, J.~L. 2012, \lrsp, 9, 2
 
-\bibitem[{{Asai} {et~al.}(2001){Asai}, {Ishii}, \& {Kurokawa}}]{asa_etal01}
-{Asai}, A., {Ishii}, T.~T., \& {Kurokawa}, H. 2001, \apjl, 555, L65
+\bibitem[{{Ballester}(2005)}]{bal05}
+{Ballester}, J.~L. 2005, \ssr, 121, 105
 
 \bibitem[{{Banerjee} {et~al.}(2007){Banerjee}, {Erd{\'e}lyi}, {Oliver}, \&
   {O'Shea}}]{ban_etal07}
 {Banerjee}, D., {Erd{\'e}lyi}, R., {Oliver}, R., \& {O'Shea}, E. 2007,
   \solphys, 246, 3
 
-\bibitem[{{Bharti} {et~al.}(2007){Bharti}, {Rimmele}, {Jain}, {Jaaffrey}, \&
-  {Smartt}}]{bha_etal07}
-{Bharti}, L., {Rimmele}, T., {Jain}, R., {Jaaffrey}, S.~N.~A., \& {Smartt},
-  R.~N. 2007, \mnras, 376, 1291
-
-\bibitem[{{Bovelet} \& {Wiehr}(2003)}]{bov_etal03}
-{Bovelet}, B., \& {Wiehr}, E. 2003, \aap, 412, 249
+\bibitem[{{Bourdin}(2017)}]{bou17}
+{Bourdin}, P.-A. 2017, \apjl, 850, L29
 
 \bibitem[{{Crockett} {et~al.}(2010){Crockett}, {Mathioudakis}, {Jess},
   {Shelyag}, {Keenan}, \& {Christian}}]{cro_etal10}
@@ -52,6 +47,10 @@
 \bibitem[{{Erd{\'e}lyi} \& {Verth}(2007)}]{erd_etal07}
 {Erd{\'e}lyi}, R., \& {Verth}, G. 2007, \aap, 462, 743
 
+\bibitem[{{Hou} {et~al.}(2017){Hou}, {Zhang}, {Li}, {Yang}, \&
+  {Li}}]{hou_etal17}
+{Hou}, Y., {Zhang}, J., {Li}, T., {Yang}, S., \& {Li}, X. 2017, \apjl, 848, L9
+
 \bibitem[{{Joarder} \& {Roberts}(1992{\natexlab{a}})}]{joa_etal92a}
 {Joarder}, P.~S., \& {Roberts}, B. 1992{\natexlab{a}}, \aap, 256, 264
 
@@ -67,8 +66,15 @@
 {Moreels}, M.~G., {Freij}, N., {Erd{\'e}lyi}, R., {Van Doorsselaere}, T., \&
   {Verth}, G. 2015, \aap, 579, A73
 
+\bibitem[{{Mumford} {et~al.}(2015){Mumford}, {Fedun}, \&
+  {Erd{\'e}lyi}}]{mum_etal15}
+{Mumford}, S.~J., {Fedun}, V., \& {Erd{\'e}lyi}, R. 2015, \apj, 799, 6
+
 \bibitem[{{Nakariakov} \& {Ofman}(2001)}]{nak_etal01}
 {Nakariakov}, V.~M., \& {Ofman}, L. 2001, \aap, 372, L53
+
+\bibitem[{{Oliver}(2009)}]{oli09}
+{Oliver}, R. 2009, \ssr, 149, 175
 
 \bibitem[{{Roberts}(1981{\natexlab{a}})}]{rob81b}
 {Roberts}, B. 1981{\natexlab{a}}, \solphys, 69, 39
